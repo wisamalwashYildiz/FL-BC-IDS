@@ -93,10 +93,32 @@ def main() -> int:
     if args.structural_only:
         return 0
 
+    # Prefer the repository-locked snarkjs installed by:
+    #     npm ci --prefix environment
+    # before falling back to any globally installed executable.
+    local_bin = root / "environment" / "node_modules" / ".bin"
+    local_candidates = [
+        local_bin / "snarkjs.cmd",
+        local_bin / "snarkjs",
+    ]
+    local_snarkjs = next(
+        (candidate for candidate in local_candidates if candidate.is_file()),
+        None,
+    )
+
     snarkjs = shutil.which("snarkjs")
     npx = shutil.which("npx")
 
-    if snarkjs:
+    if local_snarkjs is not None:
+        cmd = [
+            str(local_snarkjs),
+            "groth16",
+            "verify",
+            str(vkeys[0]),
+            str(publics[0]),
+            str(proofs[0]),
+        ]
+    elif snarkjs:
         cmd = [
             snarkjs,
             "groth16",
