@@ -1,0 +1,198 @@
+{
+  "schema": "ReviewerConcern4ValidationV2",
+  "local_rounds_per_client_delta": 10,
+  "num_parallel_tree": 1,
+  "anchor_size": 64,
+  "anchor_scale": 1000000,
+  "delta1_tree_count": 10,
+  "delta2_tree_count": 10,
+  "flower_1_23_tree_count_after_two_deltas": 11,
+  "intended_all_tree_count_after_two_deltas": 20,
+  "corrected_all_tree_count_after_two_deltas": 20,
+  "corrected_second_round_tree_count": 40,
+  "aggregation_replay_record_sha256": "d4543b6ca653d588b30a813d3e718ed404e9d2289f6ee6cb423ff29fdfc02e18",
+  "tests_total": 16,
+  "tests_passed": 16,
+  "tests_failed": 0,
+  "tests": [
+    {
+      "test": "direct_signed_delta_to_anchor_link_positive",
+      "passed": true,
+      "observed": "ok",
+      "expected": "ok",
+      "severity": "critical",
+      "note": "The exact received delta first matches the signed delta digest, then its anchor is independently recomputed."
+    },
+    {
+      "test": "reviewer_unrelated_artifacts_signature_attack",
+      "passed": true,
+      "observed": {
+        "signature_verified": true,
+        "derivation_result": "model_anchor_derivation_mismatch"
+      },
+      "expected": {
+        "signature_verified": true,
+        "derivation_result": "model_anchor_derivation_mismatch"
+      },
+      "severity": "critical",
+      "note": "Directly demonstrates that a valid signature cannot make an unrelated anchor pass the new derivation check."
+    },
+    {
+      "test": "signed_delta_substitution_rejected",
+      "passed": true,
+      "observed": "model_delta_sha256_mismatch",
+      "expected": "model_delta_sha256_mismatch",
+      "severity": "critical",
+      "note": "The exact received model bytes must match the model-delta digest carried by the signed report."
+    },
+    {
+      "test": "signed_anchor_vector_substitution_rejected",
+      "passed": true,
+      "observed": "submitted_q_sha256_does_not_match_submitted_vector",
+      "expected": "submitted_q_sha256_does_not_match_submitted_vector",
+      "severity": "critical",
+      "note": "The retained q vector must hash to the q digest carried by the signed report."
+    },
+    {
+      "test": "all_tree_base_plus_delta_reconstruction",
+      "passed": true,
+      "observed": {
+        "max_abs_prediction_difference": 0.0,
+        "trees": 11
+      },
+      "expected": {
+        "max_abs_prediction_difference": "<=1e-7",
+        "trees": 11
+      },
+      "severity": "critical",
+      "note": "Confirms the all-tree JSON operation reproduces a native XGBoost continuation from base + sliced delta."
+    },
+    {
+      "test": "client_delta_model_contract_compatibility",
+      "passed": true,
+      "observed": {
+        "delta1_contract": "ef32653a5894f7b82c5283e90858694d515be4bf1f09ee8baee21ec3b20bd84e",
+        "delta2_contract": "ef32653a5894f7b82c5283e90858694d515be4bf1f09ee8baee21ec3b20bd84e",
+        "error": ""
+      },
+      "expected": "matching model-contract hashes",
+      "severity": "critical",
+      "note": "Aggregation is allowed only for structurally compatible XGBoost artifacts."
+    },
+    {
+      "test": "flower_1_23_exact_behavior_reproduced",
+      "passed": true,
+      "observed": 11,
+      "expected": 11,
+      "severity": "critical",
+      "note": "Reproduces the exact Flower 1.23.0 later-update tree-count behavior used for the contract diagnostic."
+    },
+    {
+      "test": "flower_multitree_contract_diagnostic",
+      "passed": true,
+      "observed": {
+        "multi_tree_delta": true,
+        "flower_tree_count": 11,
+        "all_tree_intent": 20,
+        "mismatch_present": true
+      },
+      "expected": {
+        "mismatch_present": true
+      },
+      "severity": "critical",
+      "note": "For multi-iteration deltas the Flower 1.23.0 one-iteration update contract diverges from the intended all-tree contract."
+    },
+    {
+      "test": "corrected_all_tree_aggregation_tree_count",
+      "passed": true,
+      "observed": 20,
+      "expected": 20,
+      "severity": "critical",
+      "note": "The corrected replay consumes every tree in every admitted multi-round delta."
+    },
+    {
+      "test": "corrected_aggregate_loadable_and_predictive",
+      "passed": true,
+      "observed": {
+        "predictions": 256,
+        "all_finite": true
+      },
+      "expected": {
+        "predictions": 256,
+        "all_finite": true
+      },
+      "severity": "critical",
+      "note": "Prevents a tree-count-only success from hiding an unusable aggregate artifact."
+    },
+    {
+      "test": "aggregation_replay_byte_stability",
+      "passed": true,
+      "observed": "b3566bea7e1b54b791ae32611f70dc81de0cf8013e7c9832687c13319aa1ad31",
+      "expected": "b3566bea7e1b54b791ae32611f70dc81de0cf8013e7c9832687c13319aa1ad31",
+      "severity": "critical",
+      "note": "Identical ordered retained artifacts reproduce the exact aggregate bytes and digest."
+    },
+    {
+      "test": "aggregation_order_mismatch_detection",
+      "passed": true,
+      "observed": "1a61ce7e92b2b971e1ed3775a25e77a205512460bbe412995dfd97e7f9911a07",
+      "expected": "!= b3566bea7e1b54b791ae32611f70dc81de0cf8013e7c9832687c13319aa1ad31",
+      "severity": "high",
+      "note": "The replay transcript binds the deterministic admitted-client ordering."
+    },
+    {
+      "test": "aggregate_artifact_tamper_detection",
+      "passed": true,
+      "observed": "91fe307ba4ba524dd5183391271a6fad91b8498d151a7402106151843a6c3cff",
+      "expected": "!= b3566bea7e1b54b791ae32611f70dc81de0cf8013e7c9832687c13319aa1ad31",
+      "severity": "high",
+      "note": "The persisted aggregate digest detects post-replay output substitution."
+    },
+    {
+      "test": "incompatible_model_contract_rejected",
+      "passed": true,
+      "observed": "XGBoost model-contract mismatch: previous=ef32653a5894f7b82c5283e90858694d515be4bf1f09ee8baee21ec3b20bd84e delta=b8b29211a8d6aebe50503fdaf56bb5ef8987b03a60e93de204ca8391d0f97193",
+      "expected": "XGBoost model-contract mismatch",
+      "severity": "critical",
+      "note": "Fails closed instead of concatenating trees from semantically incompatible XGBoost model contracts."
+    },
+    {
+      "test": "second_round_aggregation_replay",
+      "passed": true,
+      "observed": {
+        "trees": 40,
+        "predictions": 256,
+        "all_finite": true
+      },
+      "expected": {
+        "trees": 40,
+        "predictions": 256,
+        "all_finite": true
+      },
+      "severity": "critical",
+      "note": "Exercises the actual multi-round transition: previous RSU aggregate + ordered new deltas -> next RSU aggregate."
+    },
+    {
+      "test": "aggregation_replay_transcript_binding",
+      "passed": true,
+      "observed": {
+        "record_sha256": "d4543b6ca653d588b30a813d3e718ed404e9d2289f6ee6cb423ff29fdfc02e18",
+        "ordered_delta_sha256": [
+          "b30b0244962fe8203e2353f28ff018aedd94c371d5bdea6263b9a9b8be5c2bde",
+          "7c4f880da950c20456553b1acf7a1e568dd4c71c996931ff53a45fbd68f6deec"
+        ],
+        "aggregate_model_sha256": "b3566bea7e1b54b791ae32611f70dc81de0cf8013e7c9832687c13319aa1ad31"
+      },
+      "expected": {
+        "ordered_delta_sha256": [
+          "b30b0244962fe8203e2353f28ff018aedd94c371d5bdea6263b9a9b8be5c2bde",
+          "7c4f880da950c20456553b1acf7a1e568dd4c71c996931ff53a45fbd68f6deec"
+        ],
+        "aggregate_model_sha256": "b3566bea7e1b54b791ae32611f70dc81de0cf8013e7c9832687c13319aa1ad31",
+        "record_sha256_length": 64
+      },
+      "severity": "critical",
+      "note": "Produces the exact canonical transition record that should later be bound into the production RSU manifest/evidence path."
+    }
+  ]
+}

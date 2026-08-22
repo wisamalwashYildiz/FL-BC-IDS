@@ -1,0 +1,16 @@
+{
+  "schema": "FLBCIDSBlockchainEvidenceTimelineV1",
+  "index_artifact": {
+    "run_id": "20260325T215919Z_a0ef4dd6",
+    "created_utc": "2026-03-25T22:05:23Z",
+    "sha256": "0a3597b4aae8e49645c1ebacd2eaa2748a06b5af405a0cfe24000b1bc434350e"
+  },
+  "onchain_report": {
+    "generated_utc": "2026-08-15T03:39:15Z",
+    "run_id_sha256": "9930ad2b1d530263e5bf001f60ccf954b96071c9e51c8813c51afcbc019b5d6d",
+    "run_salt_hex": "5babd2331bb027d3950dc86e20dd382659cc824e92fb1d94540db41eed9f833b",
+    "run_id_derivation_verified": true,
+    "first_submission_epoch_utc": "2026-08-15T03:20:14.538860+00:00"
+  },
+  "interpretation": "The index's 2026-03-25 timestamp is the retained evidence-index creation time. The Sepolia publication report was generated on 2026-08-15 and cryptographically derives its run identifier from the retained index bytes plus the recorded salt. These timestamps describe different artifact lifecycle events and should not be conflated."
+}

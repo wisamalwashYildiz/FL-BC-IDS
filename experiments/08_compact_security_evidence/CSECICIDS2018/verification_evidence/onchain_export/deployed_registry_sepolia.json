@@ -1,0 +1,9 @@
+{
+  "address": "0xE73690BCEc4d8FeE2718c262e4f1F8f1f1Dc7699",
+  "deploy_tx": "fb34e0092aab8fc456b665dc28ef064df0b171a07a2cac4c05105467eeabbd4b",
+  "rsu_verifier": "0x957810FD547C6C7f13300C184B1823a58F68d53c",
+  "global_verifier": "0xcDCf8376B7851205a70A4A7f5985F6fBcbeE7465",
+  "chain_id": 11155111,
+  "deployer": "0xDc5b1C091A4dde454689C080b99c025888aEa56f",
+  "updated_utc": "2026-08-15T03:13:37Z"
+}

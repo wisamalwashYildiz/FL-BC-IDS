@@ -1,0 +1,16 @@
+{
+  "schema": "RSUAggregationReplayRecordV1",
+  "aggregation_spec": "FLBCIDS-AllTreeAggregationReplay-V1",
+  "previous_model_sha256": "",
+  "ordered_delta_sha256": [
+    "b30b0244962fe8203e2353f28ff018aedd94c371d5bdea6263b9a9b8be5c2bde",
+    "7c4f880da950c20456553b1acf7a1e568dd4c71c996931ff53a45fbd68f6deec"
+  ],
+  "ordered_delta_tree_counts": [
+    10,
+    10
+  ],
+  "aggregate_model_sha256": "b3566bea7e1b54b791ae32611f70dc81de0cf8013e7c9832687c13319aa1ad31",
+  "aggregate_tree_count": 20,
+  "model_contract_sha256": "ef32653a5894f7b82c5283e90858694d515be4bf1f09ee8baee21ec3b20bd84e"
+}

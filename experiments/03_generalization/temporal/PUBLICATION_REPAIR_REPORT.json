@@ -1,0 +1,41 @@
+{
+  "schema": "FLBCIDSGeneralizationPublicationRepairV1",
+  "source_zip": "03_generalization.zip",
+  "source_zip_sha256": "ab1c2bc849960efe0aff1bfe341ed52adbf9ae0fce01b067910434dc2ad58d9e",
+  "original_file_count": 25,
+  "files_regenerated": [
+    "03_generalization/temporal/cse_source_metadata.json",
+    "03_generalization/temporal/reviewer_ready_complete_temporal_summary.json",
+    "03_generalization/temporal/run_manifest.json"
+  ],
+  "files_preserved_byte_for_byte": 22,
+  "machine_local_path_strings_replaced": 4,
+  "scientific_values_changed": false,
+  "code_changed": false,
+  "code_syntax_valid": true,
+  "scientific_validation": {
+    "source_sha256_consistent": true,
+    "sample_rows": 3000000,
+    "temporal_blocks": 10,
+    "strict_evaluations": 5,
+    "strict_seen_attack_eligible_evaluations": 0,
+    "adaptive_transitions": 9,
+    "adaptive_seen_attack_eligible_evaluations": 5,
+    "adaptive_pooled_seen_attack_rows": 6968,
+    "adaptive_pooled_confusion_matrix": [
+      [
+        1346595,
+        7719
+      ],
+      [
+        106,
+        6862
+      ]
+    ],
+    "adaptive_pooled_metrics_recomputed_exactly": true,
+    "terminal_seen_attack_rows": 0,
+    "terminal_novel_attack_rows": 7560,
+    "terminal_combined_recall": 0.005555555555555556,
+    "test_leakage_in_threshold_selection": false
+  }
+}

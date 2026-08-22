@@ -1,0 +1,76 @@
+{
+  "schema": "FLBCIDSMultiSeedStatisticsMethodologyV1",
+  "datasets": [
+    "CSE-CIC-IDS2018",
+    "CICIoV2024"
+  ],
+  "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51
+  ],
+  "methods": [
+    "centralized",
+    "nondp",
+    "dp"
+  ],
+  "metrics": [
+    "accuracy",
+    "precision",
+    "recall",
+    "f1",
+    "roc_auc"
+  ],
+  "sample_size_per_dataset_method_metric": 10,
+  "descriptive_statistics": {
+    "mean": "arithmetic mean across seeds 42-51",
+    "sd": "sample standard deviation across seeds 42-51"
+  },
+  "reported_confidence_intervals": {
+    "type": "percentile bootstrap of the mean",
+    "coverage": 0.95,
+    "source_of_reported_endpoints": "bootstrap_exact_audit.csv: reported_ci_low/reported_ci_high",
+    "historical_limitation": "The original finite Monte-Carlo bootstrap RNG state and resample count were not retained.",
+    "independent_deterministic_audit": "bootstrap_exact_audit.csv enumerates all multinomial count vectors for the n=10 nonparametric bootstrap distribution and evaluates NumPy-linear 2.5th/97.5th percentiles without fitting a post-hoc RNG seed.",
+    "audit_result": {
+      "reported_endpoints_matching_at_6dp": 43,
+      "total_endpoints": 60,
+      "reported_interval_pairs_matching_at_6dp": 17,
+      "total_interval_pairs": 30,
+      "maximum_absolute_endpoint_difference": 8.948468122160769e-06
+    }
+  },
+  "paired_tests": {
+    "test": "exact two-sided paired sign-flip permutation test",
+    "pairs_per_test": 10,
+    "pairing": "same seed across methods",
+    "method_pairs": [
+      [
+        "centralized",
+        "nondp"
+      ],
+      [
+        "centralized",
+        "dp"
+      ],
+      [
+        "nondp",
+        "dp"
+      ]
+    ],
+    "multiple_testing": "Holm correction separately within each dataset across 15 tests = 5 metrics x 3 method pairs",
+    "independent_recalculation": {
+      "raw_p_value_mismatches": 0,
+      "holm_adjusted_p_value_mismatches": 0,
+      "cse_holm_significant_tests_at_0_05": 15,
+      "ciciov2024_holm_significant_tests_at_0_05": 0
+    }
+  }
+}

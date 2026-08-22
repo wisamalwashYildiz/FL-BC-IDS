@@ -1,0 +1,60 @@
+{
+  "schema": "FLBCIDSCompactSecurityEvidencePublicationScopeV1",
+  "dataset": "CSE-CIC-IDS2018",
+  "classification": "compact security-evidence / verification run",
+  "not_authoritative_main_predictive_utility_run": true,
+  "run_contract": {
+    "rsus": 2,
+    "vehicles_per_rsu": 2,
+    "total_vehicles": 4,
+    "global_rounds": 2,
+    "local_boosting_rounds": 10,
+    "tree_method": "approxDP"
+  },
+  "learner_stage_dp": {
+    "epsilon_tree": 0.25,
+    "subsample": 0.2,
+    "num_parallel_tree": 1,
+    "delta": 0.0,
+    "epsilon_round_exact": 0.5525028433699525,
+    "epsilon_total_exact": 1.105005686739905,
+    "epsilon_total_reported_4dp": 1.105,
+    "scope": "Per-record-instance learner-stage composition conditional on the fixed preprocessing artifact/post-preprocessing multiset; not an end-to-end raw-record guarantee."
+  },
+  "verification_evidence": {
+    "admission_bad_signature_detected": true,
+    "dp_record_digest_binding_failure_detected": true,
+    "tampered_dp_record_detected": true,
+    "commitment_recompute": "pass",
+    "initial_public_input_ablation_helper": "fail",
+    "dedicated_public_input_artifact_verifier": "pass",
+    "dedicated_rsu_public_input_checks": "8/8",
+    "dedicated_global_public_input_checks": "7/7",
+    "global_anchor_gate": true,
+    "used_rsu_ids": [
+      1,
+      2
+    ],
+    "dp_record_hash_links_verified": "8/8",
+    "onchain_prep_sha_pins_verified": "24/24"
+  },
+  "onchain_security_evidence_run": {
+    "network": "Sepolia",
+    "chain_id": 11155111,
+    "proof_submissions": 5,
+    "proof_submissions_verified": 5,
+    "transactions_eligible_for_finality_including_finalize": 6,
+    "transactions_finalized": 6,
+    "receipt_cost_eth": 0.008582244942364408,
+    "rpc_url_retained_as": "[masked]",
+    "formal_security_audit_claimed": false,
+    "formal_verification_claimed": false,
+    "distinction_from_main_compact_benchmark": "These fee/timing values belong to this security-evidence execution and must not replace separately reported main compact benchmark values."
+  },
+  "groth16_claim_boundary": [
+    "The retained proofs verify the scoped AnchorSum/public-input relation encoded by the circuits.",
+    "They do not prove correctness of XGBoost training.",
+    "They do not prove the complete federated-learning computation.",
+    "Model-update-to-anchor and deterministic aggregation-replay relations are handled separately by the model-consistency verification layer."
+  ]
+}

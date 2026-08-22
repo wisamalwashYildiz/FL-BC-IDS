@@ -1,0 +1,30 @@
+{
+  "schema": "Reviewer1Comment1SeedInputContractV1",
+  "dataset": "CICIoV2024",
+  "seed": 48,
+  "created_utc": "2026-08-19T01:36:05Z",
+  "preprocessing_dir": "experiments/02_multiseed/results/CICIoV2024/seed_48/preprocessing",
+  "split_files": {
+    "train": "experiments/02_multiseed/results/CICIoV2024/seed_48/preprocessing/CICIoV2024_train_preprocessed.csv",
+    "val": "experiments/02_multiseed/results/CICIoV2024/seed_48/preprocessing/CICIoV2024_val_preprocessed.csv",
+    "test": "experiments/02_multiseed/results/CICIoV2024/seed_48/preprocessing/CICIoV2024_test_preprocessed.csv"
+  },
+  "split_hashes": {
+    "train_csv_sha256": "dd3d7afb89628ab7849958073aed29430a5d5b04ccf3e91bea97a4e3929cbfbf",
+    "val_csv_sha256": "16d1db1ff31f6f4aa639158964a1d31cf272716a5de1b8378d5ea3bb1b656e43",
+    "test_csv_sha256": "ae4b76f1a0d1cc3aab7b7d2be9ecce3cdef25ae5ae6a8ace88c8042d55ace701"
+  },
+  "paired_methods": [
+    "centralized",
+    "nondp",
+    "dp"
+  ],
+  "statement": "All three learning configurations are launched with this exact seed-specific preprocessing directory and therefore consume the same train/validation/test CSV artifacts.",
+  "publication_path_policy": "Machine-local absolute paths were replaced by repository-relative locators. Dataset, seed, split SHA-256 values, paired-method semantics, creation time, and the scientific statement are unchanged.",
+  "publication_sanitization": {
+    "machine_local_paths_removed": true,
+    "split_hashes_unchanged": true,
+    "paired_methods_unchanged": true,
+    "historical_timestamp_unchanged": true
+  }
+}

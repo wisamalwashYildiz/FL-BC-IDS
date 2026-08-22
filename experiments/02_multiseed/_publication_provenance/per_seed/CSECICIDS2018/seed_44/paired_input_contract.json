@@ -1,0 +1,30 @@
+{
+  "schema": "Reviewer1Comment1SeedInputContractV1",
+  "dataset": "CSECICIDS2018",
+  "seed": 44,
+  "created_utc": "2026-08-18T20:44:14Z",
+  "preprocessing_dir": "experiments/02_multiseed/results/CSECICIDS2018/seed_44/preprocessing",
+  "split_files": {
+    "train": "experiments/02_multiseed/results/CSECICIDS2018/seed_44/preprocessing/CSECICIDS2018_train_preprocessed.csv",
+    "val": "experiments/02_multiseed/results/CSECICIDS2018/seed_44/preprocessing/CSECICIDS2018_val_preprocessed.csv",
+    "test": "experiments/02_multiseed/results/CSECICIDS2018/seed_44/preprocessing/CSECICIDS2018_test_preprocessed.csv"
+  },
+  "split_hashes": {
+    "train_csv_sha256": "191389a718a0a2c37c23c3bf6d097a7574097390809660640b31006f67e27165",
+    "val_csv_sha256": "69488d1ec26d098023c51053ad7c12c8b7081d0d7df3befbd90c5aac63c28d27",
+    "test_csv_sha256": "7283608ea47c8277167d99b07d5fcc3b94bbe8025d00730e6f6aecac77881ae6"
+  },
+  "paired_methods": [
+    "centralized",
+    "nondp",
+    "dp"
+  ],
+  "statement": "All three learning configurations are launched with this exact seed-specific preprocessing directory and therefore consume the same train/validation/test CSV artifacts.",
+  "publication_path_policy": "Machine-local absolute paths were replaced by repository-relative locators. Dataset, seed, split SHA-256 values, paired-method semantics, creation time, and the scientific statement are unchanged.",
+  "publication_sanitization": {
+    "machine_local_paths_removed": true,
+    "split_hashes_unchanged": true,
+    "paired_methods_unchanged": true,
+    "historical_timestamp_unchanged": true
+  }
+}

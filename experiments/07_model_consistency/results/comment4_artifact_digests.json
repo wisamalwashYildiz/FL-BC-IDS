@@ -1,0 +1,13 @@
+{
+  "delta1_sha256": "b30b0244962fe8203e2353f28ff018aedd94c371d5bdea6263b9a9b8be5c2bde",
+  "delta2_sha256": "7c4f880da950c20456553b1acf7a1e568dd4c71c996931ff53a45fbd68f6deec",
+  "q1_sha256": "b14dbfe2e8c2f5cb5c6d07ace14fda46db44a998c943e8aa4f009ebd143b96e4",
+  "unrelated_q2_sha256": "6fffe81cf3d64bfb5c35d25709df4982b614742dfd86f2e0ad3cc86027458287",
+  "signed_unrelated_report_sha256": "6aad490f21e3d83fcbf7be989b9a3a9d2d3e631ad129dc25e8a4c29e7550daeb",
+  "signed_unrelated_report_signature_b64": "KPkQpoePf6ijwbnxVdRwsvQqPSnNXtnQLS5GcSQ6AaathHxgTsAW696zA+6XycTbGzxr50BGLjTmqOWxwAexCg==",
+  "flower_aggregate_sha256": "7a86f9b04654fada6072ef97af3be934ec7b39ded94c56d9dc361d6b9ba0f5a1",
+  "corrected_aggregate_sha256": "b3566bea7e1b54b791ae32611f70dc81de0cf8013e7c9832687c13319aa1ad31",
+  "corrected_second_round_aggregate_sha256": "606da900f147856b02d6b1bef3b81663b8631d918a8f7e30cbd301aa58444faa",
+  "delta_model_contract_sha256": "ef32653a5894f7b82c5283e90858694d515be4bf1f09ee8baee21ec3b20bd84e",
+  "aggregation_replay_record_sha256": "d4543b6ca653d588b30a813d3e718ed404e9d2289f6ee6cb423ff29fdfc02e18"
+}

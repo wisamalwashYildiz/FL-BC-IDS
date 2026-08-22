@@ -1,0 +1,41 @@
+{
+  "schema": "FLBCIDS_PublicationSanitizationV1",
+  "classification": "authoritative_round2_multiseed_seed42_full_dp_artifacts",
+  "dataset": "CICIoV2024",
+  "experiment_seed": 42,
+  "scientific_contract": {
+    "num_rsus": 2,
+    "vehicles_per_rsu": 2,
+    "num_rounds": 2,
+    "num_local_rounds": 10,
+    "tree_method": "approxDP",
+    "dp_epsilon_per_tree": 0.25,
+    "dp_epsilon_round": 0.5525028433699525,
+    "dp_epsilon_total_run_config": 1.105005686739905,
+    "dp_delta_round": 0.0,
+    "subsample": 0.2,
+    "num_parallel_tree": 1
+  },
+  "dp_accounting_note": {
+    "run_config_total_equals_two_rounds_exactly": true,
+    "run_config_total": 1.105005686739905,
+    "rsu_final_cumulative_field": 1.1050058433699523,
+    "absolute_difference": 1.5663004737653807e-07,
+    "handling": "Both historical values are preserved. The difference is below manuscript reporting precision and both round to 1.1050; no historical artifact is rewritten."
+  },
+  "zkp_cross_checks": {
+    "round_2_rsu_roots_match_global_manifest": true,
+    "global_commit_matches_global_summary": true,
+    "global_Q_b64_matches_global_summary": true,
+    "global_anchor_ok": true,
+    "both_rsus_ok": true
+  },
+  "original_artifact_sha256": {
+    "zkp_anchor_gating_manifest.json": "f39413671fd48a5837510acbf39920455558fa817bc1ba916d9a7beb224638e4",
+    "global_ensemble_summary.json": "644f8e2dd12a0538232d2b52d9cc0eb37a5c1267cf19a0dcc578e55c580c222a",
+    "iov_centralized_eval_summary(2).json": "a055db9f10fb844e3fb7ee065aeaa7b911e223e60eb27adf521f398690ad1b2e",
+    "iov_rsu_1_summary(2).json": "a756bc260c8ba1dfa6466afd4929b9294b7463cf9eda774a70b2c396b5a4d9d0",
+    "iov_rsu_2_summary(2).json": "d0615b861dd804e2555177dcb125f1ada9191fdf6fcc8a662b8f720d4820cc33",
+    "iov_run_config(2).json": "c002177d49d89419b5a026636c5dab6456c0bc7a6e9707b02a0e84cb233da6c3"
+  }
+}

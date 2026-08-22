@@ -1,0 +1,1014 @@
+{
+  "generated_utc": "2026-08-15T03:39:15Z",
+  "mode": "ON_CHAIN_TRANSACTION_VERIFICATION",
+  "root_dir": "experiments/08_compact_security_evidence/CSECICIDS2018/verification_evidence",
+  "index_path": "experiments/08_compact_security_evidence/CSECICIDS2018/verification_evidence/onchain_export/latest_run_index_v1.json",
+  "index_sha256": "0a3597b4aae8e49645c1ebacd2eaa2748a06b5af405a0cfe24000b1bc434350e",
+  "run_id_sha256": "9930ad2b1d530263e5bf001f60ccf954b96071c9e51c8813c51afcbc019b5d6d",
+  "run_salt_hex": "5babd2331bb027d3950dc86e20dd382659cc824e92fb1d94540db41eed9f833b",
+  "run_id_scheme": "sha256('ONCHAIN_RUN_ID_V1|' + index_bytes + '|' + salt32)",
+  "run_id_bytes32": "0x9930ad2b1d530263e5bf001f60ccf954b96071c9e51c8813c51afcbc019b5d6d",
+  "chain_id": 11155111,
+  "rpc_url_used": "[masked]",
+  "wallet_address": "0xDc5b1C091A4dde454689C080b99c025888aEa56f",
+  "field_modulus_bn254": "21888242871839275222246405745257275088548364400416034343698204186575808495617",
+  "wallet_costs": {
+    "balance_start_wei": "18415130473721753761",
+    "balance_start_eth": "18.415130473721753761",
+    "balance_end_wei": "18406548228779389353",
+    "balance_end_eth": "18.406548228779389353",
+    "spent_total_wei_balance_delta": "8582244942364408",
+    "spent_total_eth_balance_delta": "0.008582244942364408",
+    "spent_total_wei_by_receipts": "8582244942364408",
+    "spent_total_eth_by_receipts": "0.008582244942364408",
+    "fee_breakdown": [
+      {
+        "kind": "SUBMIT_RSU",
+        "scope": "RSU",
+        "rsu_id": 1,
+        "round_idx": 1,
+        "tx_hash": "2cf7ade0b05ad9c2017d9be14b93c18d3db79b4007d0d2ed4920ea2c7683d05b",
+        "gas_used": 580338,
+        "effective_gas_price": 3064188801,
+        "fee_wei": "1778265200394738",
+        "fee_eth": "0.001778265200394738",
+        "calldata_size_bytes": 836,
+        "signed_tx_size_bytes": 954,
+        "build_latency_sec": 0.7601479000004474,
+        "sign_latency_sec": 0.753374599997187,
+        "send_latency_sec": 0.24056960000598338,
+        "receipt_wait_latency_sec": 20.16288760000316,
+        "tx_total_latency_sec": 21.916979700006777
+      },
+      {
+        "kind": "SUBMIT_RSU",
+        "scope": "RSU",
+        "rsu_id": 1,
+        "round_idx": 2,
+        "tx_hash": "75c0b69e9176e35ea8e43bf2f710d6ebe671ef6c9cd44910cdd7e56690032f74",
+        "gas_used": 546102,
+        "effective_gas_price": 3081046961,
+        "fee_wei": "1682565907496022",
+        "fee_eth": "0.001682565907496022",
+        "calldata_size_bytes": 836,
+        "signed_tx_size_bytes": 954,
+        "build_latency_sec": 0.8384246000059647,
+        "sign_latency_sec": 0.6244968999963021,
+        "send_latency_sec": 0.24563150000176392,
+        "receipt_wait_latency_sec": 10.861090499995044,
+        "tx_total_latency_sec": 12.569643499999074
+      },
+      {
+        "kind": "SUBMIT_RSU",
+        "scope": "RSU",
+        "rsu_id": 2,
+        "round_idx": 1,
+        "tx_hash": "4af8ef71f9de5533694eda6f562afa1747bae1df08c21a87f96d2c4a3b7e3307",
+        "gas_used": 546114,
+        "effective_gas_price": 3047308112,
+        "fee_wei": "1664177622276768",
+        "fee_eth": "0.001664177622276768",
+        "calldata_size_bytes": 836,
+        "signed_tx_size_bytes": 954,
+        "build_latency_sec": 0.7401903999998467,
+        "sign_latency_sec": 0.7253017000039108,
+        "send_latency_sec": 0.2412690999917686,
+        "receipt_wait_latency_sec": 9.656818900009966,
+        "tx_total_latency_sec": 11.363580100005493
+      },
+      {
+        "kind": "SUBMIT_RSU",
+        "scope": "RSU",
+        "rsu_id": 2,
+        "round_idx": 2,
+        "tx_hash": "63da39fbfe744bbb0f6945d6d8318a702df1bd3e0a825de3ed1eb8a34562f1ac",
+        "gas_used": 546126,
+        "effective_gas_price": 3019973353,
+        "fee_wei": "1649285967380478",
+        "fee_eth": "0.001649285967380478",
+        "calldata_size_bytes": 836,
+        "signed_tx_size_bytes": 954,
+        "build_latency_sec": 0.8313389000104507,
+        "sign_latency_sec": 0.6595003999973414,
+        "send_latency_sec": 0.2423619999899529,
+        "receipt_wait_latency_sec": 9.083261300009326,
+        "tx_total_latency_sec": 10.816462600007071
+      },
+      {
+        "kind": "SUBMIT_GLOBAL",
+        "scope": "GLOBAL",
+        "rsu_id": 0,
+        "round_idx": 2,
+        "tx_hash": "be1e54217664a972c7c4b5ef47f53695dbaba608fcc8a2e958d966b8bec7cd21",
+        "gas_used": 547618,
+        "effective_gas_price": 2988621774,
+        "fee_wei": "1636623078634332",
+        "fee_eth": "0.001636623078634332",
+        "calldata_size_bytes": 772,
+        "signed_tx_size_bytes": 890,
+        "build_latency_sec": 0.8303363000013633,
+        "sign_latency_sec": 0.5947302999993553,
+        "send_latency_sec": 0.23486640000191983,
+        "receipt_wait_latency_sec": 10.09784750000108,
+        "tx_total_latency_sec": 11.757780500003719
+      },
+      {
+        "kind": "FINALIZE_RUN",
+        "tx_hash": "aa09b6dd0421a2b0f9f3eed57fee0116304a1a585838c2af752de2e521ca9f73",
+        "gas_used": 55051,
+        "effective_gas_price": 3112153570,
+        "fee_wei": "171327166182070",
+        "fee_eth": "0.00017132716618207",
+        "calldata_size_bytes": 36,
+        "signed_tx_size_bytes": 151,
+        "build_latency_sec": 0.8153172000020277,
+        "sign_latency_sec": 0.5834732999937842,
+        "send_latency_sec": 0.23590480000711977,
+        "receipt_wait_latency_sec": 9.911298799997894,
+        "tx_total_latency_sec": 11.545994100000826
+      }
+    ]
+  },
+  "topology": {
+    "num_rounds": 2,
+    "num_rsus": 2,
+    "rsu_ids_sorted": [
+      1,
+      2
+    ],
+    "rsu_vehicle_ids": {
+      "1": [
+        1001,
+        1002
+      ],
+      "2": [
+        2001,
+        2002
+      ]
+    },
+    "vehicles_per_rsu": 2
+  },
+  "circuits": {
+    "rsu": "AggRSU_AnchorSum_M64_K2_RM1_S100000_RC0_RB2",
+    "global": "AggGlobal_AnchorSum_M64_K2_RM2_S100000_RC0_RB2"
+  },
+  "contracts": {
+    "rsu_verifier": "0x957810FD547C6C7f13300C184B1823a58F68d53c",
+    "global_verifier": "0xcDCf8376B7851205a70A4A7f5985F6fBcbeE7465",
+    "proof_registry": "0xE73690BCEc4d8FeE2718c262e4f1F8f1f1Dc7699",
+    "runtime_fingerprints": {
+      "rsu_verifier": {
+        "address": "0x957810FD547C6C7f13300C184B1823a58F68d53c",
+        "runtime_code_present": true,
+        "runtime_code_size_bytes": 2192,
+        "runtime_code_sha256": "30e749bb6e52c1a0bede800b94c05f9f5c8eb3b0f9eebb00ab764cbb5979b7dd"
+      },
+      "global_verifier": {
+        "address": "0xcDCf8376B7851205a70A4A7f5985F6fBcbeE7465",
+        "runtime_code_present": true,
+        "runtime_code_size_bytes": 2192,
+        "runtime_code_sha256": "30e749bb6e52c1a0bede800b94c05f9f5c8eb3b0f9eebb00ab764cbb5979b7dd"
+      },
+      "proof_registry": {
+        "address": "0xE73690BCEc4d8FeE2718c262e4f1F8f1f1Dc7699",
+        "runtime_code_present": true,
+        "runtime_code_size_bytes": 3135,
+        "runtime_code_sha256": "432afc09d91dffe38f6487d7888f2750677703ceaac0b3001158a01f0d176676"
+      }
+    },
+    "security_scope": {
+      "formal_security_audit_claimed": false,
+      "formal_verification_claimed": false,
+      "functional_onchain_verification_exercised": true,
+      "onchain_storage_readback_exercised": true,
+      "duplicate_proof_key_guard_present": true,
+      "single_finalization_guard_present": true,
+      "global_proof_required_before_finalization": true
+    }
+  },
+  "deployment_caches": {
+    "verifiers_cache_path": "experiments/08_compact_security_evidence/CSECICIDS2018/verification_evidence/onchain_export/deployed_verifiers_sepolia.json",
+    "registry_cache_path": "experiments/08_compact_security_evidence/CSECICIDS2018/verification_evidence/onchain_export/deployed_registry_sepolia.json"
+  },
+  "network_evaluation": {
+    "network": "Sepolia",
+    "submission_pattern": "SERIAL_SINGLE_SENDER_RECEIPT_WAIT",
+    "max_inflight_submissions": 1,
+    "concurrent_independent_submitters_tested": false,
+    "finality_measurement": {
+      "supported": true,
+      "eligible_transactions": 6,
+      "finalized_transactions": 6,
+      "timed_out_transactions": 0,
+      "timeout_sec": 1200,
+      "poll_interval_sec": 3.0
+    },
+    "interpretation": "Transaction receipt/inclusion and consensus finality are measured separately. The current publication run is serial and does not claim independent multi-sender concurrency."
+  },
+  "submissions": [
+    {
+      "scope": "RSU",
+      "rsu_id": 1,
+      "round_idx": 1,
+      "submitted": true,
+      "tx_hash": "2cf7ade0b05ad9c2017d9be14b93c18d3db79b4007d0d2ed4920ea2c7683d05b",
+      "mined": true,
+      "status": 1,
+      "block_number": 11491507,
+      "block_timestamp": 0,
+      "gas_used": 580338,
+      "tx_fee_wei": "1778265200394738",
+      "tx_fee_eth": "0.001778265200394738",
+      "verified_ok": true,
+      "proof_key": "0x23dc4a35b0fd4b42007b6c171f15c8b9cb61f9d6d33a6a8c988b661c46097493",
+      "proof_json_size_bytes": 8655,
+      "public_inputs_v1_json_size_bytes": 762,
+      "verifier_sol_size_bytes": 10567,
+      "vkey_json_size_bytes": 4575,
+      "manifest_json_size_bytes": 4384,
+      "calldata_size_bytes": 836,
+      "signed_tx_size_bytes": 954,
+      "build_latency_sec": 0.7601479000004474,
+      "sign_latency_sec": 0.753374599997187,
+      "send_latency_sec": 0.24056960000598338,
+      "receipt_wait_latency_sec": 20.16288760000316,
+      "tx_total_latency_sec": 21.916979700006777,
+      "tx_start_epoch_sec": 1786764014.5388603,
+      "broadcast_epoch_sec": 1786764016.2923443,
+      "receipt_observed_epoch_sec": 1786764036.4553006,
+      "events": [
+        {
+          "event": "ProofVerifiedV1",
+          "proofKey": "0x23dc4a35b0fd4b42007b6c171f15c8b9cb61f9d6d33a6a8c988b661c46097493",
+          "scope": 1,
+          "runId": "0x9930ad2b1d530263e5bf001f60ccf954b96071c9e51c8813c51afcbc019b5d6d",
+          "rsuId": 1,
+          "roundIdx": 1,
+          "verifiedOk": true,
+          "submitter": "0xDc5b1C091A4dde454689C080b99c025888aEa56f"
+        }
+      ],
+      "prep": {
+        "ok": true,
+        "errors": [],
+        "warnings": [],
+        "scope": "RSU",
+        "rsu_id": 1,
+        "round_idx": 1,
+        "proof_json": "experiments/08_compact_security_evidence/CSECICIDS2018/verification_evidence/rsu_1/zkp_artifacts/anchorsum/rsu_1/round_1.json",
+        "public_inputs_v1_json": "experiments/08_compact_security_evidence/CSECICIDS2018/verification_evidence/zkp_artifacts/anchorsum/rsu_1/round_1_public.json",
+        "verifier_sol": "experiments/08_compact_security_evidence/CSECICIDS2018/verification_evidence/zkp_artifacts/anchorsum/AggRSU_AnchorSum_M64_K2_RM1_S100000_RC0_RB2/Verifier_AggRSU_AnchorSum_M64_K2_RM1_S100000_RC0_RB2.sol",
+        "vkey_json": "experiments/08_compact_security_evidence/CSECICIDS2018/verification_evidence/zkp_artifacts/anchorsum/AggRSU_AnchorSum_M64_K2_RM1_S100000_RC0_RB2/verification_key.json",
+        "manifest_json": "experiments/08_compact_security_evidence/CSECICIDS2018/verification_evidence/rsu_1/round_manifests/rsu/rsu_1/round_1.json",
+        "pub_len_expected": 10,
+        "pub_len_actual": 10,
+        "solidity_args": {
+          "a": [
+            14267994374049470757009053872777420510763704627236486457223973500707641063444,
+            12784546602442396800343277461713835769744986419791072471383038722955556967461
+          ],
+          "b": [
+            [
+              6368304367365675939040867836510545401879386905275078761090358282255455175954,
+              11799754279121336295539240773177024223307049068053460566687162389880592224091
+            ],
+            [
+              18534663848265864859205616521708093802681938712291460605749111058827524886193,
+              3896109214430343423630229192756028566821716496183940544765317878705670475571
+            ]
+          ],
+          "c": [
+            17625609214644617714640989239691768649711585123006029589731863472867054543899,
+            11942452843607331082740043598003330596790599631065366268722605657359495115858
+          ],
+          "input": [
+            21745069337441240602254689650392019371859055653640140822419508315926717261562,
+            1,
+            1,
+            1,
+            21680219998936368250186190627414182540228750728544415659305539117453054367859,
+            1573704204606186522149144320993560571343976200497240014458125942228145229657,
+            15541283417183887457257512739663032669350578057218474700204431046679895322142,
+            380352535432739907181275539269192085629686801521602481279463657722932903141,
+            21274497857344145805808413917346849856646362934780316706018686337510288206164,
+            13883162366637143934466549179699218578079389938113146047881333556097065027450
+          ]
+        },
+        "sha256": {
+          "proof_sha256": "6d4529f61c3422160e35c7929c2fe81274d2592637a804c732e36f59bcbf1629",
+          "public_inputs_v1_sha256": "b02d5c66d2f848e1b5ee348a531b0eb9b3b730a0c3f17ce6337ee780db3cd516",
+          "verifier_sol_sha256": "49acf88545b18d0d1253d7830d5273e5503c6ed59b15088029516e5580fc0301",
+          "vkey_sha256": "9b5dc0643303568535ad8e7ef8a922fa2cf078f61aa653bc4dffcccbaf04a9ce",
+          "manifest_sha256": "ef2d3c8057a33ec689c5f2267e5295ad2a3d8390d9667a5785b3c2287a0d0b9f"
+        },
+        "pins_relpaths": {
+          "proof_relpath": "rsu_1/zkp_artifacts/anchorsum/rsu_1/round_1.json",
+          "public_inputs_v1_relpath": "zkp_artifacts/anchorsum/rsu_1/round_1_public.json",
+          "verifier_sol_relpath": "zkp_artifacts/anchorsum/AggRSU_AnchorSum_M64_K2_RM1_S100000_RC0_RB2/Verifier_AggRSU_AnchorSum_M64_K2_RM1_S100000_RC0_RB2.sol",
+          "vkey_relpath": "zkp_artifacts/anchorsum/AggRSU_AnchorSum_M64_K2_RM1_S100000_RC0_RB2/verification_key.json",
+          "manifest_relpath": "rsu_1/round_manifests/rsu/rsu_1/round_1.json"
+        },
+        "pins_expected": {
+          "proof_sha256": "6d4529f61c3422160e35c7929c2fe81274d2592637a804c732e36f59bcbf1629",
+          "public_inputs_v1_sha256": "b02d5c66d2f848e1b5ee348a531b0eb9b3b730a0c3f17ce6337ee780db3cd516",
+          "verifier_sol_sha256": "49acf88545b18d0d1253d7830d5273e5503c6ed59b15088029516e5580fc0301",
+          "vkey_sha256": "9b5dc0643303568535ad8e7ef8a922fa2cf078f61aa653bc4dffcccbaf04a9ce",
+          "manifest_sha256": "ef2d3c8057a33ec689c5f2267e5295ad2a3d8390d9667a5785b3c2287a0d0b9f"
+        },
+        "vehicle_ssi": {
+          "manifest_path": "experiments/08_compact_security_evidence/CSECICIDS2018/verification_evidence/rsu_1/round_manifests/rsu/rsu_1/round_1.json",
+          "ssi_verify_total": 1,
+          "ssi_verify_ok": 1,
+          "ssi_verify_fail": 0,
+          "records_count": 1,
+          "vehicle_records": [
+            {
+              "vehicle_id": 1002,
+              "ssi_did": "did:key:ed25519:2f4cd531553e8749831be37a62df6e2cca377fce83370ffc333c5db50336c1ce",
+              "ssi_verify_ok": 1,
+              "ssi_report_sha256_hex": "4fe068dd089cd7f2740495f12eafa5eba96cc9be6e2ebb63937689d87c7ad46f",
+              "ssi_pubkey_b64": "L0zVMVU+h0mDG+N6Yt9uLMo3f86DNw/8MzxdtQM2wc4=",
+              "ssi_sig_b64": "Ydzm35X7Z+DLCHL7Kg4lqgEJRHsWEaReQO5f+BgSfms/B+j924n6GKuhvl55lay0C6IoihZsOrdcm97Yjt5mBA=="
+            }
+          ],
+          "ok": true,
+          "errors": []
+        },
+        "vehicle_ssi_ok": true,
+        "resolved_verifier_strategy": "pinned_relpath",
+        "resolved_verifier_candidates": [
+          "experiments/08_compact_security_evidence/CSECICIDS2018/verification_evidence/zkp_artifacts/anchorsum/AggRSU_AnchorSum_M64_K2_RM1_S100000_RC0_RB2/Verifier_AggRSU_AnchorSum_M64_K2_RM1_S100000_RC0_RB2.sol"
+        ]
+      },
+      "finality_measured": true,
+      "finalized": true,
+      "finalized_head_block_number": 11491536,
+      "finality_observed_epoch_sec": 1786765154.416668,
+      "receipt_to_finality_sec": 1117.9613673686981,
+      "tx_start_to_finality_sec": 1139.8778076171875
+    },
+    {
+      "scope": "RSU",
+      "rsu_id": 1,
+      "round_idx": 2,
+      "submitted": true,
+      "tx_hash": "75c0b69e9176e35ea8e43bf2f710d6ebe671ef6c9cd44910cdd7e56690032f74",
+      "mined": true,
+      "status": 1,
+      "block_number": 11491508,
+      "block_timestamp": 1786764048,
+      "gas_used": 546102,
+      "tx_fee_wei": "1682565907496022",
+      "tx_fee_eth": "0.001682565907496022",
+      "verified_ok": true,
+      "proof_key": "0xcf0417cf64cbe98130d784610b62e2e9ef847a5a22ea0ae45691bf2c28b79477",
+      "proof_json_size_bytes": 8593,
+      "public_inputs_v1_json_size_bytes": 760,
+      "verifier_sol_size_bytes": 10567,
+      "vkey_json_size_bytes": 4575,
+      "manifest_json_size_bytes": 7102,
+      "calldata_size_bytes": 836,
+      "signed_tx_size_bytes": 954,
+      "build_latency_sec": 0.8384246000059647,
+      "sign_latency_sec": 0.6244968999963021,
+      "send_latency_sec": 0.24563150000176392,
+      "receipt_wait_latency_sec": 10.861090499995044,
+      "tx_total_latency_sec": 12.569643499999074,
+      "tx_start_epoch_sec": 1786764036.909491,
+      "broadcast_epoch_sec": 1786764038.6187751,
+      "receipt_observed_epoch_sec": 1786764049.479934,
+      "events": [
+        {
+          "event": "ProofVerifiedV1",
+          "proofKey": "0xcf0417cf64cbe98130d784610b62e2e9ef847a5a22ea0ae45691bf2c28b79477",
+          "scope": 1,
+          "runId": "0x9930ad2b1d530263e5bf001f60ccf954b96071c9e51c8813c51afcbc019b5d6d",
+          "rsuId": 1,
+          "roundIdx": 2,
+          "verifiedOk": true,
+          "submitter": "0xDc5b1C091A4dde454689C080b99c025888aEa56f"
+        }
+      ],
+      "prep": {
+        "ok": true,
+        "errors": [],
+        "warnings": [],
+        "scope": "RSU",
+        "rsu_id": 1,
+        "round_idx": 2,
+        "proof_json": "experiments/08_compact_security_evidence/CSECICIDS2018/verification_evidence/rsu_1/zkp_artifacts/anchorsum/rsu_1/round_2.json",
+        "public_inputs_v1_json": "experiments/08_compact_security_evidence/CSECICIDS2018/verification_evidence/zkp_artifacts/anchorsum/rsu_1/round_2_public.json",
+        "verifier_sol": "experiments/08_compact_security_evidence/CSECICIDS2018/verification_evidence/zkp_artifacts/anchorsum/AggRSU_AnchorSum_M64_K2_RM1_S100000_RC0_RB2/Verifier_AggRSU_AnchorSum_M64_K2_RM1_S100000_RC0_RB2.sol",
+        "vkey_json": "experiments/08_compact_security_evidence/CSECICIDS2018/verification_evidence/zkp_artifacts/anchorsum/AggRSU_AnchorSum_M64_K2_RM1_S100000_RC0_RB2/verification_key.json",
+        "manifest_json": "experiments/08_compact_security_evidence/CSECICIDS2018/verification_evidence/rsu_1/round_manifests/rsu/rsu_1/round_2.json",
+        "pub_len_expected": 10,
+        "pub_len_actual": 10,
+        "solidity_args": {
+          "a": [
+            14434724870459890233306518856529355863364037715293292226135765737341939448980,
+            16298568073681623651176854373000405034159993621206274542616526962612696264666
+          ],
+          "b": [
+            [
+              15096154453997851089102017791097978816035508652543075599002232944739262784667,
+              10353196738690478217653903498214052243736661967026293117382800644621294759474
+            ],
+            [
+              336291645731767315028137038233978679807618455366597250648455458494144553358,
+              16793335417209296607388130522698685076354572620581887984163150937111566317151
+            ]
+          ],
+          "c": [
+            5673938996247734515439906966751440767569835557640534085604898262845876572791,
+            8380120446541973215078033797247408940987081462125924839322934062085378541132
+          ],
+          "input": [
+            21745069337441240602254689650392019371859055653640140822419508315926717261562,
+            2,
+            1,
+            2,
+            13390136000432930054520051734640751519658608845553779442178000830133666967251,
+            1573704204606186522149144320993560571343976200497240014458125942228145229657,
+            15541283417183887457257512739663032669350578057218474700204431046679895322142,
+            380352535432739907181275539269192085629686801521602481279463657722932903141,
+            3315839679857439508850817213012936704892653744233441281867020875111193042296,
+            2946394428886847727930226581734708456597135883603015132401528931888641322941
+          ]
+        },
+        "sha256": {
+          "proof_sha256": "8c3aa2fe87d2939fe83b038844a2e3290384240bc62c6b556e4d574941f7fe82",
+          "public_inputs_v1_sha256": "4b2bd603144e6c016a9bcc642d4564d87c5b326c8f7cbb85d0991baa5bceb3f5",
+          "verifier_sol_sha256": "49acf88545b18d0d1253d7830d5273e5503c6ed59b15088029516e5580fc0301",
+          "vkey_sha256": "9b5dc0643303568535ad8e7ef8a922fa2cf078f61aa653bc4dffcccbaf04a9ce",
+          "manifest_sha256": "17bc7c02ef1ab35ee1e90bf8de207f8c598baffdbf6ead314aff2ea1a708e61a"
+        },
+        "pins_relpaths": {
+          "proof_relpath": "rsu_1/zkp_artifacts/anchorsum/rsu_1/round_2.json",
+          "public_inputs_v1_relpath": "zkp_artifacts/anchorsum/rsu_1/round_2_public.json",
+          "verifier_sol_relpath": "zkp_artifacts/anchorsum/AggRSU_AnchorSum_M64_K2_RM1_S100000_RC0_RB2/Verifier_AggRSU_AnchorSum_M64_K2_RM1_S100000_RC0_RB2.sol",
+          "vkey_relpath": "zkp_artifacts/anchorsum/AggRSU_AnchorSum_M64_K2_RM1_S100000_RC0_RB2/verification_key.json",
+          "manifest_relpath": "rsu_1/round_manifests/rsu/rsu_1/round_2.json"
+        },
+        "pins_expected": {
+          "proof_sha256": "8c3aa2fe87d2939fe83b038844a2e3290384240bc62c6b556e4d574941f7fe82",
+          "public_inputs_v1_sha256": "4b2bd603144e6c016a9bcc642d4564d87c5b326c8f7cbb85d0991baa5bceb3f5",
+          "verifier_sol_sha256": "49acf88545b18d0d1253d7830d5273e5503c6ed59b15088029516e5580fc0301",
+          "vkey_sha256": "9b5dc0643303568535ad8e7ef8a922fa2cf078f61aa653bc4dffcccbaf04a9ce",
+          "manifest_sha256": "17bc7c02ef1ab35ee1e90bf8de207f8c598baffdbf6ead314aff2ea1a708e61a"
+        },
+        "vehicle_ssi": {
+          "manifest_path": "experiments/08_compact_security_evidence/CSECICIDS2018/verification_evidence/rsu_1/round_manifests/rsu/rsu_1/round_2.json",
+          "ssi_verify_total": 2,
+          "ssi_verify_ok": 2,
+          "ssi_verify_fail": 0,
+          "records_count": 2,
+          "vehicle_records": [
+            {
+              "vehicle_id": 1002,
+              "ssi_did": "did:key:ed25519:2f4cd531553e8749831be37a62df6e2cca377fce83370ffc333c5db50336c1ce",
+              "ssi_verify_ok": 1,
+              "ssi_report_sha256_hex": "66d851df9b691d8d42d73e9b64bbbbc674aa60c7cd83e70df4d01acbe4b00f91",
+              "ssi_pubkey_b64": "L0zVMVU+h0mDG+N6Yt9uLMo3f86DNw/8MzxdtQM2wc4=",
+              "ssi_sig_b64": "0KMGMAkdBekPrOopEgHZAbRXxIKkUYSekwKjDbaSftbf2N7i5XmDWHiCGOiEIeERZSRn0O/CMBhQAqRi0lUWBw=="
+            },
+            {
+              "vehicle_id": 1001,
+              "ssi_did": "did:key:ed25519:686fd0a379261e8bdc1e3e93ca2cc03e395355574e242b32155554d68bad546e",
+              "ssi_verify_ok": 1,
+              "ssi_report_sha256_hex": "19ea06b3f55ceed925cb16572cee5077e4cadf5b08ad4bbb16c8196df1f92480",
+              "ssi_pubkey_b64": "aG/Qo3kmHovcHj6TyizAPjlTVVdOJCsyFVVU1outVG4=",
+              "ssi_sig_b64": "X+JLBEp2ktkl122X9aPYMcbdIpKfwrVsMKo3Yg13sy2jFihZvXMGwOEhZiyhYWi+G/Njmev689HEEVdk6vEvDw=="
+            }
+          ],
+          "ok": true,
+          "errors": []
+        },
+        "vehicle_ssi_ok": true,
+        "resolved_verifier_strategy": "pinned_relpath",
+        "resolved_verifier_candidates": [
+          "experiments/08_compact_security_evidence/CSECICIDS2018/verification_evidence/zkp_artifacts/anchorsum/AggRSU_AnchorSum_M64_K2_RM1_S100000_RC0_RB2/Verifier_AggRSU_AnchorSum_M64_K2_RM1_S100000_RC0_RB2.sol"
+        ]
+      },
+      "finality_measured": true,
+      "finalized": true,
+      "finalized_head_block_number": 11491536,
+      "finality_observed_epoch_sec": 1786765154.416668,
+      "receipt_to_finality_sec": 1104.9367339611053,
+      "tx_start_to_finality_sec": 1117.5071768760681
+    },
+    {
+      "scope": "RSU",
+      "rsu_id": 2,
+      "round_idx": 1,
+      "submitted": true,
+      "tx_hash": "4af8ef71f9de5533694eda6f562afa1747bae1df08c21a87f96d2c4a3b7e3307",
+      "mined": true,
+      "status": 1,
+      "block_number": 11491509,
+      "block_timestamp": 1786764060,
+      "gas_used": 546114,
+      "tx_fee_wei": "1664177622276768",
+      "tx_fee_eth": "0.001664177622276768",
+      "verified_ok": true,
+      "proof_key": "0x32bc5db33e8737514a3a7d75cd102197b73b7c42bbf6514144750cdafa5a765e",
+      "proof_json_size_bytes": 8653,
+      "public_inputs_v1_json_size_bytes": 760,
+      "verifier_sol_size_bytes": 10567,
+      "vkey_json_size_bytes": 4575,
+      "manifest_json_size_bytes": 4385,
+      "calldata_size_bytes": 836,
+      "signed_tx_size_bytes": 954,
+      "build_latency_sec": 0.7401903999998467,
+      "sign_latency_sec": 0.7253017000039108,
+      "send_latency_sec": 0.2412690999917686,
+      "receipt_wait_latency_sec": 9.656818900009966,
+      "tx_total_latency_sec": 11.363580100005493,
+      "tx_start_epoch_sec": 1786764049.9191673,
+      "broadcast_epoch_sec": 1786764051.625791,
+      "receipt_observed_epoch_sec": 1786764061.2825966,
+      "events": [
+        {
+          "event": "ProofVerifiedV1",
+          "proofKey": "0x32bc5db33e8737514a3a7d75cd102197b73b7c42bbf6514144750cdafa5a765e",
+          "scope": 1,
+          "runId": "0x9930ad2b1d530263e5bf001f60ccf954b96071c9e51c8813c51afcbc019b5d6d",
+          "rsuId": 2,
+          "roundIdx": 1,
+          "verifiedOk": true,
+          "submitter": "0xDc5b1C091A4dde454689C080b99c025888aEa56f"
+        }
+      ],
+      "prep": {
+        "ok": true,
+        "errors": [],
+        "warnings": [],
+        "scope": "RSU",
+        "rsu_id": 2,
+        "round_idx": 1,
+        "proof_json": "experiments/08_compact_security_evidence/CSECICIDS2018/verification_evidence/rsu_2/zkp_artifacts/anchorsum/rsu_2/round_1.json",
+        "public_inputs_v1_json": "experiments/08_compact_security_evidence/CSECICIDS2018/verification_evidence/zkp_artifacts/anchorsum/rsu_2/round_1_public.json",
+        "verifier_sol": "experiments/08_compact_security_evidence/CSECICIDS2018/verification_evidence/zkp_artifacts/anchorsum/AggRSU_AnchorSum_M64_K2_RM1_S100000_RC0_RB2/Verifier_AggRSU_AnchorSum_M64_K2_RM1_S100000_RC0_RB2.sol",
+        "vkey_json": "experiments/08_compact_security_evidence/CSECICIDS2018/verification_evidence/zkp_artifacts/anchorsum/AggRSU_AnchorSum_M64_K2_RM1_S100000_RC0_RB2/verification_key.json",
+        "manifest_json": "experiments/08_compact_security_evidence/CSECICIDS2018/verification_evidence/rsu_2/round_manifests/rsu/rsu_2/round_1.json",
+        "pub_len_expected": 10,
+        "pub_len_actual": 10,
+        "solidity_args": {
+          "a": [
+            8576572079622709921286627745592008370651008378453087040103337365761392766517,
+            15277359946807257588414984970602554441562086827678452513161175280938257666758
+          ],
+          "b": [
+            [
+              20030613196935996804524864787552065370567266559979946702499185260328853062614,
+              13388268972560932787711561207811244172972702924554112656736150089903856705159
+            ],
+            [
+              7187943303303754285200618792739387422925907052064286778057341501989807539050,
+              3494579785436460006788456859057640900831889506637934909950542655358103318249
+            ]
+          ],
+          "c": [
+            15282025021931208239949716730309508756502901099255567874523487273665649899819,
+            21489878515766670667757528300441660006689931878047347793171544245091487710357
+          ],
+          "input": [
+            21745069337441240602254689650392019371859055653640140822419508315926717261562,
+            1,
+            2,
+            1,
+            16144307860213241820799841253331792430755725225596523203900260537385954191576,
+            1573704204606186522149144320993560571343976200497240014458125942228145229657,
+            15541283417183887457257512739663032669350578057218474700204431046679895322142,
+            380352535432739907181275539269192085629686801521602481279463657722932903141,
+            9609816570652493642339926720017019149213082071025434144383424693109639589012,
+            4741137444107282602820524589018268334351818057605345482367887607982933487476
+          ]
+        },
+        "sha256": {
+          "proof_sha256": "3c2fd6bbaf369a6dee0d82231cd12cdf3e3928c7e06e2fb643d7e40354d1d857",
+          "public_inputs_v1_sha256": "01f2dcec1eed29b9e9fc635085c8fa1a571e7962fb8ff555248f62ece7469215",
+          "verifier_sol_sha256": "49acf88545b18d0d1253d7830d5273e5503c6ed59b15088029516e5580fc0301",
+          "vkey_sha256": "9b5dc0643303568535ad8e7ef8a922fa2cf078f61aa653bc4dffcccbaf04a9ce",
+          "manifest_sha256": "c6ed4fd549b8301a18b2193137c6ccfdea06884595d0e72f1fb1f2346e36161a"
+        },
+        "pins_relpaths": {
+          "proof_relpath": "rsu_2/zkp_artifacts/anchorsum/rsu_2/round_1.json",
+          "public_inputs_v1_relpath": "zkp_artifacts/anchorsum/rsu_2/round_1_public.json",
+          "verifier_sol_relpath": "zkp_artifacts/anchorsum/AggRSU_AnchorSum_M64_K2_RM1_S100000_RC0_RB2/Verifier_AggRSU_AnchorSum_M64_K2_RM1_S100000_RC0_RB2.sol",
+          "vkey_relpath": "zkp_artifacts/anchorsum/AggRSU_AnchorSum_M64_K2_RM1_S100000_RC0_RB2/verification_key.json",
+          "manifest_relpath": "rsu_2/round_manifests/rsu/rsu_2/round_1.json"
+        },
+        "pins_expected": {
+          "proof_sha256": "3c2fd6bbaf369a6dee0d82231cd12cdf3e3928c7e06e2fb643d7e40354d1d857",
+          "public_inputs_v1_sha256": "01f2dcec1eed29b9e9fc635085c8fa1a571e7962fb8ff555248f62ece7469215",
+          "verifier_sol_sha256": "49acf88545b18d0d1253d7830d5273e5503c6ed59b15088029516e5580fc0301",
+          "vkey_sha256": "9b5dc0643303568535ad8e7ef8a922fa2cf078f61aa653bc4dffcccbaf04a9ce",
+          "manifest_sha256": "c6ed4fd549b8301a18b2193137c6ccfdea06884595d0e72f1fb1f2346e36161a"
+        },
+        "vehicle_ssi": {
+          "manifest_path": "experiments/08_compact_security_evidence/CSECICIDS2018/verification_evidence/rsu_2/round_manifests/rsu/rsu_2/round_1.json",
+          "ssi_verify_total": 1,
+          "ssi_verify_ok": 1,
+          "ssi_verify_fail": 0,
+          "records_count": 1,
+          "vehicle_records": [
+            {
+              "vehicle_id": 2002,
+              "ssi_did": "did:key:ed25519:bbc5d0c594338e0412422fa3277f0e5f99793d096c56cf0791780455d0caa5c4",
+              "ssi_verify_ok": 1,
+              "ssi_report_sha256_hex": "fde8eeb053a622860436a5602b01689e561800578dbf7d2fc68b6acb05ea7fc9",
+              "ssi_pubkey_b64": "u8XQxZQzjgQSQi+jJ38OX5l5PQlsVs8HkXgEVdDKpcQ=",
+              "ssi_sig_b64": "clZCFsONNLZ25iS8gUbTx2U+sudcUuzCvzVJjPIz+dOrTUrASfF2eeKcZG8fu38c2RpOra2Vh3u8O4iil01qCw=="
+            }
+          ],
+          "ok": true,
+          "errors": []
+        },
+        "vehicle_ssi_ok": true,
+        "resolved_verifier_strategy": "pinned_relpath",
+        "resolved_verifier_candidates": [
+          "experiments/08_compact_security_evidence/CSECICIDS2018/verification_evidence/zkp_artifacts/anchorsum/AggRSU_AnchorSum_M64_K2_RM1_S100000_RC0_RB2/Verifier_AggRSU_AnchorSum_M64_K2_RM1_S100000_RC0_RB2.sol"
+        ]
+      },
+      "finality_measured": true,
+      "finalized": true,
+      "finalized_head_block_number": 11491536,
+      "finality_observed_epoch_sec": 1786765154.416668,
+      "receipt_to_finality_sec": 1093.1340713500977,
+      "tx_start_to_finality_sec": 1104.4975006580353
+    },
+    {
+      "scope": "RSU",
+      "rsu_id": 2,
+      "round_idx": 2,
+      "submitted": true,
+      "tx_hash": "63da39fbfe744bbb0f6945d6d8318a702df1bd3e0a825de3ed1eb8a34562f1ac",
+      "mined": true,
+      "status": 1,
+      "block_number": 11491510,
+      "block_timestamp": 1786764072,
+      "gas_used": 546126,
+      "tx_fee_wei": "1649285967380478",
+      "tx_fee_eth": "0.001649285967380478",
+      "verified_ok": true,
+      "proof_key": "0x31327abd1240de11f3f46d1fafaaf9a3bae3f39b09952401094485c20fb77d32",
+      "proof_json_size_bytes": 8648,
+      "public_inputs_v1_json_size_bytes": 761,
+      "verifier_sol_size_bytes": 10567,
+      "vkey_json_size_bytes": 4575,
+      "manifest_json_size_bytes": 7106,
+      "calldata_size_bytes": 836,
+      "signed_tx_size_bytes": 954,
+      "build_latency_sec": 0.8313389000104507,
+      "sign_latency_sec": 0.6595003999973414,
+      "send_latency_sec": 0.2423619999899529,
+      "receipt_wait_latency_sec": 9.083261300009326,
+      "tx_total_latency_sec": 10.816462600007071,
+      "tx_start_epoch_sec": 1786764061.7305899,
+      "broadcast_epoch_sec": 1786764063.464134,
+      "receipt_observed_epoch_sec": 1786764072.5474775,
+      "events": [
+        {
+          "event": "ProofVerifiedV1",
+          "proofKey": "0x31327abd1240de11f3f46d1fafaaf9a3bae3f39b09952401094485c20fb77d32",
+          "scope": 1,
+          "runId": "0x9930ad2b1d530263e5bf001f60ccf954b96071c9e51c8813c51afcbc019b5d6d",
+          "rsuId": 2,
+          "roundIdx": 2,
+          "verifiedOk": true,
+          "submitter": "0xDc5b1C091A4dde454689C080b99c025888aEa56f"
+        }
+      ],
+      "prep": {
+        "ok": true,
+        "errors": [],
+        "warnings": [],
+        "scope": "RSU",
+        "rsu_id": 2,
+        "round_idx": 2,
+        "proof_json": "experiments/08_compact_security_evidence/CSECICIDS2018/verification_evidence/rsu_2/zkp_artifacts/anchorsum/rsu_2/round_2.json",
+        "public_inputs_v1_json": "experiments/08_compact_security_evidence/CSECICIDS2018/verification_evidence/zkp_artifacts/anchorsum/rsu_2/round_2_public.json",
+        "verifier_sol": "experiments/08_compact_security_evidence/CSECICIDS2018/verification_evidence/zkp_artifacts/anchorsum/AggRSU_AnchorSum_M64_K2_RM1_S100000_RC0_RB2/Verifier_AggRSU_AnchorSum_M64_K2_RM1_S100000_RC0_RB2.sol",
+        "vkey_json": "experiments/08_compact_security_evidence/CSECICIDS2018/verification_evidence/zkp_artifacts/anchorsum/AggRSU_AnchorSum_M64_K2_RM1_S100000_RC0_RB2/verification_key.json",
+        "manifest_json": "experiments/08_compact_security_evidence/CSECICIDS2018/verification_evidence/rsu_2/round_manifests/rsu/rsu_2/round_2.json",
+        "pub_len_expected": 10,
+        "pub_len_actual": 10,
+        "solidity_args": {
+          "a": [
+            11108948415125742726255590465092258466178329870369779730071051637853209780684,
+            8111017249177348120245062809948438905438661855493766925785224785128170191979
+          ],
+          "b": [
+            [
+              20680336857342298542404208263308258017899215029130665851524676998001264507816,
+              14133651146193707909998898184519589555698172245815483371747686496900859801726
+            ],
+            [
+              3505886258126364749653010475777603625106264027310211369186004195166960225638,
+              14505347554055858409332195771852963558841693921839994347973391164326401128171
+            ]
+          ],
+          "c": [
+            3445631126610413096938654470976713611027876748731798183812034699432685713425,
+            13844462569499679186067347737511392154055276107541126597282805567090190510128
+          ],
+          "input": [
+            21745069337441240602254689650392019371859055653640140822419508315926717261562,
+            2,
+            2,
+            2,
+            19268322764750176638697042101818619472875531761440023780921201417664614965466,
+            1573704204606186522149144320993560571343976200497240014458125942228145229657,
+            15541283417183887457257512739663032669350578057218474700204431046679895322142,
+            380352535432739907181275539269192085629686801521602481279463657722932903141,
+            3178018846660906020337623944707056508475375804464630399115046407167157017751,
+            10504101340273108744562322421404728598422914848016714000707107242143358252734
+          ]
+        },
+        "sha256": {
+          "proof_sha256": "48ad560b424cee279713271529fc3b2aacd73e818c975eb52c4f587800554681",
+          "public_inputs_v1_sha256": "4f9d1640479e8f91940f5d8cf53e09bf5d6dcc51aebe99133136314d9595a2f9",
+          "verifier_sol_sha256": "49acf88545b18d0d1253d7830d5273e5503c6ed59b15088029516e5580fc0301",
+          "vkey_sha256": "9b5dc0643303568535ad8e7ef8a922fa2cf078f61aa653bc4dffcccbaf04a9ce",
+          "manifest_sha256": "f30dfa80e3ca850164fd3784aed3de0b26130fde9454c83200b230a380eb20a0"
+        },
+        "pins_relpaths": {
+          "proof_relpath": "rsu_2/zkp_artifacts/anchorsum/rsu_2/round_2.json",
+          "public_inputs_v1_relpath": "zkp_artifacts/anchorsum/rsu_2/round_2_public.json",
+          "verifier_sol_relpath": "zkp_artifacts/anchorsum/AggRSU_AnchorSum_M64_K2_RM1_S100000_RC0_RB2/Verifier_AggRSU_AnchorSum_M64_K2_RM1_S100000_RC0_RB2.sol",
+          "vkey_relpath": "zkp_artifacts/anchorsum/AggRSU_AnchorSum_M64_K2_RM1_S100000_RC0_RB2/verification_key.json",
+          "manifest_relpath": "rsu_2/round_manifests/rsu/rsu_2/round_2.json"
+        },
+        "pins_expected": {
+          "proof_sha256": "48ad560b424cee279713271529fc3b2aacd73e818c975eb52c4f587800554681",
+          "public_inputs_v1_sha256": "4f9d1640479e8f91940f5d8cf53e09bf5d6dcc51aebe99133136314d9595a2f9",
+          "verifier_sol_sha256": "49acf88545b18d0d1253d7830d5273e5503c6ed59b15088029516e5580fc0301",
+          "vkey_sha256": "9b5dc0643303568535ad8e7ef8a922fa2cf078f61aa653bc4dffcccbaf04a9ce",
+          "manifest_sha256": "f30dfa80e3ca850164fd3784aed3de0b26130fde9454c83200b230a380eb20a0"
+        },
+        "vehicle_ssi": {
+          "manifest_path": "experiments/08_compact_security_evidence/CSECICIDS2018/verification_evidence/rsu_2/round_manifests/rsu/rsu_2/round_2.json",
+          "ssi_verify_total": 2,
+          "ssi_verify_ok": 2,
+          "ssi_verify_fail": 0,
+          "records_count": 2,
+          "vehicle_records": [
+            {
+              "vehicle_id": 2002,
+              "ssi_did": "did:key:ed25519:bbc5d0c594338e0412422fa3277f0e5f99793d096c56cf0791780455d0caa5c4",
+              "ssi_verify_ok": 1,
+              "ssi_report_sha256_hex": "a0e1dcb64e7b880fda0c20e055992f35d37db9e83a0b3be2f4c8c8acff6bed8a",
+              "ssi_pubkey_b64": "u8XQxZQzjgQSQi+jJ38OX5l5PQlsVs8HkXgEVdDKpcQ=",
+              "ssi_sig_b64": "Hc2UNjws603klxMJYHrQ1gnuLnVQGyYFhOPPAG4khd4Pt0YY5cXUGZiWvv43UExa33KtpdyP2sN0SAsB13OHCw=="
+            },
+            {
+              "vehicle_id": 2001,
+              "ssi_did": "did:key:ed25519:08b1d9782b37f5b3aa64bd891b875b5af8c65506a7737d16217080bb9f022fae",
+              "ssi_verify_ok": 1,
+              "ssi_report_sha256_hex": "1bc203ecf8b5975101b27c185528f812f0c5639c05bea1f31cc91b1c72e34c8d",
+              "ssi_pubkey_b64": "CLHZeCs39bOqZL2JG4dbWvjGVQanc30WIXCAu58CL64=",
+              "ssi_sig_b64": "eP+XCiDXnkBnn/OWXp3cgelCuKG3NrT9IhLrqo/VbVJHCoLwYaBcGpLoqeToTjmsQf28Y1tEGrX9KzHNC35yCQ=="
+            }
+          ],
+          "ok": true,
+          "errors": []
+        },
+        "vehicle_ssi_ok": true,
+        "resolved_verifier_strategy": "pinned_relpath",
+        "resolved_verifier_candidates": [
+          "experiments/08_compact_security_evidence/CSECICIDS2018/verification_evidence/zkp_artifacts/anchorsum/AggRSU_AnchorSum_M64_K2_RM1_S100000_RC0_RB2/Verifier_AggRSU_AnchorSum_M64_K2_RM1_S100000_RC0_RB2.sol"
+        ]
+      },
+      "finality_measured": true,
+      "finalized": true,
+      "finalized_head_block_number": 11491536,
+      "finality_observed_epoch_sec": 1786765154.416668,
+      "receipt_to_finality_sec": 1081.869190454483,
+      "tx_start_to_finality_sec": 1092.6860780715942
+    },
+    {
+      "scope": "GLOBAL",
+      "rsu_id": 0,
+      "round_idx": 2,
+      "submitted": true,
+      "tx_hash": "be1e54217664a972c7c4b5ef47f53695dbaba608fcc8a2e958d966b8bec7cd21",
+      "mined": true,
+      "status": 1,
+      "block_number": 11491511,
+      "block_timestamp": 1786764084,
+      "gas_used": 547618,
+      "tx_fee_wei": "1636623078634332",
+      "tx_fee_eth": "0.001636623078634332",
+      "verified_ok": true,
+      "proof_key": "0x942e7b222ba6f35ed5c58c3998ca878983336f56b7526169e876d7d89b04adc8",
+      "proof_json_size_bytes": 8865,
+      "public_inputs_v1_json_size_bytes": 764,
+      "verifier_sol_size_bytes": 10567,
+      "vkey_json_size_bytes": 4575,
+      "manifest_json_size_bytes": 0,
+      "calldata_size_bytes": 772,
+      "signed_tx_size_bytes": 890,
+      "build_latency_sec": 0.8303363000013633,
+      "sign_latency_sec": 0.5947302999993553,
+      "send_latency_sec": 0.23486640000191983,
+      "receipt_wait_latency_sec": 10.09784750000108,
+      "tx_total_latency_sec": 11.757780500003719,
+      "tx_start_epoch_sec": 1786764072.9887931,
+      "broadcast_epoch_sec": 1786764074.6493504,
+      "receipt_observed_epoch_sec": 1786764084.7464895,
+      "events": [
+        {
+          "event": "ProofVerifiedV1",
+          "proofKey": "0x942e7b222ba6f35ed5c58c3998ca878983336f56b7526169e876d7d89b04adc8",
+          "scope": 2,
+          "runId": "0x9930ad2b1d530263e5bf001f60ccf954b96071c9e51c8813c51afcbc019b5d6d",
+          "rsuId": 0,
+          "roundIdx": 2,
+          "verifiedOk": true,
+          "submitter": "0xDc5b1C091A4dde454689C080b99c025888aEa56f"
+        }
+      ],
+      "prep": {
+        "ok": true,
+        "errors": [],
+        "warnings": [],
+        "scope": "GLOBAL",
+        "rsu_id": 0,
+        "round_idx": 2,
+        "proof_json": "experiments/08_compact_security_evidence/CSECICIDS2018/verification_evidence/zkp_artifacts/anchorsum/global/round_2.json",
+        "public_inputs_v1_json": "experiments/08_compact_security_evidence/CSECICIDS2018/verification_evidence/zkp_artifacts/anchorsum/global/round_2_public.json",
+        "verifier_sol": "experiments/08_compact_security_evidence/CSECICIDS2018/verification_evidence/zkp_artifacts/anchorsum/AggGlobal_AnchorSum_M64_K2_RM2_S100000_RC0_RB2/Verifier_AggGlobal_AnchorSum_M64_K2_RM2_S100000_RC0_RB2.sol",
+        "vkey_json": "experiments/08_compact_security_evidence/CSECICIDS2018/verification_evidence/zkp_artifacts/anchorsum/AggGlobal_AnchorSum_M64_K2_RM2_S100000_RC0_RB2/verification_key.json",
+        "manifest_json": "",
+        "pub_len_expected": 10,
+        "pub_len_actual": 10,
+        "solidity_args": {
+          "a": [
+            4961376138912191720697225741098471007070249000442856898470185384153511539437,
+            8472207301469802217311089799213426347464670490086544995119543984133749747407
+          ],
+          "b": [
+            [
+              11044465053205812295267766367847598604890474673460546392549337393271487609618,
+              13566698939830057862988423559278002416144273848608348862877382626584884983379
+            ],
+            [
+              20944316834221571786895026047563198600651100502787637060854841006016614709277,
+              17755239358024999635004670876298030542068542580063365340108465119849651384173
+            ]
+          ],
+          "c": [
+            20915931390749366232700460655700832597092282907156149959358689535381898923209,
+            20674307380988429651862846859541080154329970336605898454434114902406632551326
+          ],
+          "input": [
+            21745069337441240602254689650392019371859055653640140822419508315926717261562,
+            2,
+            0,
+            2,
+            6256034525455582208719653635352908651401196319498550195985094743522728291161,
+            16345652631185911219206416860201629410877490718264333187314155666653888824039,
+            13587658417743578414377738976806013629381460068231136330562461205536371710092,
+            4474133564344520844785649771291405666250632887756829414636978779304877424522,
+            18015563463294184360510431110125745037920865646752351782194541555708749312604,
+            11590373657496501033096099696537690796421465190967808443736286312599348757288
+          ]
+        },
+        "sha256": {
+          "proof_sha256": "da9d5ff6bfb766da5ae4404cc842471ba399b06413d8833f76693f8eda00ca30",
+          "public_inputs_v1_sha256": "76851057a1bc04b5f2ce3b207831611de3f5d31e16cb046e31d8338edf45c8de",
+          "verifier_sol_sha256": "49acf88545b18d0d1253d7830d5273e5503c6ed59b15088029516e5580fc0301",
+          "vkey_sha256": "9b5dc0643303568535ad8e7ef8a922fa2cf078f61aa653bc4dffcccbaf04a9ce"
+        },
+        "pins_relpaths": {
+          "proof_relpath": "zkp_artifacts/anchorsum/global/round_2.json",
+          "public_inputs_v1_relpath": "zkp_artifacts/anchorsum/global/round_2_public.json",
+          "verifier_sol_relpath": "zkp_artifacts/anchorsum/AggGlobal_AnchorSum_M64_K2_RM2_S100000_RC0_RB2/Verifier_AggGlobal_AnchorSum_M64_K2_RM2_S100000_RC0_RB2.sol",
+          "vkey_relpath": "zkp_artifacts/anchorsum/AggGlobal_AnchorSum_M64_K2_RM2_S100000_RC0_RB2/verification_key.json"
+        },
+        "pins_expected": {
+          "proof_sha256": "da9d5ff6bfb766da5ae4404cc842471ba399b06413d8833f76693f8eda00ca30",
+          "public_inputs_v1_sha256": "76851057a1bc04b5f2ce3b207831611de3f5d31e16cb046e31d8338edf45c8de",
+          "verifier_sol_sha256": "49acf88545b18d0d1253d7830d5273e5503c6ed59b15088029516e5580fc0301",
+          "vkey_sha256": "9b5dc0643303568535ad8e7ef8a922fa2cf078f61aa653bc4dffcccbaf04a9ce"
+        },
+        "vehicle_ssi": {},
+        "vehicle_ssi_ok": null,
+        "resolved_verifier_strategy": "pinned_relpath",
+        "resolved_verifier_candidates": [
+          "experiments/08_compact_security_evidence/CSECICIDS2018/verification_evidence/zkp_artifacts/anchorsum/AggGlobal_AnchorSum_M64_K2_RM2_S100000_RC0_RB2/Verifier_AggGlobal_AnchorSum_M64_K2_RM2_S100000_RC0_RB2.sol"
+        ]
+      },
+      "finality_measured": true,
+      "finalized": true,
+      "finalized_head_block_number": 11491536,
+      "finality_observed_epoch_sec": 1786765154.416668,
+      "receipt_to_finality_sec": 1069.670178413391,
+      "tx_start_to_finality_sec": 1081.427874803543
+    }
+  ],
+  "finalize": {
+    "submitted": true,
+    "tx_hash": "aa09b6dd0421a2b0f9f3eed57fee0116304a1a585838c2af752de2e521ca9f73",
+    "status": 1,
+    "block_number": 11491512,
+    "block_timestamp": null,
+    "gas_used": 55051,
+    "tx_fee_wei": "171327166182070",
+    "tx_fee_eth": "0.00017132716618207",
+    "calldata_size_bytes": 36,
+    "signed_tx_size_bytes": 151,
+    "build_latency_sec": 0.8153172000020277,
+    "sign_latency_sec": 0.5834732999937842,
+    "send_latency_sec": 0.23590480000711977,
+    "receipt_wait_latency_sec": 9.911298799997894,
+    "tx_total_latency_sec": 11.545994100000826,
+    "tx_start_epoch_sec": 1786764085.189589,
+    "broadcast_epoch_sec": 1786764086.824215,
+    "receipt_observed_epoch_sec": 1786764096.7364056,
+    "global_verified_ok": true,
+    "events": [
+      {
+        "event": "RunFinalizedV1",
+        "runId": "0x9930ad2b1d530263e5bf001f60ccf954b96071c9e51c8813c51afcbc019b5d6d",
+        "globalProofKey": "0x942e7b222ba6f35ed5c58c3998ca878983336f56b7526169e876d7d89b04adc8",
+        "globalVerifiedOk": true,
+        "totalSubmitted": 5,
+        "totalVerifiedOk": 5
+      }
+    ],
+    "finality_measured": true,
+    "finalized": true,
+    "finalized_head_block_number": 11491536,
+    "finality_observed_epoch_sec": 1786765154.416668,
+    "receipt_to_finality_sec": 1057.6802623271942,
+    "tx_start_to_finality_sec": 1069.2270789146423
+  },
+  "summary": {
+    "total_jobs": 5,
+    "submitted_count": 5,
+    "mined_count": 5,
+    "tx_success_count": 5,
+    "verified_ok_count": 5,
+    "verified_fail_count": 0,
+    "skipped_unsafe_count": 0,
+    "vehicle_ssi_ok_count": 4,
+    "vehicle_ssi_fail_count": 0,
+    "total_calldata_size_bytes": 4116,
+    "total_proof_json_size_bytes": 43414,
+    "total_public_inputs_v1_json_size_bytes": 3807,
+    "total_verifier_sol_size_bytes": 52835,
+    "total_vkey_json_size_bytes": 22875,
+    "total_manifest_json_size_bytes": 22977,
+    "total_gas_used": 2821349,
+    "avg_gas_used_per_tx": 470224.8333333333,
+    "avg_tx_total_latency_sec": 13.684889280004427,
+    "avg_receipt_wait_latency_sec": 11.972381160003716,
+    "tx_total_latency_sec": {
+      "n": 5,
+      "mean": 13.684889280004427,
+      "median": 11.757780500003719,
+      "stddev_population": 4.155506756354464,
+      "min": 10.816462600007071,
+      "max": 21.916979700006777,
+      "p95": 21.916979700006777
+    },
+    "receipt_wait_latency_sec": {
+      "n": 5,
+      "mean": 11.972381160003716,
+      "median": 10.09784750000108,
+      "stddev_population": 4.1362321323276605,
+      "min": 9.083261300009326,
+      "max": 20.16288760000316,
+      "p95": 20.16288760000316
+    },
+    "receipt_to_finality_sec": {
+      "n": 5,
+      "mean": 1093.514308309555,
+      "median": 1093.1340713500977,
+      "stddev_population": 16.92587595910721,
+      "min": 1069.670178413391,
+      "max": 1117.9613673686981,
+      "p95": 1117.9613673686981
+    },
+    "tx_start_to_finality_sec": {
+      "n": 5,
+      "mean": 1107.1992876052857,
+      "median": 1104.4975006580353,
+      "stddev_population": 20.279235058857452,
+      "min": 1081.427874803543,
+      "max": 1139.8778076171875,
+      "p95": 1139.8778076171875
+    },
+    "tx_failure_count": 0,
+    "observed_tx_failure_rate": 0.0,
+    "observed_tx_failure_rate_wilson95_low": 0.0,
+    "observed_tx_failure_rate_wilson95_high": 0.43448246478317476,
+    "proof_verified_ok_count": 5,
+    "proof_verified_fail_count": 0,
+    "proof_verification_failure_rate": 0.0,
+    "submission_pattern": "SERIAL_SINGLE_SENDER_RECEIPT_WAIT",
+    "max_inflight_submissions": 1,
+    "concurrent_independent_submitters_tested": false
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "schema": "FLBCIDSMultiSeedResultsPublicationRepairV1",
+  "source_zip": "results(1).zip",
+  "source_zip_sha256": "15c78ef70e022e1c1d4a1a3563813561b51f12107ddde9bc80ff04b23ba1a541",
+  "publication_actions": {
+    "original_result_files": 282,
+    "original_json_files": 282,
+    "json_files_regenerated_for_path_portability": 181,
+    "json_files_preserved_byte_for_byte": 101,
+    "machine_local_path_string_replacements": 1053,
+    "per_seed_provenance_files_added": 40,
+    "completed_orchestration_manifests_added": 2
+  },
+  "scientific_cross_checks": {
+    "per_seed_status_files_checked": 20,
+    "centralized_metric_sets_matched": 20,
+    "nondp_metric_sets_matched": 20,
+    "dp_metric_sets_matched": 20,
+    "dp_gating_manifests_matched": 20,
+    "fl_contract_2x2x2x10_matched_for_all_seeds": true,
+    "cic_split_hash_sets_matched": 10,
+    "cse_source_sha_and_seed_identity_checked": 10,
+    "cross_check_errors": 0
+  },
+  "completed_orchestration": {
+    "state": "completed",
+    "planned_stage_count": 80,
+    "recorded_stage_count": 80,
+    "completed_validated": 58,
+    "skipped_valid_existing": 22,
+    "all_returncodes_zero": true,
+    "all_validations_ok": true,
+    "dp_stages": 20,
+    "all_dp_global_anchor_gates_passed": true,
+    "transient_ray_retries_used": 0
+  },
+  "path_policy": {
+    "result_tree_prefix": "results/",
+    "cse_raw_dataset_locator": "data/raw/CSE-CIC-IDS2018/CSECICIDS2018Dataset.csv",
+    "ciciov2024_raw_dataset_locator": "data/raw/CICIoV2024",
+    "historical_scientific_values_changed": false
+  }
+}

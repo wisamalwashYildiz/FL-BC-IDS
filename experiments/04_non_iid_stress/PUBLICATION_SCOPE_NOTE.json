@@ -1,0 +1,70 @@
+{
+  "schema": "FLBCIDSNonIIDStressPublicationScopeV1",
+  "dataset": "CSE-CIC-IDS2018",
+  "seed": 42,
+  "topology": {
+    "rsus": 2,
+    "vehicles_per_rsu": 10,
+    "total_vehicles": 20,
+    "global_rounds": 8,
+    "local_rounds": 10
+  },
+  "heterogeneity": {
+    "train_rows": 3944668,
+    "client_size_min": 60353,
+    "client_size_max": 433518,
+    "client_size_ratio": 7.183039782612298,
+    "attack_fraction_min": 0.008791916457692653,
+    "attack_fraction_max": 0.8702817563950753,
+    "feature_name": "60",
+    "validation_test_repartitioned": false
+  },
+  "participation": {
+    "planned": 160,
+    "successful": 142,
+    "unavailable": 18,
+    "success_fraction": 0.8875,
+    "failure_counts_by_round_across_both_rsus": {
+      "1": 0,
+      "2": 2,
+      "3": 2,
+      "4": 2,
+      "5": 2,
+      "6": 4,
+      "7": 4,
+      "8": 2
+    },
+    "persistent_dropout": "local client 10 per RSU, rounds 5-8",
+    "isolated_miss": "local client 5 per RSU, round 4",
+    "burst_unavailability": [
+      "local client 3 per RSU, rounds 2-3",
+      "local client 7 per RSU, rounds 6-7"
+    ]
+  },
+  "context_binding": {
+    "stale_round_rejections": "1/1",
+    "cross_rsu_scope_rejections": "1/1"
+  },
+  "combined_stress_result": {
+    "accuracy": 0.998151115219744,
+    "precision": 0.9855751629201143,
+    "recall": 0.9839900577527597,
+    "f1": 0.9847819724904887,
+    "auc": 0.998544005226689,
+    "logloss": 0.06102337328270297,
+    "brier": 0.00916976891093874,
+    "ece": 0.051538985642909894,
+    "threshold": 0.698599100112915
+  },
+  "interpretation_constraints": [
+    "Single-seed controlled diagnostics; scenario utility differences are not causal evidence that dropout improves accuracy.",
+    "Contribution-level availability stress only; not packet-level mobility, radio-link, or seamless RSU-handoff validation.",
+    "DP values are learner-stage per-record-instance composition values conditional on fixed preprocessing, not an end-to-end raw-record guarantee."
+  ],
+  "historical_feature_index_note": {
+    "feature_name": "60",
+    "data_heterogeneity_recorded_positional_index": 0,
+    "combined_stress_recorded_positional_index": 37,
+    "policy": "Historical positional indices are preserved exactly; no post-hoc normalization was applied."
+  }
+}

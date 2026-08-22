@@ -1,0 +1,506 @@
+{
+  "schema": "Reviewer1Comment1MultiSeedMasterManifestV1",
+  "created_utc": "2026-08-18T21:55:51Z",
+  "purpose": "Ten-seed independently repartitioned statistical characterization of principal learning configurations.",
+  "datasets": [
+    "CSECICIDS2018",
+    "CICIoV2024"
+  ],
+  "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51
+  ],
+  "stages": [
+    "preprocess",
+    "centralized",
+    "nondp",
+    "dp"
+  ],
+  "fixed_fl_contract": {
+    "num_rsus": 2,
+    "vehicles_per_rsu": 2,
+    "num_rounds": 2,
+    "num_local_rounds": 10
+  },
+  "results_dir": "experiments/02_multiseed/results",
+  "logs_dir": "experiments/02_multiseed/logs",
+  "statistics_dir": "experiments/02_multiseed/statistics",
+  "python_executable": "python",
+  "pythonhashseed": "0",
+  "preflight_manifest": "preflight_manifest.json",
+  "source_hashes": {
+    "cse_preprocess": {
+      "path": "DatasetPreprocessing-V2_Revision2_MultiSeed.py",
+      "sha256": "51ae07036462a0de6e90675d4666bfe203d93bc9b52b75c6adf64aa552e0c670",
+      "size_bytes": 33940
+    },
+    "cic_preprocess": {
+      "path": "preprocess_ciciov2024_decimal_Revision2_MultiSeed.py",
+      "sha256": "60b07fc23a91532899bcddd7e1b2ef9a5f50a55c2ca41a48633734afd27fbcb3",
+      "size_bytes": 25305
+    },
+    "centralized": {
+      "path": "centralized_xgboost_baseline_Revision2_MultiSeed.py",
+      "sha256": "631b5f3f649b2190fa8cdddc186a9238c599c2e756ce96aad60ea309c5f3d997",
+      "size_bytes": 13346
+    },
+    "nondp": {
+      "path": "FL-RSUs-Server-Non-DPBaseline_V10_Revision2_MultiSeed_FINAL_MATCHED.py",
+      "sha256": "9eb66d054ad7283cfb91671c935cc04966c55842cf26b19fe27e9adc303dc2f1",
+      "size_bytes": 90102
+    },
+    "dp": {
+      "path": "FL_DP_SSI_DualMerklePoseidon_RSU+Global_ZKVerify_V10_Revision2_MultiSeed.py",
+      "sha256": "dfde2d6e14da61d4b7073babdef546790fac20e875f9778d264f428bd3451fae",
+      "size_bytes": 249113
+    }
+  },
+  "source_hash_semantics": "These are the source files present for this orchestration session. Stages marked skipped_valid_existing were produced by a prior session; the previous top-level manifests are preserved in prior_orchestration_archive.",
+  "prior_orchestration_archive": {
+    "preflight_manifest.json": "experiments/02_multiseed/logs/orchestration_archive/20260818T215520Z/preflight_manifest.json",
+    "multi_seed_master_manifest.json": "experiments/02_multiseed/logs/orchestration_archive/20260818T215520Z/multi_seed_master_manifest.json"
+  },
+  "plan": [
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 42,
+      "stage": "preprocess"
+    },
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 42,
+      "stage": "centralized"
+    },
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 42,
+      "stage": "nondp"
+    },
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 42,
+      "stage": "dp"
+    },
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 43,
+      "stage": "preprocess"
+    },
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 43,
+      "stage": "centralized"
+    },
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 43,
+      "stage": "nondp"
+    },
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 43,
+      "stage": "dp"
+    },
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 44,
+      "stage": "preprocess"
+    },
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 44,
+      "stage": "centralized"
+    },
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 44,
+      "stage": "nondp"
+    },
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 44,
+      "stage": "dp"
+    },
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 45,
+      "stage": "preprocess"
+    },
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 45,
+      "stage": "centralized"
+    },
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 45,
+      "stage": "nondp"
+    },
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 45,
+      "stage": "dp"
+    },
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 46,
+      "stage": "preprocess"
+    },
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 46,
+      "stage": "centralized"
+    },
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 46,
+      "stage": "nondp"
+    },
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 46,
+      "stage": "dp"
+    },
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 47,
+      "stage": "preprocess"
+    },
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 47,
+      "stage": "centralized"
+    },
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 47,
+      "stage": "nondp"
+    },
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 47,
+      "stage": "dp"
+    },
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 48,
+      "stage": "preprocess"
+    },
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 48,
+      "stage": "centralized"
+    },
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 48,
+      "stage": "nondp"
+    },
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 48,
+      "stage": "dp"
+    },
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 49,
+      "stage": "preprocess"
+    },
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 49,
+      "stage": "centralized"
+    },
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 49,
+      "stage": "nondp"
+    },
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 49,
+      "stage": "dp"
+    },
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 50,
+      "stage": "preprocess"
+    },
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 50,
+      "stage": "centralized"
+    },
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 50,
+      "stage": "nondp"
+    },
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 50,
+      "stage": "dp"
+    },
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 51,
+      "stage": "preprocess"
+    },
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 51,
+      "stage": "centralized"
+    },
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 51,
+      "stage": "nondp"
+    },
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 51,
+      "stage": "dp"
+    },
+    {
+      "dataset": "CICIoV2024",
+      "seed": 42,
+      "stage": "preprocess"
+    },
+    {
+      "dataset": "CICIoV2024",
+      "seed": 42,
+      "stage": "centralized"
+    },
+    {
+      "dataset": "CICIoV2024",
+      "seed": 42,
+      "stage": "nondp"
+    },
+    {
+      "dataset": "CICIoV2024",
+      "seed": 42,
+      "stage": "dp"
+    },
+    {
+      "dataset": "CICIoV2024",
+      "seed": 43,
+      "stage": "preprocess"
+    },
+    {
+      "dataset": "CICIoV2024",
+      "seed": 43,
+      "stage": "centralized"
+    },
+    {
+      "dataset": "CICIoV2024",
+      "seed": 43,
+      "stage": "nondp"
+    },
+    {
+      "dataset": "CICIoV2024",
+      "seed": 43,
+      "stage": "dp"
+    },
+    {
+      "dataset": "CICIoV2024",
+      "seed": 44,
+      "stage": "preprocess"
+    },
+    {
+      "dataset": "CICIoV2024",
+      "seed": 44,
+      "stage": "centralized"
+    },
+    {
+      "dataset": "CICIoV2024",
+      "seed": 44,
+      "stage": "nondp"
+    },
+    {
+      "dataset": "CICIoV2024",
+      "seed": 44,
+      "stage": "dp"
+    },
+    {
+      "dataset": "CICIoV2024",
+      "seed": 45,
+      "stage": "preprocess"
+    },
+    {
+      "dataset": "CICIoV2024",
+      "seed": 45,
+      "stage": "centralized"
+    },
+    {
+      "dataset": "CICIoV2024",
+      "seed": 45,
+      "stage": "nondp"
+    },
+    {
+      "dataset": "CICIoV2024",
+      "seed": 45,
+      "stage": "dp"
+    },
+    {
+      "dataset": "CICIoV2024",
+      "seed": 46,
+      "stage": "preprocess"
+    },
+    {
+      "dataset": "CICIoV2024",
+      "seed": 46,
+      "stage": "centralized"
+    },
+    {
+      "dataset": "CICIoV2024",
+      "seed": 46,
+      "stage": "nondp"
+    },
+    {
+      "dataset": "CICIoV2024",
+      "seed": 46,
+      "stage": "dp"
+    },
+    {
+      "dataset": "CICIoV2024",
+      "seed": 47,
+      "stage": "preprocess"
+    },
+    {
+      "dataset": "CICIoV2024",
+      "seed": 47,
+      "stage": "centralized"
+    },
+    {
+      "dataset": "CICIoV2024",
+      "seed": 47,
+      "stage": "nondp"
+    },
+    {
+      "dataset": "CICIoV2024",
+      "seed": 47,
+      "stage": "dp"
+    },
+    {
+      "dataset": "CICIoV2024",
+      "seed": 48,
+      "stage": "preprocess"
+    },
+    {
+      "dataset": "CICIoV2024",
+      "seed": 48,
+      "stage": "centralized"
+    },
+    {
+      "dataset": "CICIoV2024",
+      "seed": 48,
+      "stage": "nondp"
+    },
+    {
+      "dataset": "CICIoV2024",
+      "seed": 48,
+      "stage": "dp"
+    },
+    {
+      "dataset": "CICIoV2024",
+      "seed": 49,
+      "stage": "preprocess"
+    },
+    {
+      "dataset": "CICIoV2024",
+      "seed": 49,
+      "stage": "centralized"
+    },
+    {
+      "dataset": "CICIoV2024",
+      "seed": 49,
+      "stage": "nondp"
+    },
+    {
+      "dataset": "CICIoV2024",
+      "seed": 49,
+      "stage": "dp"
+    },
+    {
+      "dataset": "CICIoV2024",
+      "seed": 50,
+      "stage": "preprocess"
+    },
+    {
+      "dataset": "CICIoV2024",
+      "seed": 50,
+      "stage": "centralized"
+    },
+    {
+      "dataset": "CICIoV2024",
+      "seed": 50,
+      "stage": "nondp"
+    },
+    {
+      "dataset": "CICIoV2024",
+      "seed": 50,
+      "stage": "dp"
+    },
+    {
+      "dataset": "CICIoV2024",
+      "seed": 51,
+      "stage": "preprocess"
+    },
+    {
+      "dataset": "CICIoV2024",
+      "seed": 51,
+      "stage": "centralized"
+    },
+    {
+      "dataset": "CICIoV2024",
+      "seed": 51,
+      "stage": "nondp"
+    },
+    {
+      "dataset": "CICIoV2024",
+      "seed": 51,
+      "stage": "dp"
+    }
+  ],
+  "resume": false,
+  "clean_partial": false,
+  "dry_run": false,
+  "updated_utc": "2026-08-18T21:55:51Z",
+  "state": "failed",
+  "error": "FAILED dataset=CSECICIDS2018 seed=42 stage=preprocess: Refusing to run CSECICIDS2018 seed=42 stage=preprocess because its output directory already contains files:\n  experiments/02_multiseed/results/CSECICIDS2018/seed_42/preprocessing\nUse --resume if it is a completed valid run, or use --resume --clean-partial to quarantine and rebuild an incomplete stage.",
+  "stage_results": [],
+  "publication_snapshot_status": {
+    "historical_snapshot": true,
+    "snapshot_kind": "failed_non_resume_orchestration_attempt",
+    "historical_state_preserved": "failed",
+    "planned_stage_count": 80,
+    "stage_results_recorded": 0,
+    "failure_point": {
+      "dataset": "CSECICIDS2018",
+      "seed": 42,
+      "stage": "preprocess"
+    },
+    "failure_class": "preexisting_output_directory_with_resume_disabled",
+    "not_a_failed_scientific_experiment": true,
+    "interpretation": "The orchestration process intentionally refused to overwrite an existing seed-42 preprocessing directory because resume=false. No stage ran in this session. This snapshot documents runner safety behavior, not a failed learning or verification result."
+  },
+  "publication_path_policy": "Machine-local paths were replaced with repository-relative locators or identity-only basenames. Historical failed state, error semantics, source SHA-256 values, source sizes, plan, and FL contract are preserved.",
+  "publication_sanitization": {
+    "machine_local_paths_removed": true,
+    "embedded_error_path_sanitized": true,
+    "historical_state_unchanged": true,
+    "historical_error_semantics_unchanged": true,
+    "historical_stage_results_unchanged": true,
+    "historical_source_hashes_unchanged": true,
+    "plan_unchanged": true,
+    "fixed_fl_contract_unchanged": true
+  }
+}

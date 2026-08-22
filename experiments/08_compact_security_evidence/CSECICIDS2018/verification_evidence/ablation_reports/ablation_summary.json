@@ -1,0 +1,286 @@
+{
+  "admission_failure_check": {
+    "enabled": true,
+    "mode": "bad_signature",
+    "target": {
+      "rsu_id": 1,
+      "vehicle_id": 1001,
+      "round": 1
+    },
+    "detected": true,
+    "matched_detail": {
+      "cid": "7026321175366500473",
+      "vehicle_id": 1001,
+      "reason": "bad_signature_or_report_binding",
+      "classification": "bad_signature",
+      "detail": "",
+      "ablation_target": 1,
+      "ablation_mode": "bad_signature",
+      "ablation_digest_target": 0,
+      "ablation_digest_mode": ""
+    },
+    "result": "pass"
+  },
+  "digest_binding_failure_check": {
+    "enabled": true,
+    "mode": "bad_dp_record_binding",
+    "target": {
+      "rsu_id": 2,
+      "vehicle_id": 2001,
+      "round": 1
+    },
+    "detected": true,
+    "matched_detail": {
+      "cid": "15048435969316735295",
+      "vehicle_id": 2001,
+      "reason": "bad_signature_or_report_binding",
+      "classification": "bad_digest_binding",
+      "detail": "",
+      "ablation_target": 0,
+      "ablation_mode": "",
+      "ablation_digest_target": 1,
+      "ablation_digest_mode": "bad_dp_record_binding"
+    },
+    "result": "pass"
+  },
+  "artifact_tamper_check": {
+    "enabled": true,
+    "target": {
+      "rsu_id": 1,
+      "vehicle_id": 1002,
+      "round": 1
+    },
+    "consistency_scope": "dp_record_digest_binding",
+    "original_dp_record_path": "experiments/08_compact_security_evidence/CSECICIDS2018/verification_evidence/dp_records/rsu_1/vehicle_1002/round_1.json",
+    "tampered_copy_path": "experiments/08_compact_security_evidence/CSECICIDS2018/verification_evidence/ablation_reports/tamper_probe/rsu_1_vehicle_1002_round_1_tampered.json",
+    "expected_sha256_from_ledger": "1b1e011aa03643dbfd6f9823530cfdb2456559551b328d4b532ac3dbbc3dcd79",
+    "original_sha256": "1b1e011aa03643dbfd6f9823530cfdb2456559551b328d4b532ac3dbbc3dcd79",
+    "tampered_sha256": "bbe0caf4c3ae8a57f60a3408a9806a9e476f1d1f0ce66e70ee1387c5aff4ba44",
+    "detected": true,
+    "result": "pass"
+  },
+  "commitment_recompute_check": {
+    "enabled": true,
+    "target": {
+      "rsu_id": 2,
+      "round": 2,
+      "global_round": 2
+    },
+    "rsu_check": {
+      "target": {
+        "rsu_id": 2,
+        "round": 2
+      },
+      "manifest_path": "experiments/08_compact_security_evidence/CSECICIDS2018/verification_evidence/rsu_2/round_manifests/rsu/rsu_2/round_2.json",
+      "record_count": 2,
+      "record_envelope_sha256_match": true,
+      "manifest_root_sha256_hex": "5e8650bda9e1e84df2ba57d54055e6ea8ef7a7ee82979c5056b77514858e9b7a",
+      "recomputed_root_sha256_hex": "5e8650bda9e1e84df2ba57d54055e6ea8ef7a7ee82979c5056b77514858e9b7a",
+      "manifest_root_poseidon_field": 19268322764750176638697042101818619472875531761440023780921201417664614965466,
+      "recomputed_root_poseidon_field": 19268322764750176638697042101818619472875531761440023780921201417664614965466,
+      "result": "pass"
+    },
+    "global_check": {
+      "target": {
+        "round": 2
+      },
+      "gate_manifest_path": "experiments/08_compact_security_evidence/CSECICIDS2018/verification_evidence/run_root/zkp_anchor_gating_manifest.json",
+      "global_round_manifest_path": "experiments/08_compact_security_evidence/CSECICIDS2018/verification_evidence/zkp_round_manifests/global/round_2.json",
+      "global_manifest_canon_sha256_hex": "6e9d67272aa9d6e5e5bd25c84e5fb2ca7b2761bf920a5bc0fa5191fbdaa12b5b",
+      "gate_root_poseidon_field": 6256034525455582208719653635352908651401196319498550195985094743522728291161,
+      "recomputed_root_poseidon_field": 6256034525455582208719653635352908651401196319498550195985094743522728291161,
+      "summary_root_poseidon_field": 6256034525455582208719653635352908651401196319498550195985094743522728291161,
+      "rsu_ids_sorted_match": true,
+      "mask_list_match": true,
+      "rsu_round_roots_match": true,
+      "pins_hash_field_match": true,
+      "policy_id_field_match": true,
+      "public_input_order_id_field_match": true,
+      "result": "pass"
+    },
+    "result": "pass"
+  },
+  "public_input_agreement_check": {
+    "enabled": true,
+    "target": {
+      "rsu_id": 2,
+      "round": 2,
+      "global_round": 2
+    },
+    "rsu_check": {
+      "target": {
+        "rsu_id": 2,
+        "round": 2
+      },
+      "proof_summary_path": "",
+      "proof_path": "",
+      "public_sidecar_path": "",
+      "public_input_names": [],
+      "expected_public_inputs": [],
+      "exported_public_inputs": [],
+      "unresolved_public_input_names": [],
+      "mismatches": [],
+      "result": "fail",
+      "error": "[Errno 2] No such file or directory: ''"
+    },
+    "global_check": {
+      "target": {
+        "round": 2
+      },
+      "proof_summary_path": "experiments/08_compact_security_evidence/CSECICIDS2018/verification_evidence/zkp_anchor_summaries/anchorsum/global/round_2.json",
+      "proof_path": "experiments/08_compact_security_evidence/CSECICIDS2018/verification_evidence/zkp_artifacts/anchorsum/global/round_2.json",
+      "public_sidecar_path": "experiments/08_compact_security_evidence/CSECICIDS2018/verification_evidence/zkp_artifacts/anchorsum/global/round_2_public.json",
+      "public_input_names": [
+        "anchor_id",
+        "round_idx",
+        "global_id",
+        "K_used",
+        "root_poseidon_field",
+        "pins_hash_field",
+        "policy_id_field",
+        "public_input_order_id_field",
+        "r_chal",
+        "agg_commit"
+      ],
+      "expected_public_inputs": [
+        "",
+        "",
+        "",
+        "",
+        "6256034525455582208719653635352908651401196319498550195985094743522728291161",
+        "16345652631185911219206416860201629410877490718264333187314155666653888824039",
+        "13587658417743578414377738976806013629381460068231136330562461205536371710092",
+        "4474133564344520844785649771291405666250632887756829414636978779304877424522",
+        "",
+        ""
+      ],
+      "exported_public_inputs": [
+        "21745069337441240602254689650392019371859055653640140822419508315926717261562",
+        "2",
+        "0",
+        "2",
+        "6256034525455582208719653635352908651401196319498550195985094743522728291161",
+        "16345652631185911219206416860201629410877490718264333187314155666653888824039",
+        "13587658417743578414377738976806013629381460068231136330562461205536371710092",
+        "4474133564344520844785649771291405666250632887756829414636978779304877424522",
+        "18015563463294184360510431110125745037920865646752351782194541555708749312604",
+        "11590373657496501033096099696537690796421465190967808443736286312599348757288"
+      ],
+      "unresolved_public_input_names": [
+        "anchor_id",
+        "round_idx",
+        "global_id",
+        "K_used",
+        "r_chal",
+        "agg_commit"
+      ],
+      "mismatches": [
+        {
+          "index": 0,
+          "name": "anchor_id",
+          "expected": "",
+          "exported": "21745069337441240602254689650392019371859055653640140822419508315926717261562"
+        },
+        {
+          "index": 1,
+          "name": "round_idx",
+          "expected": "",
+          "exported": "2"
+        },
+        {
+          "index": 2,
+          "name": "global_id",
+          "expected": "",
+          "exported": "0"
+        },
+        {
+          "index": 3,
+          "name": "K_used",
+          "expected": "",
+          "exported": "2"
+        },
+        {
+          "index": 8,
+          "name": "r_chal",
+          "expected": "",
+          "exported": "18015563463294184360510431110125745037920865646752351782194541555708749312604"
+        },
+        {
+          "index": 9,
+          "name": "agg_commit",
+          "expected": "",
+          "exported": "11590373657496501033096099696537690796421465190967808443736286312599348757288"
+        }
+      ],
+      "result": "fail"
+    },
+    "result": "fail"
+  },
+  "layered_overhead_breakdown": {
+    "enabled": true,
+    "supports_actual_onchain_publication_measurement": false,
+    "note": "This V8c run measures off-chain learning, DP, SSI, Merkle, proof, and export-index packaging layers. Actual blockchain submission latency/gas must still be taken from the on-chain publication run/report.",
+    "measured_layers_sec": {
+      "learning_core_sec": 252.33685440001136,
+      "dp_evidence_sec": 0.03731159998278599,
+      "ssi_admission_sec": 2.590635199987446,
+      "commitment_sec": 12.983848100018804,
+      "proof_sec": 8.883635799982585,
+      "artifact_export_sec": 0.02347309998003766
+    },
+    "fine_grained_components_sec": {
+      "local_train_sec": 252.30564050000976,
+      "rsu_model_aggregation_sec": 0.020790299997315742,
+      "global_aggregation_sec": 0.010423600004287437,
+      "dp_record_sec": 0.03731159998278599,
+      "ssi_vehicle_report_sec": 0.0010719999845605344,
+      "rsu_preselect_sec": 0.008545000004232861,
+      "rsu_ssi_verification_sec": 2.5810181999986526,
+      "rsu_merkle_build_sec": 12.983848100018804,
+      "rsu_zkp_sec": 7.946446299989475,
+      "global_zkp_sec": 0.9371894999931101,
+      "global_artifact_export_sec": 0.00076299998909235,
+      "export_index_write_sec": 0.02271009999094531
+    },
+    "per_rsu_overhead_summary": {
+      "1": {
+        "simulation_wall_time_sec": 139.63386464118958,
+        "sum_fit_total_upload_bytes": 339254.0,
+        "sum_fit_total_download_bytes": 249906.0,
+        "sum_fit_total_bytes": 589160.0,
+        "sum_fit_total_train_time_sec": 121.57455829999526,
+        "sum_rsu_preselect_latency_sec": 0.007539700003690086,
+        "sum_rsu_model_aggregation_latency_sec": 0.010782199999084696,
+        "sum_rsu_ssi_verification_latency_sec": 1.36083520000102,
+        "sum_rsu_merkle_build_latency_sec": 3.9518875000067055,
+        "sum_rsu_verification_pipeline_latency_sec": 9.390526100003626,
+        "sum_rsu_zkp_latency_sec": 4.072076099997503,
+        "sum_rsu_round_total_latency_sec": 9.421715199991013
+      },
+      "2": {
+        "simulation_wall_time_sec": 144.26222252845764,
+        "sum_fit_total_upload_bytes": 347412.0,
+        "sum_fit_total_download_bytes": 242170.0,
+        "sum_fit_total_bytes": 589582.0,
+        "sum_fit_total_train_time_sec": 130.7310822000145,
+        "sum_rsu_preselect_latency_sec": 0.0010053000005427748,
+        "sum_rsu_model_aggregation_latency_sec": 0.010008099998231046,
+        "sum_rsu_ssi_verification_latency_sec": 1.2201829999976326,
+        "sum_rsu_merkle_build_latency_sec": 9.031960600012098,
+        "sum_rsu_verification_pipeline_latency_sec": 14.134360800002469,
+        "sum_rsu_zkp_latency_sec": 3.874370199991972,
+        "sum_rsu_round_total_latency_sec": 14.15659600001527
+      }
+    },
+    "global_overhead_summary": {
+      "global_aggregation_latency_sec": 0.010423600004287437,
+      "global_zkp_latency_sec": 0.9371894999931101,
+      "global_artifact_export_latency_sec": 0.00076299998909235,
+      "global_total_latency_sec": 0.9379524999822024,
+      "global_summary_artifact_size_bytes": 2172,
+      "global_proof_artifact_size_bytes": 8865,
+      "global_public_inputs_sidecar_size_bytes": 764
+    },
+    "result": "pass"
+  }
+}

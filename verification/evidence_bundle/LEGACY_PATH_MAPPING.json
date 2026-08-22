@@ -1,0 +1,10 @@
+{
+  "schema": "FLBCIDSVerificationLegacyPathMappingV1",
+  "mapping": [
+    {
+      "old_prefix": "verification/evidence_bundle/primary_compact/",
+      "new_prefix": "verification/evidence_bundle/compact_security_evidence/core/",
+      "files_reclassified": 14
+    }
+  ]
+}

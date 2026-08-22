@@ -1,0 +1,24 @@
+{
+  "schema": "FLBCIDSExpandedTopologyPublicationRepairV1",
+  "source_zip": "06_expanded_topology.zip",
+  "source_zip_sha256": "11bf61155f8653f0bc9cbf4aab95ec8176c47061e56d3f0f23a352fdba037312",
+  "original_file_count": 13,
+  "retained_v10_files_modified": 0,
+  "portable_helper_files_modified": 0,
+  "portable_main_runner_regenerated": true,
+  "cse_config_regenerated": true,
+  "cic_config_regenerated": true,
+  "cic_retained_source_claim_corrected": true,
+  "historical_raw_output_bundle_present": false,
+  "scientific_topology_constants_changed": false,
+  "validation": {
+    "python_files_syntax_valid": 10,
+    "topology_10_rsus_20_vehicles_each_2_rounds_10_local": true,
+    "retained_runner_sha256": "3da86add5373524e6295a3eba1622482d9ae7b2a47253cca65734e9e6bb41159",
+    "portable_runner_before_sha256": "a719d491db17bf0c32b3e6e8bf4961397dff855a6fe2b76b994c242151a50217",
+    "portable_runner_after_sha256": "5c6f6863cb85b446996bcc4bdc9b4c11c7a97c123bc5105735840a28b3c07053",
+    "portable_helpers_byte_identical_to_retained": true,
+    "absolute_windows_paths_in_publication_docs_configs_runner": 0,
+    "contentReference_in_portable_runner": 0
+  }
+}

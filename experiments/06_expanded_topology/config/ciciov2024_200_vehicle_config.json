@@ -1,0 +1,36 @@
+{
+  "schema": "FLBCIDSExpandedTopologyConfigV2",
+  "artifact_status": "documented_dataset_switch_plus_publication_portable_execution_config",
+  "dataset": "CICIoV2024",
+  "dataset_selector": {
+    "environment_variable": "FLBCIDS_DATASET_NAME",
+    "value": "CICIoV2024",
+    "retained_v10_default_matches_this_dataset": false,
+    "historical_dedicated_cic_source_snapshot_in_this_directory": false,
+    "interpretation": "The retained V10 runner directly fixes the expanded topology but has CSE-CIC-IDS2018 active. CICIoV2024 is the documented alternate dataset selection; the publication runner makes that switch explicit through FLBCIDS_DATASET_NAME."
+  },
+  "num_rsus": 10,
+  "vehicles_per_rsu": 20,
+  "total_vehicles": 200,
+  "global_rounds": 2,
+  "local_boosting_rounds_per_participant_per_global_round": 10,
+  "tree_method": "approxDP",
+  "dp_accounting": {
+    "epsilon_tree": 0.25,
+    "subsample": 0.2,
+    "num_parallel_tree": 1,
+    "delta": 0.0,
+    "epsilon_round_exact": 0.5525028433699525,
+    "epsilon_total_two_round_exact": 1.105005686739905,
+    "epsilon_total_two_round_reported_4dp": 1.105,
+    "scope": "learner-stage per-record-instance composition conditional on the fixed preprocessing artifact/post-preprocessing training multiset; not an end-to-end raw-record differential-privacy guarantee"
+  },
+  "source_lineage": {
+    "retained_v10_runner_sha256": "3da86add5373524e6295a3eba1622482d9ae7b2a47253cca65734e9e6bb41159",
+    "portable_runner_before_publication_hardening_sha256": "a719d491db17bf0c32b3e6e8bf4961397dff855a6fe2b76b994c242151a50217",
+    "publication_portable_runner_sha256": "5c6f6863cb85b446996bcc4bdc9b4c11c7a97c123bc5105735840a28b3c07053",
+    "portable_helpers_byte_identical_to_retained_v10": true
+  },
+  "historical_output_bundle_present_in_this_directory": false,
+  "previous_generated_at_utc": "2026-08-22T12:07:28.645482+00:00"
+}

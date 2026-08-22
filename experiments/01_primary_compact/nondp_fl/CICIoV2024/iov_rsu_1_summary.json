@@ -1,0 +1,163 @@
+{
+  "rsu_id": 1,
+  "num_rsus": 2,
+  "vehicles_per_rsu": 2,
+  "num_rounds": 2,
+  "num_local_rounds": 100,
+  "xgb_params": {
+    "objective": "binary:logistic",
+    "eval_metric": [
+      "auc",
+      "logloss"
+    ],
+    "max_depth": 6,
+    "learning_rate": 0.1,
+    "tree_method": "hist",
+    "min_child_weight": 200,
+    "subsample": 0.9,
+    "lambda": 1.0,
+    "alpha": 1.0,
+    "colsample_bytree": 0.9,
+    "base_score": 0.5,
+    "max_delta_step": 1.0,
+    "random_state": 42,
+    "seed": 42,
+    "num_parallel_tree": 1,
+    "scale_pos_weight": 1.0
+  },
+  "early_stopping_rounds": 10,
+  "simulation_wall_time_sec": 32.2826669216156,
+  "rsu_wall_time_sec": 32.2826669216156,
+  "losses_distributed": [],
+  "metrics_distributed_evaluate": {},
+  "round_summaries": [
+    {
+      "round": 1,
+      "fit_total_train_time_sec": 12.841004133224487,
+      "fit_num_clients": 2.0,
+      "fit_num_examples_total": 856616.0,
+      "fit_total_upload_bytes": 174824.0,
+      "fit_total_download_bytes": 1802.0,
+      "fit_global_model_size_bytes": 95885.0,
+      "fit_avg_train_time_sec_per_client": 6.420502066612244,
+      "fit_avg_upload_bytes_per_client": 87412.0,
+      "fit_avg_download_bytes_per_client": 901.0,
+      "fit_avg_total_bytes_per_client": 88313.0,
+      "fit_avg_train_time_msec_per_example": 0.014990385579097853,
+      "fit_avg_bytes_per_example": 0.20619040503562858
+    },
+    {
+      "round": 2,
+      "fit_total_train_time_sec": 14.689353466033936,
+      "fit_num_clients": 2.0,
+      "fit_num_examples_total": 856616.0,
+      "fit_total_upload_bytes": 108766.0,
+      "fit_total_download_bytes": 191770.0,
+      "fit_global_model_size_bytes": 97070.0,
+      "fit_avg_train_time_sec_per_client": 7.344676733016968,
+      "fit_avg_upload_bytes_per_client": 54383.0,
+      "fit_avg_download_bytes_per_client": 95885.0,
+      "fit_avg_total_bytes_per_client": 150268.0,
+      "fit_avg_train_time_msec_per_example": 0.017148119421110435,
+      "fit_avg_bytes_per_example": 0.35084098359124744
+    }
+  ],
+  "final_round_summary": {
+    "round": 2,
+    "fit_total_train_time_sec": 14.689353466033936,
+    "fit_num_clients": 2.0,
+    "fit_num_examples_total": 856616.0,
+    "fit_total_upload_bytes": 108766.0,
+    "fit_total_download_bytes": 191770.0,
+    "fit_global_model_size_bytes": 97070.0,
+    "fit_avg_train_time_sec_per_client": 7.344676733016968,
+    "fit_avg_upload_bytes_per_client": 54383.0,
+    "fit_avg_download_bytes_per_client": 95885.0,
+    "fit_avg_total_bytes_per_client": 150268.0,
+    "fit_avg_train_time_msec_per_example": 0.017148119421110435,
+    "fit_avg_bytes_per_example": 0.35084098359124744
+  },
+  "vehicle_metrics_per_round": {
+    "1": [
+      {
+        "client_id": "3234356287626450697",
+        "num_examples": 428308,
+        "train_accuracy": 0.999978987084061,
+        "train_f1": 0.9999789866425091,
+        "train_auc": 0.9999999756660948,
+        "val_accuracy": 0.9999905317824394,
+        "val_f1": 0.9999638623879734,
+        "val_auc": 0.9999999574774345,
+        "val_brier": 4.668364503951042e-05,
+        "val_ece": 0.0015386800864954525,
+        "train_time_sec": 6.46569299697876,
+        "num_train_examples": 428308.0,
+        "num_new_trees": 100.0,
+        "upload_bytes": 87337.0,
+        "download_bytes": 901.0,
+        "total_bytes": 88238.0
+      },
+      {
+        "client_id": "8806028455160177651",
+        "num_examples": 428308,
+        "train_accuracy": 0.999957974168122,
+        "train_f1": 0.9999579724018772,
+        "train_auc": 0.999999990972906,
+        "val_accuracy": 0.9999905317824394,
+        "val_f1": 0.9999638623879734,
+        "val_auc": 0.9999999921254509,
+        "val_brier": 4.8465857052956685e-05,
+        "val_ece": 0.0015806526931163602,
+        "train_time_sec": 6.3753111362457275,
+        "num_train_examples": 428308.0,
+        "num_new_trees": 100.0,
+        "upload_bytes": 87487.0,
+        "download_bytes": 901.0,
+        "total_bytes": 88388.0
+      }
+    ],
+    "2": [
+      {
+        "client_id": "3234356287626450697",
+        "num_examples": 428308,
+        "train_accuracy": 0.999978987084061,
+        "train_f1": 0.9999789866425091,
+        "train_auc": 0.9999999937856963,
+        "val_accuracy": 0.9999905317824394,
+        "val_f1": 0.9999638623879734,
+        "val_auc": 0.9999999881881763,
+        "val_brier": 2.6045460358648787e-05,
+        "val_ece": 0.0011634174250842967,
+        "train_time_sec": 7.351189851760864,
+        "num_train_examples": 428308.0,
+        "num_new_trees": 100.0,
+        "upload_bytes": 54386.0,
+        "download_bytes": 95885.0,
+        "total_bytes": 150271.0
+      },
+      {
+        "client_id": "8806028455160177651",
+        "num_examples": 428308,
+        "train_accuracy": 0.999957974168122,
+        "train_f1": 0.9999579724018772,
+        "train_auc": 0.9999999957481078,
+        "val_accuracy": 0.9999905317824394,
+        "val_f1": 0.9999638623879734,
+        "val_auc": 0.9999999964564529,
+        "val_brier": 2.4402540376732315e-05,
+        "val_ece": 0.0011675394258005161,
+        "train_time_sec": 7.338163614273071,
+        "num_train_examples": 428308.0,
+        "num_new_trees": 100.0,
+        "upload_bytes": 54380.0,
+        "download_bytes": 95885.0,
+        "total_bytes": 150265.0
+      }
+    ]
+  },
+  "flower_history_raw": {
+    "losses_distributed_attr": [],
+    "metrics_distributed_attr": {},
+    "repr": "None"
+  }
+}

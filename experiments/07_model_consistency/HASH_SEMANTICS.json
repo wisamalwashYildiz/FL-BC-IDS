@@ -1,0 +1,19 @@
+{
+  "schema": "FLBCIDSAggregationReplayHashSemanticsV1",
+  "record_file": "results/comment4_aggregation_replay_record.json",
+  "record_file_byte_sha256": "43b68d91656cfe519c147ef87194ec33efd5e8f16de5d0489d1585fa46ddc8c0",
+  "record_canonical_sha256": "d4543b6ca653d588b30a813d3e718ed404e9d2289f6ee6cb423ff29fdfc02e18",
+  "recorded_digest_field_interpretation": "comment4_artifact_digests.json:aggregation_replay_record_sha256 is the canonical JSON SHA-256, not the pretty-printed file-byte SHA-256",
+  "canonical_file": "results/comment4_aggregation_replay_record.canonical.json",
+  "canonicalization": {
+    "json_sort_keys": true,
+    "json_separators": [
+      ",",
+      ":"
+    ],
+    "ensure_ascii": false,
+    "encoding": "UTF-8",
+    "trailing_newline": false
+  },
+  "verified_match": true
+}

@@ -1,0 +1,185 @@
+{
+  "protocol": "terminal_70_15_15",
+  "evaluation_id": "terminal_70_15_15",
+  "split_contract": "timestamp_safe_approximately_70_15_15",
+  "cut70_row": 2100000,
+  "cut85_row": 2550000,
+  "train_rows": 2100000,
+  "calibration_rows": 450000,
+  "test_rows": 450000,
+  "train_fraction": 0.7,
+  "calibration_fraction": 0.15,
+  "test_fraction": 0.15,
+  "timestamp_safe": true,
+  "train_time_range": [
+    "2018-02-14 12:28:11.768711",
+    "2018-02-28 12:51:31.023940"
+  ],
+  "calibration_time_range": [
+    "2018-02-28 12:51:31.106671",
+    "2018-03-01 16:59:23.510557"
+  ],
+  "test_time_range": [
+    "2018-03-01 16:59:23.542549",
+    "2018-03-03 00:38:37.344583"
+  ],
+  "train_class_counts": {
+    "benign": 1928625,
+    "attack": 171375
+  },
+  "calibration_class_counts": {
+    "benign": 446553,
+    "attack": 3447
+  },
+  "test_class_counts": {
+    "benign": 442440,
+    "attack": 7560
+  },
+  "train_attack_types": [
+    "DDOS-HOIC",
+    "DDOS-LOIC-HTTP",
+    "DDOS-LOIC-UDP",
+    "DDOS-LOIC-UDP - ATTEMPTED",
+    "DOS GOLDENEYE",
+    "DOS GOLDENEYE - ATTEMPTED",
+    "DOS HULK",
+    "DOS HULK - ATTEMPTED",
+    "DOS SLOWLORIS",
+    "DOS SLOWLORIS - ATTEMPTED",
+    "FTP-BRUTEFORCE - ATTEMPTED",
+    "SSH-BRUTEFORCE",
+    "WEB ATTACK - BRUTE FORCE",
+    "WEB ATTACK - BRUTE FORCE - ATTEMPTED",
+    "WEB ATTACK - SQL",
+    "WEB ATTACK - SQL - ATTEMPTED",
+    "WEB ATTACK - XSS"
+  ],
+  "test_attack_types": [
+    "BOTNET ARES",
+    "BOTNET ARES - ATTEMPTED",
+    "INFILTRATION - COMMUNICATION VICTIM ATTACKER",
+    "INFILTRATION - NMAP PORTSCAN"
+  ],
+  "seen_test_attack_types": [],
+  "novel_test_attack_types": [
+    "BOTNET ARES",
+    "BOTNET ARES - ATTEMPTED",
+    "INFILTRATION - COMMUNICATION VICTIM ATTACKER",
+    "INFILTRATION - NMAP PORTSCAN"
+  ],
+  "seen_attack_rows": 0,
+  "novel_attack_rows": 7560,
+  "status": "evaluated",
+  "primary_seen_endpoint_eligible": false,
+  "primary_threshold": 0.017330838367342952,
+  "diagnostic_validation_f1_threshold": 0.0198989898989899,
+  "primary_calibration_metrics": {
+    "n": 450000,
+    "benign_n": 446553,
+    "attack_n": 3447,
+    "accuracy": 0.9832488888888888,
+    "precision": 0.03919801757152512,
+    "recall": 0.050478677110530897,
+    "f1": 0.044128835911742326,
+    "balanced_accuracy": 0.5204638695739799,
+    "mcc": 0.03610594736598423,
+    "fpr": 0.009550937962571072,
+    "tn": 442288,
+    "fp": 4265,
+    "fn": 3273,
+    "tp": 174,
+    "confusion_matrix": [
+      [
+        442288,
+        4265
+      ],
+      [
+        3273,
+        174
+      ]
+    ],
+    "roc_auc": 0.7809915936215173,
+    "threshold": 0.017330838367342952
+  },
+  "combined_test_period": {
+    "n": 450000,
+    "benign_n": 442440,
+    "attack_n": 7560,
+    "accuracy": 0.9789555555555556,
+    "precision": 0.02106318956870612,
+    "recall": 0.005555555555555556,
+    "f1": 0.008792128951224618,
+    "balanced_accuracy": 0.500571828948558,
+    "mcc": 0.0022129914222874377,
+    "fpr": 0.004411897658439562,
+    "tn": 440488,
+    "fp": 1952,
+    "fn": 7518,
+    "tp": 42,
+    "confusion_matrix": [
+      [
+        440488,
+        1952
+      ],
+      [
+        7518,
+        42
+      ]
+    ],
+    "roc_auc": 0.8733829182709256,
+    "threshold": 0.017330838367342952
+  },
+  "seen_attack_temporal": null,
+  "novel_attack_with_benign_diagnostic": {
+    "n": 450000,
+    "benign_n": 442440,
+    "attack_n": 7560,
+    "accuracy": 0.9789555555555556,
+    "precision": 0.02106318956870612,
+    "recall": 0.005555555555555556,
+    "f1": 0.008792128951224618,
+    "balanced_accuracy": 0.500571828948558,
+    "mcc": 0.0022129914222874377,
+    "fpr": 0.004411897658439562,
+    "tn": 440488,
+    "fp": 1952,
+    "fn": 7518,
+    "tp": 42,
+    "confusion_matrix": [
+      [
+        440488,
+        1952
+      ],
+      [
+        7518,
+        42
+      ]
+    ],
+    "roc_auc": 0.8733829182709256,
+    "threshold": 0.017330838367342952
+  },
+  "test_benign_fpr": 0.004411897658439562,
+  "fit_seconds": 13.020053400003235,
+  "balance": {
+    "enabled": true,
+    "before": {
+      "benign": 1928625,
+      "attack": 171375
+    },
+    "performed": true,
+    "after": {
+      "benign": 1928625,
+      "attack": 1928625
+    }
+  },
+  "predictor_hash_diagnostics": {
+    "test_rows_hash_seen_in_train": 985,
+    "test_rows_hash_novel_to_train": 449015,
+    "seen_attack_rows_hash_seen_in_train": 0,
+    "seen_attack_rows_hash_novel_to_train": 0,
+    "seen_attack_recall_hash_seen_in_train": null,
+    "seen_attack_recall_hash_novel_to_train": null
+  },
+  "primary_seen_endpoint_exclusion_reason": "zero_seen_attack_rows_in_test",
+  "interpretation_constraint": "This terminal split is a combined temporal + attack-novelty stress condition whenever the final test contains no attack family represented in training. It must not be relabeled as seen-attack temporal recall in that case."
+}

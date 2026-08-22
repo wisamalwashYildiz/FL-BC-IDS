@@ -1,0 +1,180 @@
+{
+  "schema": "Reviewer1Comment1SeedStageStatusV1",
+  "stages": {
+    "preprocess": {
+      "status": "completed_validated",
+      "returncode": 0,
+      "started_utc": "2026-08-19T01:26:11Z",
+      "ended_utc": "2026-08-19T01:26:33Z",
+      "elapsed_sec": 21.68370429999777,
+      "log_path": "experiments/02_multiseed/logs/CICIoV2024/seed_44/preprocess.log",
+      "validation": {
+        "ok": true,
+        "output_dir": "experiments/02_multiseed/results/CICIoV2024/seed_44/preprocessing",
+        "manifest": "experiments/02_multiseed/results/CICIoV2024/seed_44/preprocessing/CICIoV2024_manifest.json",
+        "seed": 44,
+        "split_hashes": {
+          "train_csv_sha256": "3c7653a14d97c1258d643c589d5bf99d5ef8b3875b71b347f728c9a4e11cf6de",
+          "val_csv_sha256": "33e35bd92a188a4d320c9d27e151ebefc1ccf9dc3fb5ad59e2e120dca54ef277",
+          "test_csv_sha256": "e733ec5303d43f19ca1529b244851d031103493209717d76c5d98625a9cc3d7d"
+        },
+        "files": {
+          "train": "experiments/02_multiseed/results/CICIoV2024/seed_44/preprocessing/CICIoV2024_train_preprocessed.csv",
+          "val": "experiments/02_multiseed/results/CICIoV2024/seed_44/preprocessing/CICIoV2024_val_preprocessed.csv",
+          "test": "experiments/02_multiseed/results/CICIoV2024/seed_44/preprocessing/CICIoV2024_test_preprocessed.csv"
+        },
+        "execution_attempts": 1,
+        "transient_ray_retries": 0
+      },
+      "command": [
+        "python",
+        "experiments/02_multiseed/code/preprocess_ciciov2024_decimal_Revision2_MultiSeed.py",
+        "--seed",
+        "44",
+        "--revision-root",
+        "experiments/02_multiseed/results",
+        "--decimal-dir",
+        "data/raw/CICIoV2024"
+      ],
+      "command_display": "python experiments/02_multiseed/code/preprocess_ciciov2024_decimal_Revision2_MultiSeed.py --seed 44 --revision-root experiments/02_multiseed/results --decimal-dir data/raw/CICIoV2024"
+    },
+    "centralized": {
+      "status": "completed_validated",
+      "returncode": 0,
+      "started_utc": "2026-08-19T01:26:33Z",
+      "ended_utc": "2026-08-19T01:26:42Z",
+      "elapsed_sec": 9.361720300003071,
+      "log_path": "experiments/02_multiseed/logs/CICIoV2024/seed_44/centralized.log",
+      "validation": {
+        "ok": true,
+        "output_dir": "experiments/02_multiseed/results/CICIoV2024/seed_44/centralized",
+        "summary": "experiments/02_multiseed/results/CICIoV2024/seed_44/centralized/centralized_xgboost_CICIoV2024_summary.json",
+        "model": "experiments/02_multiseed/results/CICIoV2024/seed_44/centralized/centralized_xgboost_CICIoV2024.json",
+        "test_metrics": {
+          "accuracy": 0.9999857976736589,
+          "precision": 1.0,
+          "recall": 0.9998915871639202,
+          "f1": 0.9999457906434651,
+          "auc": 0.9999999362141941
+        },
+        "execution_attempts": 1,
+        "transient_ray_retries": 0
+      },
+      "command": [
+        "python",
+        "experiments/02_multiseed/code/centralized_xgboost_baseline_Revision2_MultiSeed.py",
+        "--dataset",
+        "CICIoV2024",
+        "--seed",
+        "44",
+        "--revision-root",
+        "experiments/02_multiseed/results"
+      ],
+      "command_display": "python experiments/02_multiseed/code/centralized_xgboost_baseline_Revision2_MultiSeed.py --dataset CICIoV2024 --seed 44 --revision-root experiments/02_multiseed/results"
+    },
+    "nondp": {
+      "status": "completed_validated",
+      "returncode": 0,
+      "started_utc": "2026-08-19T01:26:42Z",
+      "ended_utc": "2026-08-19T01:27:18Z",
+      "elapsed_sec": 35.76602090000233,
+      "log_path": "experiments/02_multiseed/logs/CICIoV2024/seed_44/nondp.log",
+      "validation": {
+        "ok": true,
+        "output_dir": "experiments/02_multiseed/results/CICIoV2024/seed_44/nondp_local_10",
+        "run_config": "experiments/02_multiseed/results/CICIoV2024/seed_44/nondp_local_10/iov_run_config.json",
+        "summary": "experiments/02_multiseed/results/CICIoV2024/seed_44/nondp_local_10/iov_global_server_ensemble_summary.json",
+        "test_metrics": {
+          "accuracy": 0.9999857976736589,
+          "precision": 1.0,
+          "recall": 0.9998915871639202,
+          "f1": 0.9999457906434651,
+          "auc": 0.9999999362141943
+        },
+        "execution_attempts": 1,
+        "transient_ray_retries": 0
+      },
+      "command": [
+        "python",
+        "experiments/02_multiseed/code/FL-RSUs-Server-Non-DPBaseline_V10_Revision2_MultiSeed_FINAL_MATCHED.py",
+        "--dataset",
+        "CICIoV2024",
+        "--seed",
+        "44",
+        "--revision-root",
+        "experiments/02_multiseed/results",
+        "--num-rsus",
+        "2",
+        "--vehicles-per-rsu",
+        "2",
+        "--num-rounds",
+        "2",
+        "--num-local-rounds",
+        "10"
+      ],
+      "command_display": "python experiments/02_multiseed/code/FL-RSUs-Server-Non-DPBaseline_V10_Revision2_MultiSeed_FINAL_MATCHED.py --dataset CICIoV2024 --seed 44 --revision-root experiments/02_multiseed/results --num-rsus 2 --vehicles-per-rsu 2 --num-rounds 2 --num-local-rounds 10"
+    },
+    "dp": {
+      "status": "completed_validated",
+      "returncode": 0,
+      "started_utc": "2026-08-19T01:27:18Z",
+      "ended_utc": "2026-08-19T01:28:28Z",
+      "elapsed_sec": 70.41295110000647,
+      "log_path": "experiments/02_multiseed/logs/CICIoV2024/seed_44/dp.log",
+      "validation": {
+        "ok": true,
+        "output_dir": "experiments/02_multiseed/results/CICIoV2024/seed_44/full_dp",
+        "run_config": "experiments/02_multiseed/results/CICIoV2024/seed_44/full_dp/iov_run_config.json",
+        "summary": "experiments/02_multiseed/results/CICIoV2024/seed_44/full_dp/global_ensemble_summary.json",
+        "gating_manifest": "experiments/02_multiseed/results/CICIoV2024/seed_44/full_dp/zkp_anchor_gating_manifest.json",
+        "test_metrics": {
+          "accuracy": 0.9996118030800112,
+          "precision": 0.9971529479602134,
+          "recall": 0.9998915871639202,
+          "f1": 0.9985203897509924,
+          "auc": 0.9999878291170199
+        },
+        "global_anchor_ok": true,
+        "used_rsu_ids": [
+          1,
+          2
+        ],
+        "execution_attempts": 1,
+        "transient_ray_retries": 0
+      },
+      "command": [
+        "python",
+        "experiments/02_multiseed/code/FL_DP_SSI_DualMerklePoseidon_RSU+Global_ZKVerify_V10_Revision2_MultiSeed.py",
+        "--dataset",
+        "CICIoV2024",
+        "--seed",
+        "44",
+        "--revision-root",
+        "experiments/02_multiseed/results",
+        "--num-rsus",
+        "2",
+        "--vehicles-per-rsu",
+        "2",
+        "--num-rounds",
+        "2",
+        "--num-local-rounds",
+        "10"
+      ],
+      "command_display": "python experiments/02_multiseed/code/FL_DP_SSI_DualMerklePoseidon_RSU+Global_ZKVerify_V10_Revision2_MultiSeed.py --dataset CICIoV2024 --seed 44 --revision-root experiments/02_multiseed/results --num-rsus 2 --vehicles-per-rsu 2 --num-rounds 2 --num-local-rounds 10"
+    }
+  },
+  "dataset": "CICIoV2024",
+  "seed": 44,
+  "updated_utc": "2026-08-19T01:28:28Z",
+  "publication_path_policy": "Machine-local executable, source, log, results, and raw-data paths were replaced by portable publication locators. Stage statuses, timestamps, elapsed times, return codes, validation results, metrics, retry counts, and experiment arguments are unchanged.",
+  "publication_sanitization": {
+    "machine_local_paths_removed": true,
+    "historical_status_values_unchanged": true,
+    "metrics_unchanged": true,
+    "timings_unchanged": true,
+    "returncodes_unchanged": true,
+    "retry_counts_unchanged": true,
+    "command_arguments_unchanged_except_path_locators": true,
+    "command_display_rebuilt_from_sanitized_argv": true
+  }
+}

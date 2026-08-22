@@ -1,0 +1,11 @@
+--- V10:FL_IoV_AnchorZKP_UtilsV10.py
++++ V9:FL_IoV_AnchorZKP_UtilsV9.py
+@@ -31,7 +31,7 @@
+ # Canonical Spec V1 (frozen encodings + hash-to-field)
+ # -----------------------------------------------------------------------------#
+ try:
+-    from FL_IoV_CanonicalSpecV10 import (
++    from FL_IoV_CanonicalSpecV9 import (
+         BN254_PRIME as _BN254_PRIME,
+         ANCHOR_SPEC_V1,
+         sha256_hex as _spec_sha256_hex,

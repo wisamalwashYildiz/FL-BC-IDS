@@ -1,0 +1,4 @@
+# Preserve exact release bytes across platforms. The repository contains
+# SHA-256-pinned evidence and provenance artifacts, so Git must not perform
+# automatic line-ending conversion on checkout or commit.
+* -text

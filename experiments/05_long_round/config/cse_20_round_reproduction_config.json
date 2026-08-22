@@ -1,0 +1,40 @@
+{
+  "schema": "FLBCIDS20RoundReproductionConfigV2",
+  "artifact_status": "publication_hardened_reconstructed_reproduction_configuration",
+  "historical_output_status": "The original retained output bundle for the historical supplementary 20-round run was not located in the project audit.",
+  "historical_source_snapshot_status": "A dedicated historical source snapshot with NUM_ROUNDS=20 was not located.",
+  "historical_execution_claim": "The publication runner is a reconstruction from retained V10 lineage; it is not asserted to be the exact historical executable.",
+  "dataset": "CSE-CIC-IDS2018",
+  "num_rsus": 2,
+  "vehicles_per_rsu": 2,
+  "total_vehicles": 4,
+  "global_rounds": 20,
+  "local_boosting_rounds_per_participant_per_global_round": 10,
+  "dp_accounting": {
+    "epsilon_tree": 0.25,
+    "subsample": 0.2,
+    "num_parallel_tree": 1,
+    "delta": 0.0,
+    "epsilon_round_exact": 0.5525028433699525,
+    "epsilon_total_20_round_exact": 11.05005686739905,
+    "epsilon_total_20_round_reported_4dp": 11.0501,
+    "scope": "learner-stage per-record-instance composition conditional on the fixed preprocessing artifact/post-preprocessing training multiset; not an end-to-end raw-record differential-privacy guarantee"
+  },
+  "lineage": {
+    "retained_v10_runner_sha256": "3da86add5373524e6295a3eba1622482d9ae7b2a47253cca65734e9e6bb41159",
+    "retained_reconstructed_runner_sha256_before_publication_hardening": "e789404e0a08634b440c96312047dec22c64c2d684dee27def3e6e1bf5d2ea68",
+    "publication_hardened_reproduction_runner_sha256": "6fddfc1b6cdfdb9bd060c20f72c57a9d0be7ae1ff33351c6798bec4865ae7641",
+    "reconstructed_helpers_are_byte_identical_to_retained_v10": true
+  },
+  "stale_hash_record_from_previous_config": {
+    "value": "00a15f8e70e40e70b5b882827450f32477175d006c9f11078fa5cddcdcff1d8a",
+    "authoritative": false,
+    "reason": "The value recorded in the previous config does not match the reconstructed runner actually retained in the uploaded archive."
+  },
+  "execution_evidence_status": {
+    "historical_outputs_included": false,
+    "new_reproduction_outputs_included": false,
+    "configuration_and_source_lineage_only": true
+  },
+  "previous_generated_at_utc": "2026-08-22T12:07:28.645482+00:00"
+}

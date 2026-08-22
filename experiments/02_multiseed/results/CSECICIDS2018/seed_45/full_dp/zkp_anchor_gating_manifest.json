@@ -1,0 +1,50 @@
+{
+  "round": 2,
+  "root_poseidon_field": 5959697051250617268508068375439312772219418436805421612841548069702557330610,
+  "anchor_root_poseidon_field": 19319284489361507773513076651385484015416126318371712912391545789792450652006,
+  "anchor_id_field": "18946174390177655557678379508605933089163913261557442146859652884916087915507",
+  "anchor_version": "v1",
+  "M": 64,
+  "SCALE": 100000,
+  "rsu_ids_sorted": [
+    1,
+    2
+  ],
+  "mask_list": [
+    1,
+    1
+  ],
+  "rsu_round_roots": [
+    5777378399246250981885155364131119967369340129303292196304088114260662279905,
+    15969458573594576646587142502177437930486926665654359651559156955596146016359
+  ],
+  "global_round_manifest_path": "results/CSECICIDS2018/seed_45/full_dp/zkp_round_manifests/global/round_2.json",
+  "rsus_with_valid_anchor_payload": [
+    1,
+    2
+  ],
+  "anchor_X_path": "results/CSECICIDS2018/seed_45/full_dp/anchor_X.npy",
+  "anchor_meta_path": "results/CSECICIDS2018/seed_45/full_dp/anchor_meta.json",
+  "global_commit_field": "15752518416615598068356759805000760418308762266884902710464540306061097971501",
+  "rsu_ok_map": {
+    "1": true,
+    "2": true
+  },
+  "used_rsu_ids": [
+    1,
+    2
+  ],
+  "global_anchor_ok": true,
+  "global_artifact_path": "results/CSECICIDS2018/seed_45/full_dp/zkp_anchor_summaries/anchorsum/global/round_2.json",
+  "Q_global_b64": "eJw7LMoABlcvQujDUP5aLQidKQKheXIhdLothE7ogNCrGJjAdJIahH9IEUJLu0Jox1QIHWAEoQWFIPR/qHqp0xC60g9C73aH0IGrWcH0dX4I394DQmexQOhF1hBaTZoBBbhKsYFp8e8Q/U3CEHEnIVT1jKoQ+iwHhOa3gNDHxSG0nxOEFoqF0HUGEFoOzR3PoP4q94S6Kw1Cq0OsZ6gSRFWv3wOh/0LDORxq3xZeCJ0BlWfng9B3uSD0YkFUf8pCw2utEoTW9ILQh6Dx5OwGFYfGx3NoeAuEoroHAG/9KLY=",
+  "num_rsus_configured": 2,
+  "num_rsus_masked_in": 2,
+  "pins_hash_field": 17023974230354348161126265028711334417246499459946346409103022093274593946456,
+  "policy_id_field": 13587658417743578414377738976806013629381460068231136330562461205536371710092,
+  "public_input_order_id_field": 4474133564344520844785649771291405666250632887756829414636978779304877424522,
+  "ssi_preimage_fingerprint_v1": {
+    "ssi_preimage_def_sha256_v1": "0fab1b9dc71def9a0ad6c677f276669add9b8bb157d0acde12bb7829c764aba9",
+    "ssi_preimage_def_field_bn254_v1": "7087014177658550609046789491821027048655323326405230766997640855547250256809"
+  },
+  "global_public_inputs_sidecar_path": "results/CSECICIDS2018/seed_45/full_dp/zkp_artifacts/anchorsum/global/round_2_public.json"
+}

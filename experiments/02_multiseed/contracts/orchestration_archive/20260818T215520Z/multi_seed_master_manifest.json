@@ -1,0 +1,983 @@
+{
+  "schema": "Reviewer1Comment1MultiSeedMasterManifestV1",
+  "created_utc": "2026-08-18T18:59:58Z",
+  "purpose": "Ten-seed independently repartitioned statistical characterization of principal learning configurations.",
+  "datasets": [
+    "CSECICIDS2018",
+    "CICIoV2024"
+  ],
+  "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51
+  ],
+  "stages": [
+    "preprocess",
+    "centralized",
+    "nondp",
+    "dp"
+  ],
+  "fixed_fl_contract": {
+    "num_rsus": 2,
+    "vehicles_per_rsu": 2,
+    "num_rounds": 2,
+    "num_local_rounds": 10
+  },
+  "results_dir": "experiments/02_multiseed/results",
+  "logs_dir": "experiments/02_multiseed/logs",
+  "statistics_dir": "experiments/02_multiseed/statistics",
+  "python_executable": "python",
+  "pythonhashseed": "0",
+  "preflight_manifest": "preflight_manifest.json",
+  "source_hashes": {
+    "cse_preprocess": {
+      "path": "DatasetPreprocessing-V2_Revision2_MultiSeed.py",
+      "sha256": "dc4a20b00a06d28a97f0019f220f382e5c12a98d5b2c8c6cff76d939e7380bc2",
+      "size_bytes": 28745
+    },
+    "cic_preprocess": {
+      "path": "preprocess_ciciov2024_decimal_Revision2_MultiSeed.py",
+      "sha256": "60b07fc23a91532899bcddd7e1b2ef9a5f50a55c2ca41a48633734afd27fbcb3",
+      "size_bytes": 25305
+    },
+    "centralized": {
+      "path": "centralized_xgboost_baseline_Revision2_MultiSeed.py",
+      "sha256": "631b5f3f649b2190fa8cdddc186a9238c599c2e756ce96aad60ea309c5f3d997",
+      "size_bytes": 13346
+    },
+    "nondp": {
+      "path": "FL-RSUs-Server-Non-DPBaseline_V10_Revision2_MultiSeed_FINAL_MATCHED.py",
+      "sha256": "9eb66d054ad7283cfb91671c935cc04966c55842cf26b19fe27e9adc303dc2f1",
+      "size_bytes": 90102
+    },
+    "dp": {
+      "path": "FL_DP_SSI_DualMerklePoseidon_RSU+Global_ZKVerify_V10_Revision2_MultiSeed.py",
+      "sha256": "dfde2d6e14da61d4b7073babdef546790fac20e875f9778d264f428bd3451fae",
+      "size_bytes": 249113
+    }
+  },
+  "plan": [
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 42,
+      "stage": "preprocess"
+    },
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 42,
+      "stage": "centralized"
+    },
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 42,
+      "stage": "nondp"
+    },
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 42,
+      "stage": "dp"
+    },
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 43,
+      "stage": "preprocess"
+    },
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 43,
+      "stage": "centralized"
+    },
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 43,
+      "stage": "nondp"
+    },
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 43,
+      "stage": "dp"
+    },
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 44,
+      "stage": "preprocess"
+    },
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 44,
+      "stage": "centralized"
+    },
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 44,
+      "stage": "nondp"
+    },
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 44,
+      "stage": "dp"
+    },
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 45,
+      "stage": "preprocess"
+    },
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 45,
+      "stage": "centralized"
+    },
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 45,
+      "stage": "nondp"
+    },
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 45,
+      "stage": "dp"
+    },
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 46,
+      "stage": "preprocess"
+    },
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 46,
+      "stage": "centralized"
+    },
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 46,
+      "stage": "nondp"
+    },
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 46,
+      "stage": "dp"
+    },
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 47,
+      "stage": "preprocess"
+    },
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 47,
+      "stage": "centralized"
+    },
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 47,
+      "stage": "nondp"
+    },
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 47,
+      "stage": "dp"
+    },
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 48,
+      "stage": "preprocess"
+    },
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 48,
+      "stage": "centralized"
+    },
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 48,
+      "stage": "nondp"
+    },
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 48,
+      "stage": "dp"
+    },
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 49,
+      "stage": "preprocess"
+    },
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 49,
+      "stage": "centralized"
+    },
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 49,
+      "stage": "nondp"
+    },
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 49,
+      "stage": "dp"
+    },
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 50,
+      "stage": "preprocess"
+    },
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 50,
+      "stage": "centralized"
+    },
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 50,
+      "stage": "nondp"
+    },
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 50,
+      "stage": "dp"
+    },
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 51,
+      "stage": "preprocess"
+    },
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 51,
+      "stage": "centralized"
+    },
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 51,
+      "stage": "nondp"
+    },
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 51,
+      "stage": "dp"
+    },
+    {
+      "dataset": "CICIoV2024",
+      "seed": 42,
+      "stage": "preprocess"
+    },
+    {
+      "dataset": "CICIoV2024",
+      "seed": 42,
+      "stage": "centralized"
+    },
+    {
+      "dataset": "CICIoV2024",
+      "seed": 42,
+      "stage": "nondp"
+    },
+    {
+      "dataset": "CICIoV2024",
+      "seed": 42,
+      "stage": "dp"
+    },
+    {
+      "dataset": "CICIoV2024",
+      "seed": 43,
+      "stage": "preprocess"
+    },
+    {
+      "dataset": "CICIoV2024",
+      "seed": 43,
+      "stage": "centralized"
+    },
+    {
+      "dataset": "CICIoV2024",
+      "seed": 43,
+      "stage": "nondp"
+    },
+    {
+      "dataset": "CICIoV2024",
+      "seed": 43,
+      "stage": "dp"
+    },
+    {
+      "dataset": "CICIoV2024",
+      "seed": 44,
+      "stage": "preprocess"
+    },
+    {
+      "dataset": "CICIoV2024",
+      "seed": 44,
+      "stage": "centralized"
+    },
+    {
+      "dataset": "CICIoV2024",
+      "seed": 44,
+      "stage": "nondp"
+    },
+    {
+      "dataset": "CICIoV2024",
+      "seed": 44,
+      "stage": "dp"
+    },
+    {
+      "dataset": "CICIoV2024",
+      "seed": 45,
+      "stage": "preprocess"
+    },
+    {
+      "dataset": "CICIoV2024",
+      "seed": 45,
+      "stage": "centralized"
+    },
+    {
+      "dataset": "CICIoV2024",
+      "seed": 45,
+      "stage": "nondp"
+    },
+    {
+      "dataset": "CICIoV2024",
+      "seed": 45,
+      "stage": "dp"
+    },
+    {
+      "dataset": "CICIoV2024",
+      "seed": 46,
+      "stage": "preprocess"
+    },
+    {
+      "dataset": "CICIoV2024",
+      "seed": 46,
+      "stage": "centralized"
+    },
+    {
+      "dataset": "CICIoV2024",
+      "seed": 46,
+      "stage": "nondp"
+    },
+    {
+      "dataset": "CICIoV2024",
+      "seed": 46,
+      "stage": "dp"
+    },
+    {
+      "dataset": "CICIoV2024",
+      "seed": 47,
+      "stage": "preprocess"
+    },
+    {
+      "dataset": "CICIoV2024",
+      "seed": 47,
+      "stage": "centralized"
+    },
+    {
+      "dataset": "CICIoV2024",
+      "seed": 47,
+      "stage": "nondp"
+    },
+    {
+      "dataset": "CICIoV2024",
+      "seed": 47,
+      "stage": "dp"
+    },
+    {
+      "dataset": "CICIoV2024",
+      "seed": 48,
+      "stage": "preprocess"
+    },
+    {
+      "dataset": "CICIoV2024",
+      "seed": 48,
+      "stage": "centralized"
+    },
+    {
+      "dataset": "CICIoV2024",
+      "seed": 48,
+      "stage": "nondp"
+    },
+    {
+      "dataset": "CICIoV2024",
+      "seed": 48,
+      "stage": "dp"
+    },
+    {
+      "dataset": "CICIoV2024",
+      "seed": 49,
+      "stage": "preprocess"
+    },
+    {
+      "dataset": "CICIoV2024",
+      "seed": 49,
+      "stage": "centralized"
+    },
+    {
+      "dataset": "CICIoV2024",
+      "seed": 49,
+      "stage": "nondp"
+    },
+    {
+      "dataset": "CICIoV2024",
+      "seed": 49,
+      "stage": "dp"
+    },
+    {
+      "dataset": "CICIoV2024",
+      "seed": 50,
+      "stage": "preprocess"
+    },
+    {
+      "dataset": "CICIoV2024",
+      "seed": 50,
+      "stage": "centralized"
+    },
+    {
+      "dataset": "CICIoV2024",
+      "seed": 50,
+      "stage": "nondp"
+    },
+    {
+      "dataset": "CICIoV2024",
+      "seed": 50,
+      "stage": "dp"
+    },
+    {
+      "dataset": "CICIoV2024",
+      "seed": 51,
+      "stage": "preprocess"
+    },
+    {
+      "dataset": "CICIoV2024",
+      "seed": 51,
+      "stage": "centralized"
+    },
+    {
+      "dataset": "CICIoV2024",
+      "seed": 51,
+      "stage": "nondp"
+    },
+    {
+      "dataset": "CICIoV2024",
+      "seed": 51,
+      "stage": "dp"
+    }
+  ],
+  "resume": false,
+  "clean_partial": false,
+  "dry_run": false,
+  "updated_utc": "2026-08-18T20:49:00Z",
+  "state": "running",
+  "error": "",
+  "stage_results": [
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 42,
+      "stage": "preprocess",
+      "status": "completed_validated",
+      "returncode": 0,
+      "started_utc": "2026-08-18T18:59:58Z",
+      "ended_utc": "2026-08-18T19:27:19Z",
+      "elapsed_sec": 1634.1660897000038,
+      "log_path": "experiments/02_multiseed/logs/CSECICIDS2018/seed_42/preprocess.log",
+      "validation": {
+        "ok": true,
+        "output_dir": "experiments/02_multiseed/results/CSECICIDS2018/seed_42/preprocessing",
+        "manifest": "experiments/02_multiseed/results/CSECICIDS2018/seed_42/preprocessing/preprocessing_manifest.json",
+        "seed": 42,
+        "split_hashes": {
+          "train_csv_sha256": "2f7ffabc5edcc05654837074f2e3564873e40a6aa3b01c50ae2084480e37e36d",
+          "val_csv_sha256": "037e7b2f1cb067840723cc343d285734fdb355f4c36e8492966e83eb0438066f",
+          "test_csv_sha256": "f42bb856096d6dbea7b728a181582b380978fafe94452c2ca8c63f22d626574a"
+        },
+        "files": {
+          "train": "experiments/02_multiseed/results/CSECICIDS2018/seed_42/preprocessing/CSECICIDS2018_train_preprocessed.csv",
+          "val": "experiments/02_multiseed/results/CSECICIDS2018/seed_42/preprocessing/CSECICIDS2018_val_preprocessed.csv",
+          "test": "experiments/02_multiseed/results/CSECICIDS2018/seed_42/preprocessing/CSECICIDS2018_test_preprocessed.csv"
+        }
+      },
+      "command": [
+        "python",
+        "DatasetPreprocessing-V2_Revision2_MultiSeed.py",
+        "--seed",
+        "42",
+        "--revision-root",
+        "experiments/02_multiseed/results",
+        "--input-csv",
+        "data/raw/CSE-CIC-IDS2018/CSECICIDS2018Dataset.csv"
+      ]
+    },
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 42,
+      "stage": "centralized",
+      "status": "completed_validated",
+      "returncode": 0,
+      "started_utc": "2026-08-18T19:27:37Z",
+      "ended_utc": "2026-08-18T19:28:41Z",
+      "elapsed_sec": 64.25012640000205,
+      "log_path": "experiments/02_multiseed/logs/CSECICIDS2018/seed_42/centralized.log",
+      "validation": {
+        "ok": true,
+        "output_dir": "experiments/02_multiseed/results/CSECICIDS2018/seed_42/centralized",
+        "summary": "experiments/02_multiseed/results/CSECICIDS2018/seed_42/centralized/centralized_xgboost_CSECICIDS2018_summary.json",
+        "model": "experiments/02_multiseed/results/CSECICIDS2018/seed_42/centralized/centralized_xgboost_CSECICIDS2018.json",
+        "test_metrics": {
+          "accuracy": 0.9996466674518502,
+          "precision": 0.9993390857352671,
+          "recall": 0.9948461144820527,
+          "f1": 0.9970875386954371,
+          "auc": 0.9999445215805975
+        }
+      },
+      "command": [
+        "python",
+        "centralized_xgboost_baseline_Revision2_MultiSeed.py",
+        "--dataset",
+        "CSECICIDS2018",
+        "--seed",
+        "42",
+        "--revision-root",
+        "experiments/02_multiseed/results"
+      ]
+    },
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 42,
+      "stage": "nondp",
+      "status": "completed_validated",
+      "returncode": 0,
+      "started_utc": "2026-08-18T19:28:54Z",
+      "ended_utc": "2026-08-18T19:30:59Z",
+      "elapsed_sec": 124.79539039999509,
+      "log_path": "experiments/02_multiseed/logs/CSECICIDS2018/seed_42/nondp.log",
+      "validation": {
+        "ok": true,
+        "output_dir": "experiments/02_multiseed/results/CSECICIDS2018/seed_42/nondp_local_10",
+        "run_config": "experiments/02_multiseed/results/CSECICIDS2018/seed_42/nondp_local_10/iov_run_config.json",
+        "summary": "experiments/02_multiseed/results/CSECICIDS2018/seed_42/nondp_local_10/iov_global_server_ensemble_summary.json",
+        "test_metrics": {
+          "accuracy": 0.9994733345037011,
+          "precision": 0.9968490089033818,
+          "recall": 0.9944805906864537,
+          "f1": 0.9956633913377614,
+          "auc": 0.999814296220416
+        }
+      },
+      "command": [
+        "python",
+        "FL-RSUs-Server-Non-DPBaseline_V10_Revision2_MultiSeed_FINAL_MATCHED.py",
+        "--dataset",
+        "CSECICIDS2018",
+        "--seed",
+        "42",
+        "--revision-root",
+        "experiments/02_multiseed/results",
+        "--num-rsus",
+        "2",
+        "--vehicles-per-rsu",
+        "2",
+        "--num-rounds",
+        "2",
+        "--num-local-rounds",
+        "10"
+      ]
+    },
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 42,
+      "stage": "dp",
+      "status": "completed_validated",
+      "returncode": 0,
+      "started_utc": "2026-08-18T19:31:12Z",
+      "ended_utc": "2026-08-18T19:36:09Z",
+      "elapsed_sec": 296.8679336999994,
+      "log_path": "experiments/02_multiseed/logs/CSECICIDS2018/seed_42/dp.log",
+      "validation": {
+        "ok": true,
+        "output_dir": "experiments/02_multiseed/results/CSECICIDS2018/seed_42/full_dp",
+        "run_config": "experiments/02_multiseed/results/CSECICIDS2018/seed_42/full_dp/iov_run_config.json",
+        "summary": "experiments/02_multiseed/results/CSECICIDS2018/seed_42/full_dp/global_ensemble_summary.json",
+        "gating_manifest": "experiments/02_multiseed/results/CSECICIDS2018/seed_42/full_dp/zkp_anchor_gating_manifest.json",
+        "test_metrics": {
+          "accuracy": 0.9980000044444346,
+          "precision": 0.9868614750478434,
+          "recall": 0.9801520578989692,
+          "f1": 0.9834953236750412,
+          "auc": 0.9993411224787346
+        },
+        "global_anchor_ok": true,
+        "used_rsu_ids": [
+          1,
+          2
+        ]
+      },
+      "command": [
+        "python",
+        "FL_DP_SSI_DualMerklePoseidon_RSU+Global_ZKVerify_V10_Revision2_MultiSeed.py",
+        "--dataset",
+        "CSECICIDS2018",
+        "--seed",
+        "42",
+        "--revision-root",
+        "experiments/02_multiseed/results",
+        "--num-rsus",
+        "2",
+        "--vehicles-per-rsu",
+        "2",
+        "--num-rounds",
+        "2",
+        "--num-local-rounds",
+        "10"
+      ]
+    },
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 43,
+      "stage": "preprocess",
+      "status": "completed_validated",
+      "returncode": 0,
+      "started_utc": "2026-08-18T19:36:09Z",
+      "ended_utc": "2026-08-18T20:03:49Z",
+      "elapsed_sec": 1653.6964608999988,
+      "log_path": "experiments/02_multiseed/logs/CSECICIDS2018/seed_43/preprocess.log",
+      "validation": {
+        "ok": true,
+        "output_dir": "experiments/02_multiseed/results/CSECICIDS2018/seed_43/preprocessing",
+        "manifest": "experiments/02_multiseed/results/CSECICIDS2018/seed_43/preprocessing/preprocessing_manifest.json",
+        "seed": 43,
+        "split_hashes": {
+          "train_csv_sha256": "f038eb338a2f73ffc258eca7e9e6f61abc456cba78e6a82b79bfa6f82647a266",
+          "val_csv_sha256": "2c6b4c093c28157816c9aceabfd8a1da8341b0db436687a9382adfb3e669c7ed",
+          "test_csv_sha256": "143da351379122dcd8c8fa25239a70a482728de765e240b8aface70956b3d756"
+        },
+        "files": {
+          "train": "experiments/02_multiseed/results/CSECICIDS2018/seed_43/preprocessing/CSECICIDS2018_train_preprocessed.csv",
+          "val": "experiments/02_multiseed/results/CSECICIDS2018/seed_43/preprocessing/CSECICIDS2018_val_preprocessed.csv",
+          "test": "experiments/02_multiseed/results/CSECICIDS2018/seed_43/preprocessing/CSECICIDS2018_test_preprocessed.csv"
+        }
+      },
+      "command": [
+        "python",
+        "DatasetPreprocessing-V2_Revision2_MultiSeed.py",
+        "--seed",
+        "43",
+        "--revision-root",
+        "experiments/02_multiseed/results",
+        "--input-csv",
+        "data/raw/CSE-CIC-IDS2018/CSECICIDS2018Dataset.csv"
+      ]
+    },
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 43,
+      "stage": "centralized",
+      "status": "completed_validated",
+      "returncode": 0,
+      "started_utc": "2026-08-18T20:04:08Z",
+      "ended_utc": "2026-08-18T20:05:12Z",
+      "elapsed_sec": 63.79239759999473,
+      "log_path": "experiments/02_multiseed/logs/CSECICIDS2018/seed_43/centralized.log",
+      "validation": {
+        "ok": true,
+        "output_dir": "experiments/02_multiseed/results/CSECICIDS2018/seed_43/centralized",
+        "summary": "experiments/02_multiseed/results/CSECICIDS2018/seed_43/centralized/centralized_xgboost_CSECICIDS2018_summary.json",
+        "model": "experiments/02_multiseed/results/CSECICIDS2018/seed_43/centralized/centralized_xgboost_CSECICIDS2018.json",
+        "test_metrics": {
+          "accuracy": 0.999591112019751,
+          "precision": 0.9990446796002351,
+          "recall": 0.9942226122568378,
+          "f1": 0.9966278132101752,
+          "auc": 0.9999419273644257
+        }
+      },
+      "command": [
+        "python",
+        "centralized_xgboost_baseline_Revision2_MultiSeed.py",
+        "--dataset",
+        "CSECICIDS2018",
+        "--seed",
+        "43",
+        "--revision-root",
+        "experiments/02_multiseed/results"
+      ]
+    },
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 43,
+      "stage": "nondp",
+      "status": "completed_validated",
+      "returncode": 0,
+      "started_utc": "2026-08-18T20:05:24Z",
+      "ended_utc": "2026-08-18T20:07:30Z",
+      "elapsed_sec": 125.91613740000321,
+      "log_path": "experiments/02_multiseed/logs/CSECICIDS2018/seed_43/nondp.log",
+      "validation": {
+        "ok": true,
+        "output_dir": "experiments/02_multiseed/results/CSECICIDS2018/seed_43/nondp_local_10",
+        "run_config": "experiments/02_multiseed/results/CSECICIDS2018/seed_43/nondp_local_10/iov_run_config.json",
+        "summary": "experiments/02_multiseed/results/CSECICIDS2018/seed_43/nondp_local_10/iov_global_server_ensemble_summary.json",
+        "test_metrics": {
+          "accuracy": 0.9993444459012313,
+          "precision": 0.9975355868613676,
+          "recall": 0.9916630100921456,
+          "f1": 0.9945906298707252,
+          "auc": 0.9998363751832536
+        }
+      },
+      "command": [
+        "python",
+        "FL-RSUs-Server-Non-DPBaseline_V10_Revision2_MultiSeed_FINAL_MATCHED.py",
+        "--dataset",
+        "CSECICIDS2018",
+        "--seed",
+        "43",
+        "--revision-root",
+        "experiments/02_multiseed/results",
+        "--num-rsus",
+        "2",
+        "--vehicles-per-rsu",
+        "2",
+        "--num-rounds",
+        "2",
+        "--num-local-rounds",
+        "10"
+      ]
+    },
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 43,
+      "stage": "dp",
+      "status": "completed_validated",
+      "returncode": 0,
+      "started_utc": "2026-08-18T20:07:43Z",
+      "ended_utc": "2026-08-18T20:12:28Z",
+      "elapsed_sec": 284.75267420000455,
+      "log_path": "experiments/02_multiseed/logs/CSECICIDS2018/seed_43/dp.log",
+      "validation": {
+        "ok": true,
+        "output_dir": "experiments/02_multiseed/results/CSECICIDS2018/seed_43/full_dp",
+        "run_config": "experiments/02_multiseed/results/CSECICIDS2018/seed_43/full_dp/iov_run_config.json",
+        "summary": "experiments/02_multiseed/results/CSECICIDS2018/seed_43/full_dp/global_ensemble_summary.json",
+        "gating_manifest": "experiments/02_multiseed/results/CSECICIDS2018/seed_43/full_dp/zkp_anchor_gating_manifest.json",
+        "test_metrics": {
+          "accuracy": 0.9982822260394977,
+          "precision": 0.9987613077587177,
+          "recall": 0.9729413485446834,
+          "f1": 0.9856822686102724,
+          "auc": 0.9995381304626705
+        },
+        "global_anchor_ok": true,
+        "used_rsu_ids": [
+          1,
+          2
+        ]
+      },
+      "command": [
+        "python",
+        "FL_DP_SSI_DualMerklePoseidon_RSU+Global_ZKVerify_V10_Revision2_MultiSeed.py",
+        "--dataset",
+        "CSECICIDS2018",
+        "--seed",
+        "43",
+        "--revision-root",
+        "experiments/02_multiseed/results",
+        "--num-rsus",
+        "2",
+        "--vehicles-per-rsu",
+        "2",
+        "--num-rounds",
+        "2",
+        "--num-local-rounds",
+        "10"
+      ]
+    },
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 44,
+      "stage": "preprocess",
+      "status": "completed_validated",
+      "returncode": 0,
+      "started_utc": "2026-08-18T20:12:28Z",
+      "ended_utc": "2026-08-18T20:40:13Z",
+      "elapsed_sec": 1658.4612887999974,
+      "log_path": "experiments/02_multiseed/logs/CSECICIDS2018/seed_44/preprocess.log",
+      "validation": {
+        "ok": true,
+        "output_dir": "experiments/02_multiseed/results/CSECICIDS2018/seed_44/preprocessing",
+        "manifest": "experiments/02_multiseed/results/CSECICIDS2018/seed_44/preprocessing/preprocessing_manifest.json",
+        "seed": 44,
+        "split_hashes": {
+          "train_csv_sha256": "191389a718a0a2c37c23c3bf6d097a7574097390809660640b31006f67e27165",
+          "val_csv_sha256": "69488d1ec26d098023c51053ad7c12c8b7081d0d7df3befbd90c5aac63c28d27",
+          "test_csv_sha256": "7283608ea47c8277167d99b07d5fcc3b94bbe8025d00730e6f6aecac77881ae6"
+        },
+        "files": {
+          "train": "experiments/02_multiseed/results/CSECICIDS2018/seed_44/preprocessing/CSECICIDS2018_train_preprocessed.csv",
+          "val": "experiments/02_multiseed/results/CSECICIDS2018/seed_44/preprocessing/CSECICIDS2018_val_preprocessed.csv",
+          "test": "experiments/02_multiseed/results/CSECICIDS2018/seed_44/preprocessing/CSECICIDS2018_test_preprocessed.csv"
+        }
+      },
+      "command": [
+        "python",
+        "DatasetPreprocessing-V2_Revision2_MultiSeed.py",
+        "--seed",
+        "44",
+        "--revision-root",
+        "experiments/02_multiseed/results",
+        "--input-csv",
+        "data/raw/CSE-CIC-IDS2018/CSECICIDS2018Dataset.csv"
+      ]
+    },
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 44,
+      "stage": "centralized",
+      "status": "completed_validated",
+      "returncode": 0,
+      "started_utc": "2026-08-18T20:40:32Z",
+      "ended_utc": "2026-08-18T20:41:37Z",
+      "elapsed_sec": 65.45814950000204,
+      "log_path": "experiments/02_multiseed/logs/CSECICIDS2018/seed_44/centralized.log",
+      "validation": {
+        "ok": true,
+        "output_dir": "experiments/02_multiseed/results/CSECICIDS2018/seed_44/centralized",
+        "summary": "experiments/02_multiseed/results/CSECICIDS2018/seed_44/centralized/centralized_xgboost_CSECICIDS2018_summary.json",
+        "model": "experiments/02_multiseed/results/CSECICIDS2018/seed_44/centralized/centralized_xgboost_CSECICIDS2018.json",
+        "test_metrics": {
+          "accuracy": 0.9996333341481464,
+          "precision": 0.9991561800638368,
+          "recall": 0.994812974868498,
+          "f1": 0.9969798473450112,
+          "auc": 0.9999335019449804
+        }
+      },
+      "command": [
+        "python",
+        "centralized_xgboost_baseline_Revision2_MultiSeed.py",
+        "--dataset",
+        "CSECICIDS2018",
+        "--seed",
+        "44",
+        "--revision-root",
+        "experiments/02_multiseed/results"
+      ]
+    },
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 44,
+      "stage": "nondp",
+      "status": "completed_validated",
+      "returncode": 0,
+      "started_utc": "2026-08-18T20:41:50Z",
+      "ended_utc": "2026-08-18T20:44:00Z",
+      "elapsed_sec": 130.1132402000003,
+      "log_path": "experiments/02_multiseed/logs/CSECICIDS2018/seed_44/nondp.log",
+      "validation": {
+        "ok": true,
+        "output_dir": "experiments/02_multiseed/results/CSECICIDS2018/seed_44/nondp_local_10",
+        "run_config": "experiments/02_multiseed/results/CSECICIDS2018/seed_44/nondp_local_10/iov_run_config.json",
+        "summary": "experiments/02_multiseed/results/CSECICIDS2018/seed_44/nondp_local_10/iov_global_server_ensemble_summary.json",
+        "test_metrics": {
+          "accuracy": 0.999484445590121,
+          "precision": 0.997872340425532,
+          "recall": 0.9936440677966102,
+          "f1": 0.9957537154989384,
+          "auc": 0.9997662816378045
+        }
+      },
+      "command": [
+        "python",
+        "FL-RSUs-Server-Non-DPBaseline_V10_Revision2_MultiSeed_FINAL_MATCHED.py",
+        "--dataset",
+        "CSECICIDS2018",
+        "--seed",
+        "44",
+        "--revision-root",
+        "experiments/02_multiseed/results",
+        "--num-rsus",
+        "2",
+        "--vehicles-per-rsu",
+        "2",
+        "--num-rounds",
+        "2",
+        "--num-local-rounds",
+        "10"
+      ]
+    },
+    {
+      "dataset": "CSECICIDS2018",
+      "seed": 44,
+      "stage": "dp",
+      "status": "completed_validated",
+      "returncode": 0,
+      "started_utc": "2026-08-18T20:44:14Z",
+      "ended_utc": "2026-08-18T20:49:00Z",
+      "elapsed_sec": 286.1716721999983,
+      "log_path": "experiments/02_multiseed/logs/CSECICIDS2018/seed_44/dp.log",
+      "validation": {
+        "ok": true,
+        "output_dir": "experiments/02_multiseed/results/CSECICIDS2018/seed_44/full_dp",
+        "run_config": "experiments/02_multiseed/results/CSECICIDS2018/seed_44/full_dp/iov_run_config.json",
+        "summary": "experiments/02_multiseed/results/CSECICIDS2018/seed_44/full_dp/global_ensemble_summary.json",
+        "gating_manifest": "experiments/02_multiseed/results/CSECICIDS2018/seed_44/full_dp/zkp_anchor_gating_manifest.json",
+        "test_metrics": {
+          "accuracy": 0.9983200037333251,
+          "precision": 0.9903477748305335,
+          "recall": 0.9819549970777324,
+          "f1": 0.9861335289801908,
+          "auc": 0.9994887902382257
+        },
+        "global_anchor_ok": true,
+        "used_rsu_ids": [
+          1,
+          2
+        ]
+      },
+      "command": [
+        "python",
+        "FL_DP_SSI_DualMerklePoseidon_RSU+Global_ZKVerify_V10_Revision2_MultiSeed.py",
+        "--dataset",
+        "CSECICIDS2018",
+        "--seed",
+        "44",
+        "--revision-root",
+        "experiments/02_multiseed/results",
+        "--num-rsus",
+        "2",
+        "--vehicles-per-rsu",
+        "2",
+        "--num-rounds",
+        "2",
+        "--num-local-rounds",
+        "10"
+      ]
+    }
+  ],
+  "publication_snapshot_status": {
+    "historical_snapshot": true,
+    "snapshot_kind": "mid_run_master_manifest",
+    "historical_state_preserved": "running",
+    "planned_stage_count": 80,
+    "stage_results_recorded_in_snapshot": 12,
+    "last_recorded_stage": {
+      "dataset": "CSECICIDS2018",
+      "seed": 44,
+      "stage": "dp",
+      "ended_utc": "2026-08-18T20:49:00Z"
+    },
+    "not_a_final_completion_manifest": true,
+    "interpretation": "This retained file captures the master runner state at its historical updated_utc timestamp. Later per-seed status files provide subsequent execution/resume provenance and must not be backfilled into this snapshot."
+  },
+  "publication_path_policy": "Machine-local paths were replaced with repository-relative operational locators or identity-only basenames. Historical source SHA-256 values and sizes are preserved unchanged. A historical source basename plus its hash identifies the exact run input; it is not a claim that a later portability-hardened runnable copy has the same hash.",
+  "publication_sanitization": {
+    "machine_local_paths_removed": true,
+    "historical_state_unchanged": true,
+    "historical_stage_results_unchanged": true,
+    "historical_source_hashes_unchanged": true,
+    "plan_unchanged": true,
+    "fixed_fl_contract_unchanged": true
+  }
+}

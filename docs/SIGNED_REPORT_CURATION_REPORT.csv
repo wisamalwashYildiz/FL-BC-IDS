@@ -1,0 +1,6 @@
+﻿source,status,output
+<historical-development-root>\rsu_outputs_dp\onchain_export\onchain_verification_report.json,copied,verification/evidence_bundle/compact_security_evidence/signed_reports/onchain_export/onchain_verification_report.json
+<historical-development-root>\rsu_outputs_dp\rsu_1\round_manifests\rsu\rsu_1\round_1.json,copied,verification/evidence_bundle/compact_security_evidence/signed_reports/rsu_1/round_manifests/rsu/rsu_1/round_1.json
+<historical-development-root>\rsu_outputs_dp\rsu_1\round_manifests\rsu\rsu_1\round_2.json,copied,verification/evidence_bundle/compact_security_evidence/signed_reports/rsu_1/round_manifests/rsu/rsu_1/round_2.json
+<historical-development-root>\rsu_outputs_dp\rsu_2\round_manifests\rsu\rsu_2\round_1.json,copied,verification/evidence_bundle/compact_security_evidence/signed_reports/rsu_2/round_manifests/rsu/rsu_2/round_1.json
+<historical-development-root>\rsu_outputs_dp\rsu_2\round_manifests\rsu\rsu_2\round_2.json,copied,verification/evidence_bundle/compact_security_evidence/signed_reports/rsu_2/round_manifests/rsu/rsu_2/round_2.json

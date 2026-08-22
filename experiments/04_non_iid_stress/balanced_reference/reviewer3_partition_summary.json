@@ -1,0 +1,25 @@
+{
+  "experiment_version": "reviewer3-heterogeneity-participation-v1",
+  "scenario": "balanced_reference",
+  "seed": 42,
+  "num_clients": 20,
+  "feature_diagnostic": "60",
+  "global_feature_mean": 0.04709517989036252,
+  "global_feature_std": 2.9232016665081666,
+  "client_size_min": 197232,
+  "client_size_median": 197234.0,
+  "client_size_max": 197234,
+  "client_size_max_min_ratio": 1.000010140342338,
+  "client_attack_fraction_min": 0.5,
+  "client_attack_fraction_median": 0.5,
+  "client_attack_fraction_max": 0.5,
+  "client_feature_mean_shift_min_sd": -0.00498129358178815,
+  "client_feature_mean_shift_max_sd": 0.005374966819623579,
+  "heterogeneity_meta": {
+    "partition_mode": "existing_balanced_stratified_reference",
+    "seed": 42,
+    "feature_skew_feature_index": 41,
+    "feature_skew_feature_name": "60"
+  },
+  "per_client_csv": "reviewer3_client_partition_stats.csv"
+}

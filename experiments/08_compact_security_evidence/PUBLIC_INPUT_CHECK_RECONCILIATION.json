@@ -1,0 +1,26 @@
+{
+  "schema": "FLBCIDSPublicInputCheckReconciliationV1",
+  "historical_in_run_ablation_summary": {
+    "file": "verification_evidence/ablation_reports/ablation_summary.json",
+    "public_input_agreement_result": "fail",
+    "rsu_failure_reason": "[Errno 2] No such file or directory: ''",
+    "global_unresolved_public_input_names": [
+      "anchor_id",
+      "round_idx",
+      "global_id",
+      "K_used",
+      "r_chal",
+      "agg_commit"
+    ],
+    "interpretation": "The in-run helper did not complete a valid RSU artifact lookup and left six global fields unresolved. This historical failure is preserved."
+  },
+  "separate_retained_artifact_verifier": {
+    "file": "verification_evidence/ablation_reports/public_inputs_artifact_verification_report.json",
+    "schema": "PublicInputArtifactVerificationReportV1",
+    "overall_result": "pass",
+    "rsu_consistency_checks": "8/8 pass",
+    "global_consistency_checks": "7/7 pass",
+    "interpretation": "A separate retained verifier reconstructs and compares the required public inputs against proof, summary, manifest, and sidecar artifacts successfully."
+  },
+  "publication_rule": "Do not claim that all in-run ablation checks passed. State that the initial public-input helper failed, while the separate retained artifact verifier records consistent RSU and global public inputs."
+}

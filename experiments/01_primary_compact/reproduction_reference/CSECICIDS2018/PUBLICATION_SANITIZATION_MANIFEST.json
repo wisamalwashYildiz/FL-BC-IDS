@@ -1,0 +1,45 @@
+{
+  "schema": "FLBCIDS_PublicationSanitizationV1",
+  "classification": "authoritative_round2_multiseed_seed42_full_dp_artifacts",
+  "dataset": "CSE-CIC-IDS2018",
+  "experiment_seed": 42,
+  "scientific_contract": {
+    "num_rsus": 2,
+    "vehicles_per_rsu": 2,
+    "num_rounds": 2,
+    "num_local_rounds": 10,
+    "tree_method": "approxDP",
+    "dp_epsilon_per_tree": 0.25,
+    "dp_epsilon_round": 0.5525028433699525,
+    "dp_epsilon_total_run_config": 1.105005686739905,
+    "dp_delta_round": 0.0,
+    "subsample": 0.2,
+    "num_parallel_tree": 1
+  },
+  "dp_accounting_note": {
+    "run_config_total_equals_two_rounds_exactly": true,
+    "run_config_total": 1.105005686739905,
+    "rsu_final_cumulative_field": 1.1050058433699523,
+    "absolute_difference": 1.5663004737653807e-07,
+    "handling": "Both historical values are preserved. The difference is below manuscript reporting precision and both round to 1.1050; no historical artifact is rewritten."
+  },
+  "zkp_cross_checks": {
+    "round_2_rsu_roots_match_global_manifest": true,
+    "global_commit_matches_global_summary": true,
+    "global_Q_b64_matches_global_summary": true,
+    "global_anchor_ok": true,
+    "both_rsus_ok": true
+  },
+  "ensemble_cross_checks": {
+    "confusion_matrix_reproduces_accuracy_precision_recall_f1": true,
+    "best_single_rsu_matches_centralized_eval_summary": true
+  },
+  "original_artifact_sha256": {
+    "zkp_anchor_gating_manifest(2).json": "02b5612ca601f5c18dacd490de3603497df107c186d913b9c16c622fea966d5f",
+    "global_ensemble_summary(2).json": "f78a69592a783aba73afb74741a38faa5fb970dde3fc26326092242714fd7746",
+    "iov_centralized_eval_summary(3).json": "e40b5aeb8f2bffa8ea03ea0f267631b67da715dec5c1d10b09c29f9035caf4e3",
+    "iov_rsu_1_summary(4).json": "7039b59acdc369e4f20932c48bd9a81ed0c5023e8efea94cea3a0f62c2edff86",
+    "iov_rsu_2_summary(4).json": "ae14fb167eb5ef8dfbc19d98218c5aae3f6d625c74b71b7aa38f331a38bf4d7b",
+    "iov_run_config(4).json": "5d84169cda074c8316effcd9f1c61a71d6f2718d14bda087bb69a064701514fd"
+  }
+}

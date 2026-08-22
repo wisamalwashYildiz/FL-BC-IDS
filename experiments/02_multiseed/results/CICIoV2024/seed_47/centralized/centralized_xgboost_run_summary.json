@@ -1,0 +1,105 @@
+{
+  "CICIoV2024": {
+    "dataset": "CICIoV2024",
+    "label_col": "Label",
+    "experiment_seed": 47,
+    "revision_context": {
+      "round": 2,
+      "reviewer": 1,
+      "comment": 1,
+      "purpose": "multi-seed and repartitioned statistical evaluation",
+      "revision_root": "results",
+      "preprocessing_dir": "results/CICIoV2024/seed_47/preprocessing",
+      "output_dir": "results/CICIoV2024/seed_47/centralized"
+    },
+    "train_rows": 1713232,
+    "val_rows": 211233,
+    "test_rows": 211233,
+    "num_features": 9,
+    "feature_columns": [
+      "ID",
+      "DATA_0",
+      "DATA_1",
+      "DATA_2",
+      "DATA_3",
+      "DATA_4",
+      "DATA_5",
+      "DATA_6",
+      "DATA_7"
+    ],
+    "xgboost_params": {
+      "objective": "binary:logistic",
+      "eval_metric": "logloss",
+      "tree_method": "hist",
+      "max_depth": 6,
+      "learning_rate": 0.2,
+      "min_child_weight": 500,
+      "subsample": 0.2,
+      "colsample_bytree": 0.9,
+      "reg_lambda": 1.0,
+      "reg_alpha": 1.0,
+      "max_delta_step": 1.0,
+      "seed": 47,
+      "verbosity": 1,
+      "random_state": 47,
+      "scale_pos_weight": 1.0,
+      "base_score": 0.5
+    },
+    "num_boost_round": 100,
+    "early_stopping_rounds": 10,
+    "best_iteration": 99,
+    "best_score": 0.00339235063099221,
+    "train_time_sec": 1.3691975000110688,
+    "val_inference_time_sec": 0.011429399994085543,
+    "test_inference_time_sec": 0.01064379999297671,
+    "model_path": "results/CICIoV2024/seed_47/centralized/centralized_xgboost_CICIoV2024.json",
+    "validation_metrics": {
+      "threshold": 0.5449999999999999,
+      "accuracy": 0.9999857976736589,
+      "precision": 1.0,
+      "recall": 0.9998915910815597,
+      "f1": 0.9999457926024972,
+      "auc": 0.9999999261761015,
+      "logloss": 0.003392349746662213,
+      "brier": 0.00012848050597787496,
+      "confusion_matrix": [
+        [
+          183560,
+          0
+        ],
+        [
+          3,
+          27670
+        ]
+      ],
+      "tn": 183560,
+      "fp": 0,
+      "fn": 3,
+      "tp": 27670
+    },
+    "test_metrics": {
+      "threshold": 0.5449999999999999,
+      "accuracy": 0.9999952658912197,
+      "precision": 1.0,
+      "recall": 0.9999638623879734,
+      "f1": 0.9999819308674991,
+      "auc": 0.999999977753716,
+      "logloss": 0.003314680934310304,
+      "brier": 0.00011207600785684285,
+      "confusion_matrix": [
+        [
+          183561,
+          0
+        ],
+        [
+          1,
+          27671
+        ]
+      ],
+      "tn": 183561,
+      "fp": 0,
+      "fn": 1,
+      "tp": 27671
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "status": "documented_main_configuration",
+  "datasets": [
+    "CSECICIDS2018",
+    "CICIoV2024"
+  ],
+  "seed": 42,
+  "num_rsus": 2,
+  "vehicles_per_rsu": 2,
+  "total_vehicles": 4,
+  "global_rounds": 2,
+  "local_boosting_rounds_per_vehicle_per_global_round": 10,
+  "num_parallel_tree": 1,
+  "tree_method": "approxDP",
+  "dp_enabled": true,
+  "dp_epsilon_per_tree": 0.25,
+  "subsample": 0.2,
+  "dp_delta_round": 0.0,
+  "dp_epsilon_round_reported_4dp": 0.5525,
+  "dp_epsilon_total_reported_4dp": 1.105,
+  "dp_epsilon_round_retained_exact": 0.5525028433699525,
+  "dp_epsilon_total_retained_exact": 1.105005686739905,
+  "dp_accounting_note": "The manuscript reports the learner-stage privacy accounting rounded to four decimal places (epsilon_round=0.5525 and epsilon_total=1.1050). The retained seed-42 full-DP run configuration stores epsilon_round=0.5525028433699525 and epsilon_total=1.105005686739905. Historical RSU summaries additionally retain a cumulative field of 1.1050058433699523; this sub-micro discrepancy is preserved in the evidence rather than retrospectively rewritten.",
+  "historical_output_bundle_retained": false
+}

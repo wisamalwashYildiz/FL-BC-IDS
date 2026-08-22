@@ -1,0 +1,22 @@
+{
+  "enabled": true,
+  "mode": "bad_dp_record_binding",
+  "target": {
+    "rsu_id": 2,
+    "vehicle_id": 2001,
+    "round": 1
+  },
+  "detected": true,
+  "matched_detail": {
+    "cid": "15048435969316735295",
+    "vehicle_id": 2001,
+    "reason": "bad_signature_or_report_binding",
+    "classification": "bad_digest_binding",
+    "detail": "",
+    "ablation_target": 0,
+    "ablation_mode": "",
+    "ablation_digest_target": 1,
+    "ablation_digest_mode": "bad_dp_record_binding"
+  },
+  "result": "pass"
+}

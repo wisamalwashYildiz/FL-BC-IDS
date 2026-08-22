@@ -1,0 +1,251 @@
+{
+  "dataset_name": "CICIoV2024",
+  "source_representation": "decimal",
+  "source_directory": "data/raw/CICIoV2024",
+  "output_directory": "results/CICIoV2024/seed_47/preprocessing",
+  "merge_policy": "Concatenate the six raw decimal class-specific CSV files, then split.",
+  "expected_files": [
+    "decimal_benign.csv",
+    "decimal_DoS.csv",
+    "decimal_spoofing-GAS.csv",
+    "decimal_spoofing-RPM.csv",
+    "decimal_spoofing-SPEED.csv",
+    "decimal_spoofing-STEERING_WHEEL.csv"
+  ],
+  "expected_columns": [
+    "ID",
+    "DATA_0",
+    "DATA_1",
+    "DATA_2",
+    "DATA_3",
+    "DATA_4",
+    "DATA_5",
+    "DATA_6",
+    "DATA_7",
+    "label",
+    "category",
+    "specific_class"
+  ],
+  "model_feature_columns": [
+    "ID",
+    "DATA_0",
+    "DATA_1",
+    "DATA_2",
+    "DATA_3",
+    "DATA_4",
+    "DATA_5",
+    "DATA_6",
+    "DATA_7"
+  ],
+  "output_label_column": "Label",
+  "split_sizes": {
+    "train": 0.7,
+    "val": 0.15,
+    "test": 0.15
+  },
+  "train_balance_policy": {
+    "train_only_balanced": true,
+    "val_unchanged": true,
+    "test_unchanged": true,
+    "before": {
+      "benign": 856616,
+      "attack": 129137
+    },
+    "after": {
+      "benign": 856616,
+      "attack": 856616
+    },
+    "sampling_strategy": 1.0,
+    "target_pos_frac_train_logged_only": 0.5
+  },
+  "merged_summary": {
+    "rows": 1408219,
+    "benign": 1223737,
+    "attack": 184482,
+    "benign_pct": 86.8996228569562,
+    "attack_pct": 13.100377143043803
+  },
+  "input_files": [
+    {
+      "file": "decimal_benign.csv",
+      "rows": 1223737,
+      "sha256": "b6d77f20dfb0a1a08717f02b3773568a6035332bc430c9a92f18407dc2893755",
+      "binary_counts": {
+        "benign": 1223737,
+        "attack": 0
+      },
+      "category_values": [
+        "BENIGN"
+      ],
+      "specific_class_values": [
+        "BENIGN"
+      ],
+      "id_min": 65,
+      "id_max": 1438
+    },
+    {
+      "file": "decimal_DoS.csv",
+      "rows": 74663,
+      "sha256": "84b45003b8ab75273e0a1dcb05de6a351a2ded4be1bd1127017a4b4624b4f1c8",
+      "binary_counts": {
+        "benign": 0,
+        "attack": 74663
+      },
+      "category_values": [
+        "DoS"
+      ],
+      "specific_class_values": [
+        "DoS"
+      ],
+      "id_min": 291,
+      "id_max": 291
+    },
+    {
+      "file": "decimal_spoofing-GAS.csv",
+      "rows": 9991,
+      "sha256": "70631989df540d8699842b025a6a017578d6ef0e04416d5d417948f41d14ed90",
+      "binary_counts": {
+        "benign": 0,
+        "attack": 9991
+      },
+      "category_values": [
+        "SPOOFING"
+      ],
+      "specific_class_values": [
+        "GAS"
+      ],
+      "id_min": 513,
+      "id_max": 513
+    },
+    {
+      "file": "decimal_spoofing-RPM.csv",
+      "rows": 54900,
+      "sha256": "a9898d6c74236a22dcb57bbcf2fe0e4937ba31061c9508d85e75f0485cd41019",
+      "binary_counts": {
+        "benign": 0,
+        "attack": 54900
+      },
+      "category_values": [
+        "SPOOFING"
+      ],
+      "specific_class_values": [
+        "RPM"
+      ],
+      "id_min": 476,
+      "id_max": 513
+    },
+    {
+      "file": "decimal_spoofing-SPEED.csv",
+      "rows": 24951,
+      "sha256": "40812845fd3abae2471c5a87deb84f3cb7cfc014696f4e90b6f48089fc5327bc",
+      "binary_counts": {
+        "benign": 0,
+        "attack": 24951
+      },
+      "category_values": [
+        "SPOOFING"
+      ],
+      "specific_class_values": [
+        "SPEED"
+      ],
+      "id_min": 344,
+      "id_max": 513
+    },
+    {
+      "file": "decimal_spoofing-STEERING_WHEEL.csv",
+      "rows": 19977,
+      "sha256": "9f7db973ee9a0ad2c38e48b9db7ba1c8e0b7aeb269c87e10f4894cee39fbd5e7",
+      "binary_counts": {
+        "benign": 0,
+        "attack": 19977
+      },
+      "category_values": [
+        "SPOOFING"
+      ],
+      "specific_class_values": [
+        "STEERING_WHEEL"
+      ],
+      "id_min": 128,
+      "id_max": 128
+    }
+  ],
+  "split_summary": {
+    "train_before_balance": {
+      "rows": 985753,
+      "benign": 856616,
+      "attack": 129137,
+      "benign_pct": 86.8996594481579,
+      "attack_pct": 13.100340551842095
+    },
+    "val": {
+      "rows": 211233,
+      "benign": 183560,
+      "attack": 27673,
+      "benign_pct": 86.89930077213315,
+      "attack_pct": 13.100699227866858
+    },
+    "test": {
+      "rows": 211233,
+      "benign": 183561,
+      "attack": 27672,
+      "benign_pct": 86.89977418301117,
+      "attack_pct": 13.100225816988823
+    }
+  },
+  "post_save_sanity_checks": {
+    "train": {
+      "rows": 1713232,
+      "benign": 856616,
+      "attack": 856616,
+      "balanced_50_50": true
+    },
+    "val": {
+      "rows": 211233,
+      "benign": 183560,
+      "attack": 27673,
+      "balanced_50_50": false
+    },
+    "test": {
+      "rows": 211233,
+      "benign": 183561,
+      "attack": 27672,
+      "balanced_50_50": false
+    }
+  },
+  "output_files": {
+    "train_csv": "results/CICIoV2024/seed_47/preprocessing/CICIoV2024_train_preprocessed.csv",
+    "val_csv": "results/CICIoV2024/seed_47/preprocessing/CICIoV2024_val_preprocessed.csv",
+    "test_csv": "results/CICIoV2024/seed_47/preprocessing/CICIoV2024_test_preprocessed.csv",
+    "preprocessor_joblib": "results/CICIoV2024/seed_47/preprocessing/CICIoV2024_preprocessor.joblib"
+  },
+  "file_hashes": {
+    "train_csv_sha256": "d4df97b5a0ae42ffeea94503d77698dadd4ce8a43771f7bd69242d9c8500dd79",
+    "val_csv_sha256": "f9797b24c4c284db244ab6767d3fb1b95142b11ec2507ae8217fdbc2e01f3049",
+    "test_csv_sha256": "981650f1f2da06514970b2f0069d7138aec39e56890f03a081843e92aeab7760",
+    "preprocessor_joblib_sha256": "26204dc02ec2fde2d34c0a36014137a401fe77f83ad79874b46d2d2917b0be2a"
+  },
+  "library_versions": {
+    "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "sklearn": "1.7.2",
+    "joblib": "1.5.2"
+  },
+  "random_state": 47,
+  "revision_context": {
+    "round": 2,
+    "reviewer": 1,
+    "comment": 1,
+    "purpose": "multi-seed and repartitioned statistical evaluation",
+    "revision_root": "results"
+  },
+  "timestamp_local": "2026-08-19 04:33:23",
+  "notes": [
+    "This final pipeline uses the merged raw decimal CICIoV2024 files.",
+    "The final outputs are only the three preprocessed CSV splits, the fitted preprocessor, and this manifest.",
+    "TRAIN is balanced after preprocessing using RandomOverSampler.",
+    "VAL and TEST keep their natural post-split distribution.",
+    "Post-save sanity checks verify finite feature values and binary labels in the saved CSV files."
+  ]
+}

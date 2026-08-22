@@ -1,0 +1,3 @@
+# command: circom --version
+# exit_code: 0
+circom compiler 2.1.8

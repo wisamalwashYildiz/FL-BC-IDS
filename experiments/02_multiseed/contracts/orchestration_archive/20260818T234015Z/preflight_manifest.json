@@ -1,0 +1,134 @@
+{
+  "schema": "Reviewer1Comment1MultiSeedPreflightV1",
+  "created_utc": "2026-08-18T21:59:49Z",
+  "runner": {
+    "path": "Reviewer1_Comment1_Run_MultiSeed.py",
+    "sha256": "e1d65a560257f6673b816b8c1e1be6b1594fd0cb8185c3c5b675d922397a5a41"
+  },
+  "python_executable": "python",
+  "python_packages": {
+    "raw": "<python-environment>\\Lib\\site-packages\\dp_xgboost\\compat.py:102: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.\n  import pkg_resources\n{\"numpy\": {\"ok\": true, \"version\": \"1.26.4\"}, \"pandas\": {\"ok\": true, \"version\": \"2.3.3\"}, \"sklearn\": {\"ok\": true, \"version\": \"1.7.2\"}, \"xgboost\": {\"ok\": true, \"version\": \"3.1.2\"}, \"imblearn\": {\"ok\": true, \"version\": \"0.14.0\"}, \"dask\": {\"ok\": true, \"version\": \"2025.11.0\"}, \"scipy\": {\"ok\": true, \"version\": \"1.16.3\"}, \"flwr\": {\"ok\": true, \"version\": \"1.23.0\"}, \"ray\": {\"ok\": true, \"version\": \"2.31.0\"}, \"dp_xgboost\": {\"ok\": true, \"version\": \"0.2.10\"}, \"cryptography\": {\"ok\": true, \"version\": \"44.0.3\"}}\n\u001b[0m"
+  },
+  "paths": {
+    "revision_dir": "experiments/02_multiseed",
+    "code_dir": "experiments/02_multiseed/code",
+    "results_dir": "experiments/02_multiseed/results",
+    "logs_dir": "experiments/02_multiseed/logs",
+    "statistics_dir": "experiments/02_multiseed/statistics",
+    "project_root": ".",
+    "cse_input": "data/raw/CSE-CIC-IDS2018/CSECICIDS2018Dataset.csv",
+    "cic_decimal_dir": "data/raw/CICIoV2024"
+  },
+  "selected": {
+    "datasets": [
+      "CSECICIDS2018",
+      "CICIoV2024"
+    ],
+    "stages": [
+      "preprocess",
+      "centralized",
+      "nondp",
+      "dp"
+    ]
+  },
+  "source_manifest": {
+    "scripts": {
+      "cse_preprocess": {
+        "path": "DatasetPreprocessing-V2_Revision2_MultiSeed.py",
+        "sha256": "51ae07036462a0de6e90675d4666bfe203d93bc9b52b75c6adf64aa552e0c670",
+        "size_bytes": 33940
+      },
+      "cic_preprocess": {
+        "path": "preprocess_ciciov2024_decimal_Revision2_MultiSeed.py",
+        "sha256": "60b07fc23a91532899bcddd7e1b2ef9a5f50a55c2ca41a48633734afd27fbcb3",
+        "size_bytes": 25305
+      },
+      "centralized": {
+        "path": "centralized_xgboost_baseline_Revision2_MultiSeed.py",
+        "sha256": "631b5f3f649b2190fa8cdddc186a9238c599c2e756ce96aad60ea309c5f3d997",
+        "size_bytes": 13346
+      },
+      "nondp": {
+        "path": "FL-RSUs-Server-Non-DPBaseline_V10_Revision2_MultiSeed_FINAL_MATCHED.py",
+        "sha256": "9eb66d054ad7283cfb91671c935cc04966c55842cf26b19fe27e9adc303dc2f1",
+        "size_bytes": 90102
+      },
+      "dp": {
+        "path": "FL_DP_SSI_DualMerklePoseidon_RSU+Global_ZKVerify_V10_Revision2_MultiSeed.py",
+        "sha256": "dfde2d6e14da61d4b7073babdef546790fac20e875f9778d264f428bd3451fae",
+        "size_bytes": 249113
+      }
+    },
+    "contract": {
+      "seeds_default": [
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51
+      ],
+      "datasets_default": [
+        "CSECICIDS2018",
+        "CICIoV2024"
+      ],
+      "num_rsus": 2,
+      "vehicles_per_rsu": 2,
+      "num_rounds": 2,
+      "num_local_rounds": 10,
+      "pythondeterminism": "PYTHONHASHSEED=0 in every child process"
+    }
+  },
+  "cse_source": {
+    "path": "data/raw/CSE-CIC-IDS2018/CSECICIDS2018Dataset.csv",
+    "sha256": "4335539845e880b1fb06703b5a68da0a03ed0682204bdda0863ddfc316782e3c",
+    "rows": 63195145,
+    "label_counts": {
+      "0": 59353486,
+      "1": 3841659
+    },
+    "metadata_trust_basis": "row and label counts are reused only after exact raw-file SHA-256 verification"
+  },
+  "dp_toolchain": {
+    "node": "node",
+    "circom": "circom",
+    "snarkjs": "snarkjs",
+    "ptau": "powersOfTau28_hez_final_20.ptau",
+    "ptau_sha256": "159d3f938d941e06767d99f30b9fe59a245400a4aae138cf8e411732d7a2f6cd",
+    "frozen_helpers": {
+      "FL_IoV_AnchorZKP_UtilsV10.py": {
+        "path": "FL_IoV_AnchorZKP_UtilsV10.py",
+        "sha256": "242a4d8f25fbbb5977be591fd816e5c1e9b36bb35d6b5a834057fc0a86d094f4"
+      },
+      "FL_IoV_CanonicalSpecV10.py": {
+        "path": "FL_IoV_CanonicalSpecV10.py",
+        "sha256": "f2559b08c10157a7accceff4e9c97a9a847dae6b7bec5a42f41e03e04849bee4"
+      },
+      "FL_IoV_MerkleSSI_UtilsV10.py": {
+        "path": "FL_IoV_MerkleSSI_UtilsV10.py",
+        "sha256": "55774c98d9f79856c88c65d7698a48115076ac34278120df0a9868da420797d6"
+      },
+      "FL_IoV_DPxgb_UtilsV10.py": {
+        "path": "FL_IoV_DPxgb_UtilsV10.py",
+        "sha256": "8bd9b2d4036231db087fc00fc866bc2491bb7de0ff6a6feb72d4bb6e3ae683f8"
+      }
+    }
+  },
+  "historical_source_identity_policy": "Source, runner, and frozen-helper path fields coupled to historical SHA-256 values are represented by basenames. Their hashes remain the authoritative identity of the exact files present for this orchestration session; later publication-hardened runnable copies may have different hashes.",
+  "publication_path_policy": "Machine-local Python, repository, dataset, Node/Circom/snarkjs, trusted-setup, and helper paths were replaced by portable command names, repository-relative locators, dataset locators, or identity-only basenames.",
+  "publication_sanitization": {
+    "machine_local_paths_removed": true,
+    "historical_source_hashes_unchanged": true,
+    "historical_runner_hash_unchanged": true,
+    "historical_helper_hashes_unchanged": true,
+    "ptau_sha256_unchanged": true,
+    "cse_source_sha256_and_counts_unchanged": true,
+    "package_versions_unchanged": true,
+    "experiment_contract_unchanged": true,
+    "warning_text_preserved_except_environment_path": true
+  }
+}

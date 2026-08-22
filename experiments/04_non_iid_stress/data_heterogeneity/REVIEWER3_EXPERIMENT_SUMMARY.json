@@ -1,0 +1,190 @@
+{
+  "experiment_version": "reviewer3-heterogeneity-participation-v1",
+  "scenario": "data_heterogeneity",
+  "seed": 42,
+  "purpose": "Controlled federated data-heterogeneity, quantity-heterogeneity, unstable-participation, intermittent-availability, stale-round delayed-arrival, and cross-RSU context stress evaluation; not a packet-level V2X mobility or seamless-handoff simulation.",
+  "topology": {
+    "num_rsus": 2,
+    "vehicles_per_rsu": 10,
+    "total_vehicles": 20,
+    "rounds": 8
+  },
+  "partition_summary": {
+    "experiment_version": "reviewer3-heterogeneity-participation-v1",
+    "scenario": "data_heterogeneity",
+    "seed": 42,
+    "num_clients": 20,
+    "feature_diagnostic": "60",
+    "global_feature_mean": 0.047095179890362555,
+    "global_feature_std": 2.9232016665081666,
+    "client_size_min": 60353,
+    "client_size_median": 171580.5,
+    "client_size_max": 433518,
+    "client_size_max_min_ratio": 7.183039782612298,
+    "client_attack_fraction_min": 0.008791916457692653,
+    "client_attack_fraction_median": 0.5701466424521703,
+    "client_attack_fraction_max": 0.8702817563950753,
+    "client_feature_mean_shift_min_sd": -0.018278703111120908,
+    "client_feature_mean_shift_max_sd": 0.46151830940519256,
+    "heterogeneity_meta": {
+      "experiment_version": "reviewer3-heterogeneity-participation-v1",
+      "partition_mode": "joint_quantity_label_feature_heterogeneity",
+      "seed": 42,
+      "label_alpha": 0.3,
+      "quantity_sigma": 0.9,
+      "max_requested_size_ratio": 10.0,
+      "feature_skew_feature_index": 0,
+      "feature_skew_feature_name": "60",
+      "global_train_rows": 3944668,
+      "global_attack_rows": 1972334,
+      "global_benign_rows": 1972334,
+      "client_target_sizes": [
+        206782,
+        61649,
+        308840,
+        366473,
+        60353,
+        60353,
+        176352,
+        118251,
+        154826,
+        72945,
+        346844,
+        316534,
+        166809,
+        433518,
+        239410,
+        72536,
+        219049,
+        66317,
+        346548,
+        150279
+      ],
+      "client_target_attack_counts": [
+        168405,
+        53652,
+        268776,
+        3222,
+        20936,
+        50598,
+        2023,
+        2743,
+        14227,
+        60051,
+        222009,
+        275472,
+        145169,
+        242714,
+        87545,
+        20944,
+        127141,
+        44448,
+        81405,
+        80854
+      ],
+      "client_target_benign_counts": [
+        38377,
+        7997,
+        40064,
+        363251,
+        39417,
+        9755,
+        174329,
+        115508,
+        140599,
+        12894,
+        124835,
+        41062,
+        21640,
+        190804,
+        151865,
+        51592,
+        91908,
+        21869,
+        265143,
+        69425
+      ]
+    },
+    "per_client_csv": "reviewer3_client_partition_stats.csv"
+  },
+  "participation": {
+    "successful_fit_results_total": 160,
+    "fit_failures_total": 0,
+    "successful_fit_fraction": 1.0,
+    "round_csv": "reviewer3_round_participation.csv"
+  },
+  "context_binding_challenges": {
+    "targets": [],
+    "requested_stale_round_challenges": 0,
+    "observed_stale_round_rejections": 0,
+    "requested_cross_rsu_challenges": 0,
+    "observed_cross_rsu_rejections": 0,
+    "exclusions_csv": "reviewer3_context_exclusions.csv"
+  },
+  "global_ensemble_metrics": {
+    "accuracy": 0.9773378281381597,
+    "precision": 0.7526501766784452,
+    "recall": 0.934278821551283,
+    "f1": 0.8336866825402003,
+    "auc": 0.9869281583596534,
+    "logloss": 0.5311506335840827,
+    "brier": 0.16801403615573113,
+    "ece": 0.3652017505191893,
+    "threshold": 0.6436643898487091
+  },
+  "global_confusion_matrix": [
+    [
+      414243,
+      8400
+    ],
+    [
+      1798,
+      25560
+    ]
+  ],
+  "zkp_global_anchor_ok": true,
+  "used_rsu_ids": [
+    1,
+    2
+  ],
+  "stress_configuration": {
+    "enable_admission_failure_check": false,
+    "enable_digest_binding_failure_check": false,
+    "enable_artifact_tamper_check": false,
+    "enable_participation_stress": false,
+    "availability_schedule": {
+      "permanent_dropout_local_index": 10,
+      "permanent_dropout_from_round": 5,
+      "burst_outage_rounds_by_local_index": {
+        "3": [
+          2,
+          3
+        ],
+        "7": [
+          6,
+          7
+        ]
+      },
+      "isolated_outage_rounds_by_local_index": {
+        "5": [
+          4
+        ]
+      }
+    },
+    "enable_context_binding_challenges": false,
+    "context_binding_targets": [],
+    "enable_commitment_recompute_check": true,
+    "commitment_recompute_target": {
+      "rsu_id": 2,
+      "round": 8,
+      "global_round": 8
+    },
+    "enable_public_input_agreement_check": true,
+    "public_input_agreement_target": {
+      "rsu_id": 2,
+      "round": 8,
+      "global_round": 8
+    },
+    "enable_layered_overhead_breakdown": true
+  }
+}

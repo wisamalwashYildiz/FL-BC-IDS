@@ -1,0 +1,91 @@
+{
+  "extra": {
+    "N_total_decoded": 1,
+    "N_used_for_anchorsum": 1,
+    "auditor_recompute_ok": true,
+    "canon_scheme": "JCS/RFC8785",
+    "client_ids_sorted": [
+      "15437685419188756094"
+    ],
+    "clients_with_valid_anchor_payload": [
+      "15437685419188756094"
+    ],
+    "excluded_client_ids": [
+      "7026321175366500473"
+    ],
+    "poseidon_arity": 5,
+    "poseidon_depth": 32,
+    "record_count": 1,
+    "record_sha256_hex_list": [
+      "c3969a63f4b1bec5b842fb807f9f2382e9036b4d271c76ca1eb78939ff8702cd"
+    ],
+    "records": [
+      {
+        "client_id": "15437685419188756094",
+        "envelope": {
+          "auth_evidence_sha256": "92e4b8c92a33160fc239df9cbc6aeb948183633f13be944d8271283f091f3a1d",
+          "data_fingerprint_sha256": "",
+          "did": "did:key:ed25519:2f4cd531553e8749831be37a62df6e2cca377fce83370ffc333c5db50336c1ce",
+          "dp_record_sha256": "1b1e011aa03643dbfd6f9823530cfdb2456559551b328d4b532ac3dbbc3dcd79",
+          "nonce": 0,
+          "round_idx": 1,
+          "rsu_id": 1,
+          "schema": "ClientUpdateEnvelopeV1",
+          "sig_sha256": "1e90571fec01d5ea850f8e694b8fa9ad866c4604b9b1ff1dc5dbeb1472a6786e",
+          "signed_payload_sha256": "4fe068dd089cd7f2740495f12eafa5eba96cc9be6e2ebb63937689d87c7ad46f",
+          "timestamp": 1774476098,
+          "update_commit_sha256": "80223f023cf8f7d368bad9e63d763995145594c1061ab414394c36912f04dbac"
+        },
+        "envelope_sha256_hex": "c3969a63f4b1bec5b842fb807f9f2382e9036b4d271c76ca1eb78939ff8702cd",
+        "poseidon_leaf_field": 6513136975297400584691567188681209257562804760797361668431927848514934365023,
+        "record": {
+          "M": 64,
+          "SCALE": 100000,
+          "anchor_id_field": "21745069337441240602254689650392019371859055653640140822419508315926717261562",
+          "anchor_version": "v1",
+          "client_id": "15437685419188756094",
+          "dp_round_json_sha256": "1b1e011aa03643dbfd6f9823530cfdb2456559551b328d4b532ac3dbbc3dcd79",
+          "model_delta_sha256": "80223f023cf8f7d368bad9e63d763995145594c1061ab414394c36912f04dbac",
+          "q_anchor_sha256": "c1ed8f1a1f0447cd9f7084584797f5a9ce64120af632aae3bb10a07f40bbea15",
+          "round": 1,
+          "rsu_id": 1,
+          "schema": "ClientUpdateRecordV1",
+          "ssi_did": "did:key:ed25519:2f4cd531553e8749831be37a62df6e2cca377fce83370ffc333c5db50336c1ce",
+          "ssi_pubkey_b64": "L0zVMVU+h0mDG+N6Yt9uLMo3f86DNw/8MzxdtQM2wc4=",
+          "ssi_report_sha256_hex": "4fe068dd089cd7f2740495f12eafa5eba96cc9be6e2ebb63937689d87c7ad46f",
+          "ssi_sig_b64": "Ydzm35X7Z+DLCHL7Kg4lqgEJRHsWEaReQO5f+BgSfms/B+j924n6GKuhvl55lay0C6IoihZsOrdcm97Yjt5mBA==",
+          "ssi_verify_ok": 1,
+          "v": 1,
+          "vehicle_id": 1002
+        },
+        "sha256_leaf_hex": "c3969a63f4b1bec5b842fb807f9f2382e9036b4d271c76ca1eb78939ff8702cd",
+        "ssi": {
+          "did": "did:key:ed25519:2f4cd531553e8749831be37a62df6e2cca377fce83370ffc333c5db50336c1ce",
+          "report_sha256_hex": "4fe068dd089cd7f2740495f12eafa5eba96cc9be6e2ebb63937689d87c7ad46f",
+          "verify_ok": 1
+        }
+      }
+    ],
+    "scope": "rsu_round",
+    "sha_depth": 32,
+    "ssi_preimage_def_field_bn254": 7087014177658550609046789491821027048655323326405230766997640855547250256809,
+    "ssi_preimage_def_field_bn254_v1": 7087014177658550609046789491821027048655323326405230766997640855547250256809,
+    "ssi_preimage_def_sha256": "0fab1b9dc71def9a0ad6c677f276669add9b8bb157d0acde12bb7829c764aba9",
+    "ssi_preimage_def_sha256_v1": "0fab1b9dc71def9a0ad6c677f276669add9b8bb157d0acde12bb7829c764aba9",
+    "ssi_verify_fail": 0,
+    "ssi_verify_ok": 1,
+    "ssi_verify_total": 1
+  },
+  "identity_state_root_field": "0",
+  "manifest_body_canon_sha256_hex": "6ad73dabbaf57f8e0a72f3658145881d1d88dd06632507ac6c9d74da2becc99e",
+  "poseidon_arity": 5,
+  "poseidon_depth": 32,
+  "poseidon_pad_leaf_field": "0",
+  "root_poseidon_field": "21680219998936368250186190627414182540228750728544415659305539117453054367859",
+  "root_sha256_hex": "f29525230b16264810c74e3501b833a05be32d02977df3680364865711bcc7fa",
+  "round_idx": 1,
+  "rsu_id": 1,
+  "schema": "RoundRootsManifestV1",
+  "sha256_depth": 32,
+  "ssi_preimage_def_sha256": "0fab1b9dc71def9a0ad6c677f276669add9b8bb157d0acde12bb7829c764aba9"
+}

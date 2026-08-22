@@ -1,0 +1,26 @@
+{
+  "bootstrap_type": "exact nonparametric percentile bootstrap of the mean",
+  "distinct_count_vectors": 92378,
+  "expected_seed_range": [
+    42,
+    51
+  ],
+  "groups": 30,
+  "input": "experiments/02_multiseed/statistics/per_seed_metrics.csv",
+  "interpretation": "The submitted intervals are numerically consistent with a finite Monte-Carlo percentile bootstrap, but the original RNG state and resample count were not retained. This deterministic exact bootstrap audit therefore verifies the underlying percentile-bootstrap estimand without post-hoc seed fitting.",
+  "maximum_absolute_endpoint_difference": 8.948468122160769e-06,
+  "monte_carlo_rng_used": false,
+  "reported_endpoints_matching_at_6dp": 43,
+  "reported_interval_pairs_matching_at_6dp": 17,
+  "represented_ordered_resamples_per_group": 10000000000,
+  "row_count": 300,
+  "schema": "FLBCIDSReviewer1Comment1BootstrapAuditV1",
+  "total_endpoints": 60,
+  "total_interval_pairs": 30,
+  "publication_path_policy": "The machine-local input path was replaced by the logical repository locator. All bootstrap audit counts, endpoint comparisons, and interpretation are unchanged.",
+  "publication_sanitization": {
+    "machine_local_input_path_removed": true,
+    "bootstrap_results_unchanged": true,
+    "interpretation_unchanged": true
+  }
+}

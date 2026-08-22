@@ -1,0 +1,25 @@
+{
+  "dataset_name": "CSECICIDS2018",
+  "dp_enabled": false,
+  "dp_epsilon_round": 0.0,
+  "dp_delta_round": 0.0,
+  "dp_clip_l1": null,
+  "num_rounds": 2,
+  "num_local_rounds": 10,
+  "num_rsus": 2,
+  "vehicles_per_rsu": 2,
+  "tree_method": "hist",
+  "dp_epsilon_total": 0.0,
+  "experiment_seed": 49,
+  "revision_context": {
+    "round": 2,
+    "reviewer": 1,
+    "comment": 1,
+    "purpose": "multi-seed and repartitioned statistical evaluation",
+    "revision_root": "results",
+    "preprocessing_dir": "results/CSECICIDS2018/seed_49/preprocessing",
+    "output_dir": "results/CSECICIDS2018/seed_49/nondp_local_10",
+    "matched_ablation": true,
+    "ablation_difference": "DP tree mechanism/accounting disabled; learner hyperparameters otherwise matched"
+  }
+}

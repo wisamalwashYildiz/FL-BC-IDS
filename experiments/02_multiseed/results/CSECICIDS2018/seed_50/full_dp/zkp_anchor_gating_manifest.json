@@ -1,0 +1,50 @@
+{
+  "round": 2,
+  "root_poseidon_field": 12495936478808444805874403615283703024020474031469937858976833616835243385793,
+  "anchor_root_poseidon_field": 15587273222029986109734393034369785384623279557018508101926045103945712418864,
+  "anchor_id_field": "791371256443955538393300695365880186098941859193923307602698818430399157875",
+  "anchor_version": "v1",
+  "M": 64,
+  "SCALE": 100000,
+  "rsu_ids_sorted": [
+    1,
+    2
+  ],
+  "mask_list": [
+    1,
+    1
+  ],
+  "rsu_round_roots": [
+    2805225741307491859547718698414505773848696977859049730252612478644368296884,
+    10863156382070245946620955619802245231795315268273354313089395862802514019235
+  ],
+  "global_round_manifest_path": "results/CSECICIDS2018/seed_50/full_dp/zkp_round_manifests/global/round_2.json",
+  "rsus_with_valid_anchor_payload": [
+    1,
+    2
+  ],
+  "anchor_X_path": "results/CSECICIDS2018/seed_50/full_dp/anchor_X.npy",
+  "anchor_meta_path": "results/CSECICIDS2018/seed_50/full_dp/anchor_meta.json",
+  "global_commit_field": "8487278695490095831973630995804061928610902828330189729368956222896601033112",
+  "rsu_ok_map": {
+    "1": true,
+    "2": true
+  },
+  "used_rsu_ids": [
+    1,
+    2
+  ],
+  "global_anchor_ok": true,
+  "global_artifact_path": "results/CSECICIDS2018/seed_50/full_dp/zkp_anchor_summaries/anchorsum/global/round_2.json",
+  "Q_global_b64": "eJxjYICAmA4ILfKLAQU4S0BotQoIvfUQhN7Iyoai7qQihL67FELHNkPoUG4GrIBPALt4Oj+EnsUKoRdwodp3EE3fdKi6N8YQej8ThL6QDKFzmSG0LweEfiWCqt+pGEJrsaKKP1OB0GL2jGDa/yNEgWMCqrqd8RB6kTmEhvkrxAGiD+Z/RV0I3VsPEf+gBlXfAKF/8EJoUScInSQDob31GVDMOfkH4o4bpQxYAcycNqi/2wwh9JxGCA0LR5h5AMBrJh0=",
+  "num_rsus_configured": 2,
+  "num_rsus_masked_in": 2,
+  "pins_hash_field": 4356583656769860852988042548196674496773111854747887645526118588895344918128,
+  "policy_id_field": 13587658417743578414377738976806013629381460068231136330562461205536371710092,
+  "public_input_order_id_field": 4474133564344520844785649771291405666250632887756829414636978779304877424522,
+  "ssi_preimage_fingerprint_v1": {
+    "ssi_preimage_def_sha256_v1": "0fab1b9dc71def9a0ad6c677f276669add9b8bb157d0acde12bb7829c764aba9",
+    "ssi_preimage_def_field_bn254_v1": "7087014177658550609046789491821027048655323326405230766997640855547250256809"
+  },
+  "global_public_inputs_sidecar_path": "results/CSECICIDS2018/seed_50/full_dp/zkp_artifacts/anchorsum/global/round_2_public.json"
+}

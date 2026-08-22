@@ -1,0 +1,53 @@
+{
+  "schema": "FLBCIDSModelConsistencyPublicationScopeV1",
+  "validation_result": {
+    "assertions_total": 16,
+    "assertions_passed": 16,
+    "critical_assertions": 14,
+    "high_severity_assertions": 2
+  },
+  "model_update_anchor_relation": {
+    "signature_only_is_sufficient": false,
+    "valid_signature_unrelated_artifact_attack_detected": true,
+    "unrelated_artifact_derivation_result": "model_anchor_derivation_mismatch",
+    "scope": "deterministic verifier-side relation between retained model-update bytes, signed digests, quantized anchor, and fixed anchor contract",
+    "groth16_training_correctness_claim": false
+  },
+  "aggregation_replay": {
+    "delta_tree_counts": [
+      10,
+      10
+    ],
+    "flower_1_23_tree_count_after_two_deltas": 11,
+    "intended_all_tree_count_after_two_deltas": 20,
+    "corrected_all_tree_count_after_two_deltas": 20,
+    "corrected_second_round_tree_count": 40,
+    "interpretation": "The harness passes because it detects the Flower multi-tree contract mismatch and validates a corrected deterministic all-tree replay. It does not establish that unmodified Flower 1.23.0 consumed all trees in these multi-iteration deltas."
+  },
+  "replay_record_hash_semantics": {
+    "canonical_sha256": "d4543b6ca653d588b30a813d3e718ed404e9d2289f6ee6cb423ff29fdfc02e18",
+    "pretty_printed_file_sha256": "43b68d91656cfe519c147ef87194ec33efd5e8f16de5d0489d1585fa46ddc8c0",
+    "canonicalization": {
+      "encoding": "UTF-8",
+      "sort_keys": true,
+      "separators": [
+        ",",
+        ":"
+      ],
+      "trailing_newline": false
+    }
+  },
+  "standalone_archive_limitations": {
+    "raw_model_update_bytes_included": false,
+    "quantized_anchor_arrays_included": false,
+    "signed_report_bytes_and_public_key_included": false,
+    "verification_code_included": false,
+    "standalone_reexecution_possible_from_this_zip_alone": false
+  },
+  "publication_claim_boundary": [
+    "Supports model-consistency/accountability validation for the checked relations.",
+    "Does not prove XGBoost training correctness.",
+    "Does not prove the entire FL computation inside Groth16.",
+    "Does not convert the historical Flower 1.23.0 multi-tree behavior into a correct all-tree aggregation result."
+  ]
+}

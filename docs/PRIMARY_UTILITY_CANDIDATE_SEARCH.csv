@@ -1,0 +1,5 @@
+﻿dataset,path,matched_metric_count,matched_metrics,status
+CICIoV2024,<historical-development-root>\Revision2\Reviewer1_Comment1_MultiSeed\code\ConsoleResults.txt,4,"accuracy,precision,recall,f1",strong_candidate
+CICIoV2024,<historical-development-root>\missing_experiment_runtime_candidates.csv,3,"accuracy,precision,recall",weak_candidate
+CICIoV2024,<historical-development-root>\runtime_configuration_inventory.txt,3,"accuracy,precision,recall",weak_candidate
+CICIoV2024,<historical-development-root>\Revision2\Reviewer1_Comment1_MultiSeed\logs\CICIoV2024\seed_49\dp.log,2,"accuracy,f1",weak_candidate

@@ -1,0 +1,16 @@
+{
+  "enabled": true,
+  "target": {
+    "rsu_id": 1,
+    "vehicle_id": 1002,
+    "round": 1
+  },
+  "consistency_scope": "dp_record_digest_binding",
+  "original_dp_record_path": "experiments/08_compact_security_evidence/CSECICIDS2018/verification_evidence/dp_records/rsu_1/vehicle_1002/round_1.json",
+  "tampered_copy_path": "experiments/08_compact_security_evidence/CSECICIDS2018/verification_evidence/ablation_reports/tamper_probe/rsu_1_vehicle_1002_round_1_tampered.json",
+  "expected_sha256_from_ledger": "1b1e011aa03643dbfd6f9823530cfdb2456559551b328d4b532ac3dbbc3dcd79",
+  "original_sha256": "1b1e011aa03643dbfd6f9823530cfdb2456559551b328d4b532ac3dbbc3dcd79",
+  "tampered_sha256": "bbe0caf4c3ae8a57f60a3408a9806a9e476f1d1f0ce66e70ee1387c5aff4ba44",
+  "detected": true,
+  "result": "pass"
+}

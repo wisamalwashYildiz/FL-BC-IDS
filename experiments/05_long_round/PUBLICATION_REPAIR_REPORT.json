@@ -1,0 +1,30 @@
+{
+  "schema": "FLBCIDS20RoundPublicationRepairV1",
+  "source_zip": "05_long_round.zip",
+  "source_zip_sha256": "f10a5f5df4520a568e8bf01287763cd0181b748f4c5883ef2acf16ea4bcdf884",
+  "original_file_count": 17,
+  "historical_retained_v9_v10_files_modified": 0,
+  "reconstructed_helper_files_modified": 0,
+  "reconstructed_main_runner_modified": true,
+  "config_regenerated": true,
+  "stale_config_hash_detected": true,
+  "stale_config_hash": "00a15f8e70e40e70b5b882827450f32477175d006c9f11078fa5cddcdcff1d8a",
+  "actual_pre_hardening_reconstructed_runner_sha256": "e789404e0a08634b440c96312047dec22c64c2d684dee27def3e6e1bf5d2ea68",
+  "publication_hardened_runner_sha256": "6fddfc1b6cdfdb9bd060c20f72c57a9d0be7ae1ff33351c6798bec4865ae7641",
+  "scientific_constant_changes_in_publication_hardening": false,
+  "scientific_contract": {
+    "dataset": "CSE-CIC-IDS2018",
+    "rsus": 2,
+    "vehicles_per_rsu": 2,
+    "global_rounds": 20,
+    "local_rounds": 10
+  },
+  "privacy_accounting": {
+    "epsilon_round_exact": 0.5525028433699525,
+    "epsilon_total_20_exact": 11.05005686739905,
+    "epsilon_total_20_reported_4dp": 11.0501,
+    "delta": 0.0
+  },
+  "historical_output_bundle_present": false,
+  "historical_20_round_source_snapshot_present": false
+}

@@ -1,0 +1,28 @@
+{
+  "dp_enabled": true,
+  "dp_epsilon_round": 0.5525028433699525,
+  "dp_delta_round": 0.0,
+  "dataset_name": "CSECICIDS2018",
+  "experiment_seed": 45,
+  "revision_context": {
+    "round": 2,
+    "reviewer": 1,
+    "comment": 1,
+    "purpose": "multi-seed and repartitioned statistical evaluation",
+    "revision_root": "results",
+    "preprocessing_dir": "results/CSECICIDS2018/seed_45/preprocessing",
+    "output_dir": "results/CSECICIDS2018/seed_45/full_dp",
+    "anchor_seed_fixed": 42,
+    "anchor_source_split_seed": 45
+  },
+  "dp_clip_l1": null,
+  "num_rounds": 2,
+  "num_local_rounds": 10,
+  "num_rsus": 2,
+  "vehicles_per_rsu": 2,
+  "tree_method": "approxDP",
+  "dp_epsilon_per_tree": 0.25,
+  "subsample": 0.2,
+  "num_parallel_tree": 1,
+  "dp_epsilon_total": 1.105005686739905
+}

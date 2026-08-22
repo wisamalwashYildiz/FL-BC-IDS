@@ -1,0 +1,28 @@
+{
+  "schema": "FLBCIDSCompactSecurityEvidencePublicationRepairV1",
+  "source_zip": "08_compact_security_evidence.zip",
+  "source_zip_sha256": "6caf2d190fedb479fcadf704c36c91e553204baa876d6402f958ba38bd4dfd80",
+  "original_file_count": 117,
+  "publication_view_json_files_path_sanitized": 31,
+  "absolute_path_values_replaced": 252,
+  "unresolved_historical_file_targets": 19,
+  "exact_original_archive_embedded": true,
+  "scientific_values_changed": false,
+  "historical_embedded_sha_values_changed": false,
+  "validation": {
+    "compact_contract_2x2x2x10": true,
+    "epsilon_round_exact": 0.5525028433699525,
+    "epsilon_total_exact": 1.105005686739905,
+    "global_anchor_gate": true,
+    "dp_record_hash_links": "8/8",
+    "tamper_probe_hash_relation": "PASS",
+    "commitment_recompute": "PASS",
+    "initial_public_input_helper": "FAIL (preserved)",
+    "dedicated_public_input_rsu_checks": "8/8 PASS",
+    "dedicated_public_input_global_checks": "7/7 PASS",
+    "onchain_verified_proof_submissions": "5/5",
+    "onchain_prep_sha_pins_against_original_bytes": "24/24",
+    "finalized_transactions_including_finalize": "6/6",
+    "live_sensitive_json_keys_detected": 0
+  }
+}

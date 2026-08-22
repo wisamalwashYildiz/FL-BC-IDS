@@ -1,0 +1,2 @@
+package-lock.json: snarkjs=0.7.5
+package.json: snarkjs=^0.7.5

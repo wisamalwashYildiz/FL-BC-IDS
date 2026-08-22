@@ -1,0 +1,68 @@
+{
+  "schema": "FLBCIDS_LegacyRunBundleClassificationV1",
+  "classification": "historical_legacy_non_dp_run_not_authoritative_final_baseline",
+  "dataset": "CSE-CIC-IDS2018",
+  "dp_enabled": false,
+  "topology": {
+    "num_rsus": 2,
+    "vehicles_per_rsu": 2,
+    "num_rounds": 2,
+    "num_local_rounds": 100
+  },
+  "xgboost_runtime_contract": {
+    "objective": "binary:logistic",
+    "eval_metric": [
+      "auc",
+      "logloss"
+    ],
+    "learning_rate": 0.1,
+    "min_child_weight": 200,
+    "subsample": 0.9,
+    "tree_method": "hist",
+    "seed": 42,
+    "num_parallel_tree": 1
+  },
+  "model_structure": {
+    "rsu_1_num_trees": 103,
+    "rsu_2_num_trees": 103,
+    "num_features": 85,
+    "xgboost_version": "3.1.2",
+    "feature_names_embedded_in_model": false,
+    "feature_order_source": "External CSE-CIC-IDS2018 preprocessing contract; the retained XGBoost model JSONs do not embed feature names."
+  },
+  "ensemble_test_metrics": {
+    "accuracy": 0.9996800007111095,
+    "precision": 0.9979506696918685,
+    "recall": 0.996783390598728,
+    "f1": 0.9973666886109283,
+    "auc": 0.999986257409529,
+    "brier": 0.00042013993060749795,
+    "ece": 0.0017462402406742432,
+    "threshold": 0.8949617743492126
+  },
+  "ensemble_confusion_matrix": [
+    [
+      422587,
+      56
+    ],
+    [
+      88,
+      27270
+    ]
+  ],
+  "artifact_sha256": {
+    "iov_centralized_eval_summary(1).json": "8c6d574af974e5450ba06fec541ffa1b1905ed9bef5a7a7a62004e5025afbfd7",
+    "iov_global_model_rsu_1(1).json": "e3b22b8f81302dd73dd8216f467f50a059958b8fa70f469d1b7e52a9f63506fb",
+    "iov_global_model_rsu_2(1).json": "3fb602d003731d9c731dec6cf4ddd6cfa209023f3368ebd3f23d339abf0263e9",
+    "iov_global_server_ensemble_summary(2).json": "fa90178ad78d2764ea901013f31d49fe5eccbaa5a9cbc5b340cc7a97a16e4ae4",
+    "iov_rsu_1_summary(1).json": "ef94dc713c320722c9a8d412fc797059e75e8382288ccd0e4cf48b558fa5cdbd",
+    "iov_rsu_2_summary(1).json": "62d6df122d5433c40f4f2c73e3c28cede85caf87cc97cd0fccd0c635d6cf571b",
+    "iov_run_config(1).json": "c4a27dbf0369ba104d7c1d5e12f206a6f741ef61d591879ad7561226356895fb"
+  },
+  "publication_guidance": {
+    "authoritative_final_baseline": false,
+    "do_not_edit_historical_values_to_match_final_configuration": true,
+    "recommended_action": "Exclude from the authoritative final-baseline results directory. If retained publicly, place under an explicitly labelled legacy/history area.",
+    "filename_note": "iov_centralized_eval_summary.json contains the same per-RSU evaluation mapping as ensemble_summary.per_rsu_test_metrics; 'centralized' here describes centralized evaluation, not centralized model training."
+  }
+}

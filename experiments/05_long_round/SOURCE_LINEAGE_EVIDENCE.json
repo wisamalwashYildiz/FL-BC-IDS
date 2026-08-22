@@ -1,0 +1,111 @@
+{
+  "schema": "FLBCIDS20RoundSourceLineageEvidenceV1",
+  "scope": "This evidence supports code-lineage continuity only. It does not prove which exact source snapshot executed the historical 20-round run.",
+  "v9_v10_ast_comparison": {
+    "main_runner": {
+      "v9_path": "05_long_round/code/retained_v9_stack/FL_DP_SSI_DualMerklePoseidon_RSU+Global_ZKVerify_V9.py",
+      "v10_path": "05_long_round/code/retained_v10_stack/FL_DP_SSI_DualMerklePoseidon_RSU+Global_ZKVerify_V10.py",
+      "v9_sha256": "92d2cdd8f368f9b30f3d179ffa26c2cca8ecb9607efe4c0785e3d48f74386071",
+      "v10_sha256": "3da86add5373524e6295a3eba1622482d9ae7b2a47253cca65734e9e6bb41159",
+      "common_function_definitions": 32,
+      "changed_function_definitions": 0,
+      "only_in_v9": [],
+      "only_in_v10": [],
+      "comparison_method": "normalized Python AST function-definition comparison"
+    },
+    "anchor_zkp_utils": {
+      "v9_path": "05_long_round/code/retained_v9_stack/FL_IoV_AnchorZKP_UtilsV9.py",
+      "v10_path": "05_long_round/code/retained_v10_stack/FL_IoV_AnchorZKP_UtilsV10.py",
+      "v9_sha256": "b3a93c3b00b048895728bea39894ef7d416cb14f0ce21c09d1191b3a1ce535da",
+      "v10_sha256": "242a4d8f25fbbb5977be591fd816e5c1e9b36bb35d6b5a834057fc0a86d094f4",
+      "common_function_definitions": 86,
+      "changed_function_definitions": 0,
+      "only_in_v9": [],
+      "only_in_v10": [],
+      "comparison_method": "normalized Python AST function-definition comparison"
+    },
+    "canonical_spec": {
+      "v9_path": "05_long_round/code/retained_v9_stack/FL_IoV_CanonicalSpecV9.py",
+      "v10_path": "05_long_round/code/retained_v10_stack/FL_IoV_CanonicalSpecV10.py",
+      "v9_sha256": "f2559b08c10157a7accceff4e9c97a9a847dae6b7bec5a42f41e03e04849bee4",
+      "v10_sha256": "f2559b08c10157a7accceff4e9c97a9a847dae6b7bec5a42f41e03e04849bee4",
+      "common_function_definitions": 38,
+      "changed_function_definitions": 0,
+      "only_in_v9": [],
+      "only_in_v10": [],
+      "comparison_method": "normalized Python AST function-definition comparison"
+    },
+    "dpxgb_utils": {
+      "v9_path": "05_long_round/code/retained_v9_stack/FL_IoV_DPxgb_UtilsV9.py",
+      "v10_path": "05_long_round/code/retained_v10_stack/FL_IoV_DPxgb_UtilsV10.py",
+      "v9_sha256": "75ae53eaaca4aae1a0fd29bae3a093e6d5af35b60f509b885455297d78a93881",
+      "v10_sha256": "8bd9b2d4036231db087fc00fc866bc2491bb7de0ff6a6feb72d4bb6e3ae683f8",
+      "common_function_definitions": 59,
+      "changed_function_definitions": 0,
+      "only_in_v9": [],
+      "only_in_v10": [],
+      "comparison_method": "normalized Python AST function-definition comparison"
+    },
+    "merkle_ssi_utils": {
+      "v9_path": "05_long_round/code/retained_v9_stack/FL_IoV_MerkleSSI_UtilsV9.py",
+      "v10_path": "05_long_round/code/retained_v10_stack/FL_IoV_MerkleSSI_UtilsV10.py",
+      "v9_sha256": "1a48de4b74825010bb097d57e230ab54d13844a0b6d71e24c2b847e7269fe58f",
+      "v10_sha256": "55774c98d9f79856c88c65d7698a48115076ac34278120df0a9868da420797d6",
+      "common_function_definitions": 17,
+      "changed_function_definitions": 0,
+      "only_in_v9": [],
+      "only_in_v10": [],
+      "comparison_method": "normalized Python AST function-definition comparison"
+    }
+  },
+  "all_compared_function_definitions_changed": 0,
+  "reconstructed_helper_identity": {
+    "FL_IoV_AnchorZKP_UtilsV10.py": {
+      "sha256": "242a4d8f25fbbb5977be591fd816e5c1e9b36bb35d6b5a834057fc0a86d094f4",
+      "byte_identical_to_retained_v10": true
+    },
+    "FL_IoV_CanonicalSpecV10.py": {
+      "sha256": "f2559b08c10157a7accceff4e9c97a9a847dae6b7bec5a42f41e03e04849bee4",
+      "byte_identical_to_retained_v10": true
+    },
+    "FL_IoV_DPxgb_UtilsV10.py": {
+      "sha256": "8bd9b2d4036231db087fc00fc866bc2491bb7de0ff6a6feb72d4bb6e3ae683f8",
+      "byte_identical_to_retained_v10": true
+    },
+    "FL_IoV_MerkleSSI_UtilsV10.py": {
+      "sha256": "55774c98d9f79856c88c65d7698a48115076ac34278120df0a9868da420797d6",
+      "byte_identical_to_retained_v10": true
+    }
+  },
+  "runner_lineage": {
+    "retained_v10_sha256": "3da86add5373524e6295a3eba1622482d9ae7b2a47253cca65734e9e6bb41159",
+    "retained_reconstructed_runner_pre_publication_sha256": "e789404e0a08634b440c96312047dec22c64c2d684dee27def3e6e1bf5d2ea68",
+    "publication_hardened_reproduction_runner_sha256": "6fddfc1b6cdfdb9bd060c20f72c57a9d0be7ae1ff33351c6798bec4865ae7641",
+    "documented_scientific_constant_changes_from_retained_v10": {
+      "num_rsus": [
+        10,
+        2
+      ],
+      "vehicles_per_rsu": [
+        20,
+        2
+      ],
+      "num_rounds": [
+        2,
+        20
+      ],
+      "num_local_rounds": [
+        10,
+        10
+      ]
+    },
+    "additional_non_scientific_reproduction_changes": [
+      "portable preprocessing paths",
+      "isolated reproduction output path",
+      "repository-root discovery",
+      "contentReference comment removal",
+      "privacy-boundary wording",
+      "explicit reconstruction provenance banner"
+    ]
+  }
+}

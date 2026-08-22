@@ -1,0 +1,22 @@
+[
+  {
+    "round": 1,
+    "dp_record_sha256": "c151d4bd61d9c6db1e68d6ea6e63da474efc088e66a2915877bfcd8e04b26d60",
+    "dp_record_path": "experiments/08_compact_security_evidence/CSECICIDS2018/verification_evidence/dp_records/rsu_2/vehicle_2001/round_1.json",
+    "num_new_trees": 10,
+    "dp_epsilon_used_u": 552503,
+    "epsilon_cumulative_u": 552503,
+    "dp_epsilon_per_tree_u": 250000,
+    "subsample_u": 200000
+  },
+  {
+    "round": 2,
+    "dp_record_sha256": "2b9743dd3300687a46cbaeea97915c385f735bf26c7dea015dac9498edff072c",
+    "dp_record_path": "experiments/08_compact_security_evidence/CSECICIDS2018/verification_evidence/dp_records/rsu_2/vehicle_2001/round_2.json",
+    "num_new_trees": 10,
+    "dp_epsilon_used_u": 552503,
+    "epsilon_cumulative_u": 1105006,
+    "dp_epsilon_per_tree_u": 250000,
+    "subsample_u": 200000
+  }
+]

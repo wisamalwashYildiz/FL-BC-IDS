@@ -1,0 +1,172 @@
+{
+  "schema": "Reviewer1Comment1SeedStageStatusV1",
+  "stages": {
+    "preprocess": {
+      "status": "skipped_valid_existing",
+      "returncode": 0,
+      "started_utc": "2026-08-18T23:44:27Z",
+      "ended_utc": "2026-08-18T23:44:33Z",
+      "elapsed_sec": 6.06334760000027,
+      "log_path": "experiments/02_multiseed/logs/CSECICIDS2018/seed_42/preprocess.log",
+      "validation": {
+        "ok": true,
+        "output_dir": "experiments/02_multiseed/results/CSECICIDS2018/seed_42/preprocessing",
+        "manifest": "experiments/02_multiseed/results/CSECICIDS2018/seed_42/preprocessing/preprocessing_manifest.json",
+        "seed": 42,
+        "split_hashes": {
+          "train_csv_sha256": "2f7ffabc5edcc05654837074f2e3564873e40a6aa3b01c50ae2084480e37e36d",
+          "val_csv_sha256": "037e7b2f1cb067840723cc343d285734fdb355f4c36e8492966e83eb0438066f",
+          "test_csv_sha256": "f42bb856096d6dbea7b728a181582b380978fafe94452c2ca8c63f22d626574a"
+        },
+        "files": {
+          "train": "experiments/02_multiseed/results/CSECICIDS2018/seed_42/preprocessing/CSECICIDS2018_train_preprocessed.csv",
+          "val": "experiments/02_multiseed/results/CSECICIDS2018/seed_42/preprocessing/CSECICIDS2018_val_preprocessed.csv",
+          "test": "experiments/02_multiseed/results/CSECICIDS2018/seed_42/preprocessing/CSECICIDS2018_test_preprocessed.csv"
+        }
+      },
+      "command": [
+        "python",
+        "experiments/02_multiseed/code/DatasetPreprocessing-V2_Revision2_MultiSeed.py",
+        "--seed",
+        "42",
+        "--revision-root",
+        "experiments/02_multiseed/results",
+        "--input-csv",
+        "data/raw/CSE-CIC-IDS2018/CSECICIDS2018Dataset.csv"
+      ],
+      "command_display": "python experiments/02_multiseed/code/DatasetPreprocessing-V2_Revision2_MultiSeed.py --seed 42 --revision-root experiments/02_multiseed/results --input-csv data/raw/CSE-CIC-IDS2018/CSECICIDS2018Dataset.csv"
+    },
+    "centralized": {
+      "status": "skipped_valid_existing",
+      "returncode": 0,
+      "started_utc": "2026-08-18T23:44:33Z",
+      "ended_utc": "2026-08-18T23:44:34Z",
+      "elapsed_sec": 0.0004947000052197836,
+      "log_path": "experiments/02_multiseed/logs/CSECICIDS2018/seed_42/centralized.log",
+      "validation": {
+        "ok": true,
+        "output_dir": "experiments/02_multiseed/results/CSECICIDS2018/seed_42/centralized",
+        "summary": "experiments/02_multiseed/results/CSECICIDS2018/seed_42/centralized/centralized_xgboost_CSECICIDS2018_summary.json",
+        "model": "experiments/02_multiseed/results/CSECICIDS2018/seed_42/centralized/centralized_xgboost_CSECICIDS2018.json",
+        "test_metrics": {
+          "accuracy": 0.9996466674518502,
+          "precision": 0.9993390857352671,
+          "recall": 0.9948461144820527,
+          "f1": 0.9970875386954371,
+          "auc": 0.9999445215805975
+        }
+      },
+      "command": [
+        "python",
+        "experiments/02_multiseed/code/centralized_xgboost_baseline_Revision2_MultiSeed.py",
+        "--dataset",
+        "CSECICIDS2018",
+        "--seed",
+        "42",
+        "--revision-root",
+        "experiments/02_multiseed/results"
+      ],
+      "command_display": "python experiments/02_multiseed/code/centralized_xgboost_baseline_Revision2_MultiSeed.py --dataset CSECICIDS2018 --seed 42 --revision-root experiments/02_multiseed/results"
+    },
+    "nondp": {
+      "status": "skipped_valid_existing",
+      "returncode": 0,
+      "started_utc": "2026-08-18T23:44:34Z",
+      "ended_utc": "2026-08-18T23:44:34Z",
+      "elapsed_sec": 0.0005187999995541759,
+      "log_path": "experiments/02_multiseed/logs/CSECICIDS2018/seed_42/nondp.log",
+      "validation": {
+        "ok": true,
+        "output_dir": "experiments/02_multiseed/results/CSECICIDS2018/seed_42/nondp_local_10",
+        "run_config": "experiments/02_multiseed/results/CSECICIDS2018/seed_42/nondp_local_10/iov_run_config.json",
+        "summary": "experiments/02_multiseed/results/CSECICIDS2018/seed_42/nondp_local_10/iov_global_server_ensemble_summary.json",
+        "test_metrics": {
+          "accuracy": 0.9994733345037011,
+          "precision": 0.9968490089033818,
+          "recall": 0.9944805906864537,
+          "f1": 0.9956633913377614,
+          "auc": 0.999814296220416
+        }
+      },
+      "command": [
+        "python",
+        "experiments/02_multiseed/code/FL-RSUs-Server-Non-DPBaseline_V10_Revision2_MultiSeed_FINAL_MATCHED.py",
+        "--dataset",
+        "CSECICIDS2018",
+        "--seed",
+        "42",
+        "--revision-root",
+        "experiments/02_multiseed/results",
+        "--num-rsus",
+        "2",
+        "--vehicles-per-rsu",
+        "2",
+        "--num-rounds",
+        "2",
+        "--num-local-rounds",
+        "10"
+      ],
+      "command_display": "python experiments/02_multiseed/code/FL-RSUs-Server-Non-DPBaseline_V10_Revision2_MultiSeed_FINAL_MATCHED.py --dataset CSECICIDS2018 --seed 42 --revision-root experiments/02_multiseed/results --num-rsus 2 --vehicles-per-rsu 2 --num-rounds 2 --num-local-rounds 10"
+    },
+    "dp": {
+      "status": "skipped_valid_existing",
+      "returncode": 0,
+      "started_utc": "2026-08-18T23:44:34Z",
+      "ended_utc": "2026-08-18T23:44:34Z",
+      "elapsed_sec": 0.0007595999995828606,
+      "log_path": "experiments/02_multiseed/logs/CSECICIDS2018/seed_42/dp.log",
+      "validation": {
+        "ok": true,
+        "output_dir": "experiments/02_multiseed/results/CSECICIDS2018/seed_42/full_dp",
+        "run_config": "experiments/02_multiseed/results/CSECICIDS2018/seed_42/full_dp/iov_run_config.json",
+        "summary": "experiments/02_multiseed/results/CSECICIDS2018/seed_42/full_dp/global_ensemble_summary.json",
+        "gating_manifest": "experiments/02_multiseed/results/CSECICIDS2018/seed_42/full_dp/zkp_anchor_gating_manifest.json",
+        "test_metrics": {
+          "accuracy": 0.9980000044444346,
+          "precision": 0.9868614750478434,
+          "recall": 0.9801520578989692,
+          "f1": 0.9834953236750412,
+          "auc": 0.9993411224787346
+        },
+        "global_anchor_ok": true,
+        "used_rsu_ids": [
+          1,
+          2
+        ]
+      },
+      "command": [
+        "python",
+        "experiments/02_multiseed/code/FL_DP_SSI_DualMerklePoseidon_RSU+Global_ZKVerify_V10_Revision2_MultiSeed.py",
+        "--dataset",
+        "CSECICIDS2018",
+        "--seed",
+        "42",
+        "--revision-root",
+        "experiments/02_multiseed/results",
+        "--num-rsus",
+        "2",
+        "--vehicles-per-rsu",
+        "2",
+        "--num-rounds",
+        "2",
+        "--num-local-rounds",
+        "10"
+      ],
+      "command_display": "python experiments/02_multiseed/code/FL_DP_SSI_DualMerklePoseidon_RSU+Global_ZKVerify_V10_Revision2_MultiSeed.py --dataset CSECICIDS2018 --seed 42 --revision-root experiments/02_multiseed/results --num-rsus 2 --vehicles-per-rsu 2 --num-rounds 2 --num-local-rounds 10"
+    }
+  },
+  "dataset": "CSECICIDS2018",
+  "seed": 42,
+  "updated_utc": "2026-08-18T23:44:34Z",
+  "publication_path_policy": "Machine-local executable, source, log, results, and raw-data paths were replaced by portable publication locators. The historical `skipped_valid_existing` statuses are preserved exactly: this status file records a resume/validation pass over already-retained valid outputs, not a fresh execution of those four stages.",
+  "publication_sanitization": {
+    "machine_local_paths_removed": true,
+    "historical_status_values_unchanged": true,
+    "metrics_unchanged": true,
+    "timings_unchanged": true,
+    "returncodes_unchanged": true,
+    "skipped_valid_existing_statuses_preserved": true,
+    "command_arguments_unchanged_except_path_locators": true,
+    "command_display_rebuilt_from_sanitized_argv": true
+  }
+}

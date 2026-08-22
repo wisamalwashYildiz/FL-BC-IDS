@@ -1,0 +1,12 @@
+{
+  "schema": "FLBCIDSCompactSecurityEvidenceHashSemanticsV1",
+  "historical_original_archive": "HISTORICAL_ORIGINAL_BYTES.zip",
+  "historical_original_archive_sha256": "6caf2d190fedb479fcadf704c36c91e553204baa876d6402f958ba38bd4dfd80",
+  "reason": "Path-only publication sanitization changes bytes of SHA-pinned JSON artifacts. The exact uploaded archive is therefore embedded byte-for-byte so historical SHA-256 relationships remain verifiable.",
+  "publication_view": {
+    "json_files_path_sanitized": 31,
+    "absolute_path_values_replaced": 252,
+    "embedded_historical_sha_fields_rewritten": false,
+    "interpretation": "Embedded SHA values continue to identify historical original bytes; use ORIGINAL_TO_PUBLIC_SHA256.csv and the nested original archive to distinguish them from publication-view hashes."
+  }
+}

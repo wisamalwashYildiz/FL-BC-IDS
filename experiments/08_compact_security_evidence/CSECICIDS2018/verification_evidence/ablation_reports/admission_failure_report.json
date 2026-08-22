@@ -1,0 +1,22 @@
+{
+  "enabled": true,
+  "mode": "bad_signature",
+  "target": {
+    "rsu_id": 1,
+    "vehicle_id": 1001,
+    "round": 1
+  },
+  "detected": true,
+  "matched_detail": {
+    "cid": "7026321175366500473",
+    "vehicle_id": 1001,
+    "reason": "bad_signature_or_report_binding",
+    "classification": "bad_signature",
+    "detail": "",
+    "ablation_target": 1,
+    "ablation_mode": "bad_signature",
+    "ablation_digest_target": 0,
+    "ablation_digest_mode": ""
+  },
+  "result": "pass"
+}

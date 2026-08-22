@@ -1,0 +1,88 @@
+{
+  "script": "Reviewer_Concern2_Complete_Temporal_Validation.py",
+  "purpose": "Complete temporal validation for Reviewer Concern #2",
+  "versions": {
+    "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "scikit_learn": "1.7.2",
+    "xgboost": "3.1.2",
+    "joblib": "1.5.2"
+  },
+  "random_state": 42,
+  "source_contract": {
+    "expected_cse_sha256": "4335539845e880b1fb06703b5a68da0a03ed0682204bdda0863ddfc316782e3c",
+    "expected_cse_source_rows": 63195145
+  },
+  "sampling": {
+    "row_cap": 3000000,
+    "rule": "source-wide Dask sample with fixed seed, then strict chronological sort"
+  },
+  "block_protocol": {
+    "n_blocks": 10,
+    "rule": "approximately equal-row contiguous blocks; identical timestamps never cross block boundaries"
+  },
+  "strict_nonadaptive_protocol": {
+    "test_blocks": [
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "rule": "train all blocks before calibration; whole immediately preceding block calibration; next block test",
+    "purpose": "retain and explain the original zero-eligibility rolling-origin audit"
+  },
+  "adaptive_protocol": {
+    "test_blocks": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "adaptation_fraction": 0.7,
+    "calibration_fraction": 0.30000000000000004,
+    "rule": "all earlier blocks + first 70% of preceding block for supervised refresh; final 30% preceding block calibration only; complete next block test",
+    "operational_assumption": "labels for adaptation segment are available before subsequent test block",
+    "provenance_note": "Adaptive protocol was introduced after the strict chronology audit demonstrated zero eligible seen-attack test rows. Its split fraction, transitions, model, threshold policy, and reporting rules are fixed before adaptive performance is observed."
+  },
+  "threshold_policy": {
+    "primary_target_benign_calibration_fpr": 0.01,
+    "sensitivity_grid": [
+      0.001,
+      0.005,
+      0.01,
+      0.02,
+      0.05
+    ],
+    "test_leakage": "no test row used for fitting or threshold selection"
+  },
+  "model": {
+    "xgboost_params": {
+      "tree_method": "hist",
+      "max_depth": 6,
+      "learning_rate": 0.2,
+      "min_child_weight": 500,
+      "subsample": 0.2,
+      "colsample_bytree": 0.9,
+      "reg_lambda": 1.0,
+      "reg_alpha": 1.0,
+      "max_delta_step": 1.0,
+      "seed": 42,
+      "verbosity": 0,
+      "nthread": 19
+    },
+    "num_boost_round": 100,
+    "balance_binary_train": true
+  },
+  "paths": {
+    "cse": "data/raw/CSE-CIC-IDS2018/CSECICIDS2018Dataset.csv",
+    "output": "experiments/03_generalization/temporal"
+  }
+}

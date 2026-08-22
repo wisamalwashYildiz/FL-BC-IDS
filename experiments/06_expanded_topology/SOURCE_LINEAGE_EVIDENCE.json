@@ -1,0 +1,47 @@
+{
+  "schema": "FLBCIDSExpandedTopologySourceLineageV1",
+  "retained_v10_runner": {
+    "sha256": "3da86add5373524e6295a3eba1622482d9ae7b2a47253cca65734e9e6bb41159",
+    "topology_directly_encoded": {
+      "num_rsus": 10,
+      "vehicles_per_rsu": 20,
+      "num_rounds": 2,
+      "num_local_rounds": 10
+    },
+    "active_dataset": "CSECICIDS2018",
+    "alternate_commented_dataset": "CICIoV2024"
+  },
+  "portable_runner": {
+    "pre_publication_sha256": "a719d491db17bf0c32b3e6e8bf4961397dff855a6fe2b76b994c242151a50217",
+    "publication_sha256": "5c6f6863cb85b446996bcc4bdc9b4c11c7a97c123bc5105735840a28b3c07053",
+    "function_definition_changes_vs_retained_v10_before_hardening": 0,
+    "publication_changes": [
+      "repository-root/node_modules discovery",
+      "dataset selection via FLBCIDS_DATASET_NAME",
+      "repository-root-relative preprocessing resolution",
+      "expanded-topology-specific output isolation",
+      "contentReference comment removal",
+      "privacy-boundary wording",
+      "shebang/provenance banner cleanup"
+    ],
+    "scientific_topology_constants_changed": false
+  },
+  "helpers": {
+    "FL_IoV_AnchorZKP_UtilsV10.py": {
+      "sha256": "242a4d8f25fbbb5977be591fd816e5c1e9b36bb35d6b5a834057fc0a86d094f4",
+      "portable_copy_byte_identical_to_retained_v10": true
+    },
+    "FL_IoV_CanonicalSpecV10.py": {
+      "sha256": "f2559b08c10157a7accceff4e9c97a9a847dae6b7bec5a42f41e03e04849bee4",
+      "portable_copy_byte_identical_to_retained_v10": true
+    },
+    "FL_IoV_DPxgb_UtilsV10.py": {
+      "sha256": "8bd9b2d4036231db087fc00fc866bc2491bb7de0ff6a6feb72d4bb6e3ae683f8",
+      "portable_copy_byte_identical_to_retained_v10": true
+    },
+    "FL_IoV_MerkleSSI_UtilsV10.py": {
+      "sha256": "55774c98d9f79856c88c65d7698a48115076ac34278120df0a9868da420797d6",
+      "portable_copy_byte_identical_to_retained_v10": true
+    }
+  }
+}

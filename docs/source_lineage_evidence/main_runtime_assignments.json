@@ -1,0 +1,46 @@
+{
+  "V10": [
+    {
+      "name": "NUM_RSUS",
+      "value": "10",
+      "line": 2950
+    },
+    {
+      "name": "VEHICLES_PER_RSU",
+      "value": "20",
+      "line": 2951
+    },
+    {
+      "name": "NUM_ROUNDS",
+      "value": "2",
+      "line": 2952
+    },
+    {
+      "name": "NUM_LOCAL_ROUNDS",
+      "value": "10",
+      "line": 2953
+    }
+  ],
+  "V9": [
+    {
+      "name": "NUM_RSUS",
+      "value": "2",
+      "line": 2950
+    },
+    {
+      "name": "VEHICLES_PER_RSU",
+      "value": "2",
+      "line": 2951
+    },
+    {
+      "name": "NUM_ROUNDS",
+      "value": "2",
+      "line": 2952
+    },
+    {
+      "name": "NUM_LOCAL_ROUNDS",
+      "value": "10",
+      "line": 2953
+    }
+  ]
+}

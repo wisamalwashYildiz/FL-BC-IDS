@@ -1,0 +1,45 @@
+{
+  "schema": "FLBCIDSVerificationPublicationRepairV1",
+  "source_zip": "verification.zip",
+  "source_zip_sha256": "84110572f51c89203f388beecbb27eb2a7a4cd53c22bcf3cfe6e906d14a8d6e0",
+  "original_file_count": 43,
+  "security_redaction": {
+    "private_ed25519_fields_removed": 4,
+    "affected_public_key_files": 4,
+    "original_archive_embedded": false,
+    "reason_original_archive_not_embedded": "Embedding it would re-publish the private signing keys.",
+    "did_public_key_self_consistency": "4/4 PASS",
+    "signed_manifest_public_key_cross_links": "4/4 PASS"
+  },
+  "evidence_reclassification": {
+    "old_prefix": "verification/evidence_bundle/primary_compact/",
+    "new_prefix": "verification/evidence_bundle/compact_security_evidence/core/",
+    "files_moved": 14,
+    "reason": "The selected DP/ZKP files are compact security-evidence lineage, not the missing historical main utility bundle."
+  },
+  "path_portability": {
+    "json_files_sanitized": 7,
+    "absolute_path_values_replaced": 84,
+    "publication_locator_root": "experiments/08_compact_security_evidence/CSECICIDS2018/verification_evidence"
+  },
+  "blockchain_validation": {
+    "chain_id": 11155111,
+    "network": "Sepolia",
+    "proof_submissions_verified": "5/5",
+    "finalized_transactions": "6/6",
+    "deployment_address_cross_links": "PASS",
+    "index_sha256_cross_link": "PASS",
+    "run_id_derivation_from_index_and_salt": "PASS",
+    "credentials_exposed_in_corrected_package": false
+  },
+  "groth16_validation": {
+    "canonical_filename_hash_prefixes_checked": 8,
+    "verification_key_protocol": "groth16",
+    "verification_key_curve": "bn128",
+    "public_input_count": 10,
+    "deployment_vkey_hash_cross_links": "PASS",
+    "deployment_verifier_source_hash_cross_links": "PASS",
+    "cryptographic_snarkjs_verification_in_this_sandbox": "NOT COMPLETED; npx/snarkjs was not locally available for a deterministic offline run. Use scripts/verify_groth16.py in the frozen repository environment."
+  },
+  "scientific_or_cryptographic_values_modified": false
+}

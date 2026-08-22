@@ -1,0 +1,35 @@
+--- V10:FL_DP_SSI_DualMerklePoseidon_RSU+Global_ZKVerify_V10.py
++++ V9:FL_DP_SSI_DualMerklePoseidon_RSU+Global_ZKVerify_V9.py
+@@ -33,9 +33,9 @@
+ import pandas as pd
+ from cryptography.hazmat.primitives.asymmetric.ed25519 import Ed25519PrivateKey
+ from cryptography.hazmat.primitives import serialization
+-import FL_IoV_AnchorZKP_UtilsV10 as azkp          # AnchorSum ZK lane
+-import FL_IoV_CanonicalSpecV10 as canon           # ✅ Phase-1 canonical bytes authority
+-import FL_IoV_MerkleSSI_UtilsV10 as mssi           # ✅ Phase-2 dual leaves + dual roots + audit
++import FL_IoV_AnchorZKP_UtilsV9 as azkp          # AnchorSum ZK lane
++import FL_IoV_CanonicalSpecV9 as canon           # ✅ Phase-1 canonical bytes authority
++import FL_IoV_MerkleSSI_UtilsV9 as mssi           # ✅ Phase-2 dual leaves + dual roots + audit
+ # MUST match your frozen spec (V8b)
+ POSEIDON_ARITY = 5
+ POSEIDON_DEPTH = 32
+@@ -72,7 +72,7 @@
+ import flwr.server.strategy.fedxgb_bagging as _fxgb
+ # --------------------------------------------------------------------------
+ from sklearn.metrics import confusion_matrix, log_loss
+-from FL_IoV_DPxgb_UtilsV10 import (
++from FL_IoV_DPxgb_UtilsV9 import (
+     IoVDatasetConfig,
+     RSUConfig,
+     XGBoostConfig,
+@@ -2947,8 +2947,8 @@
+     # ---------------------------
+     # High-level RSU configuration
+     # ---------------------------
+-    NUM_RSUS = 10
+-    VEHICLES_PER_RSU = 20
++    NUM_RSUS = 2
++    VEHICLES_PER_RSU = 2
+     NUM_ROUNDS = 2
+     NUM_LOCAL_ROUNDS = 10
+     # ✅ Define once and reuse everywhere (training + global stage)

@@ -1,0 +1,11 @@
+--- V10:FL_IoV_MerkleSSI_UtilsV10.py
++++ V9:FL_IoV_MerkleSSI_UtilsV9.py
+@@ -21,7 +21,7 @@
+ from functools import lru_cache  # ✅ NEW
+ # ---- Canonical contract (MUST be updated first) ----
+ try:
+-    from FL_IoV_CanonicalSpecV10 import (
++    from FL_IoV_CanonicalSpecV9 import (
+         BN254_PRIME,
+         sha256_hex,
+         canon_json_bytes_v1,  # ✅ NEW: canonical body hashing for on-chain export index

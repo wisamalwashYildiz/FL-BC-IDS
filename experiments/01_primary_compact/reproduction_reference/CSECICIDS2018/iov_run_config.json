@@ -1,0 +1,35 @@
+{
+  "dp_enabled": true,
+  "dp_epsilon_round": 0.5525028433699525,
+  "dp_delta_round": 0.0,
+  "dataset_name": "CSECICIDS2018",
+  "experiment_seed": 42,
+  "revision_context": {
+    "round": 2,
+    "reviewer": 1,
+    "comment": 1,
+    "purpose": "multi-seed and repartitioned statistical evaluation",
+    "revision_root": "experiments/02_multiseed/results",
+    "preprocessing_dir": "experiments/02_multiseed/results/CSECICIDS2018/seed_42/preprocessing",
+    "output_dir": "experiments/02_multiseed/results/CSECICIDS2018/seed_42/full_dp",
+    "anchor_seed_fixed": 42,
+    "anchor_source_split_seed": 42
+  },
+  "dp_clip_l1": null,
+  "num_rounds": 2,
+  "num_local_rounds": 10,
+  "num_rsus": 2,
+  "vehicles_per_rsu": 2,
+  "tree_method": "approxDP",
+  "dp_epsilon_per_tree": 0.25,
+  "subsample": 0.2,
+  "num_parallel_tree": 1,
+  "dp_epsilon_total": 1.105005686739905,
+  "publication_path_policy": "Machine-local absolute execution paths were replaced by repository-relative locators; scientific, privacy-accounting, and experiment-configuration values are unchanged.",
+  "publication_sanitization": {
+    "machine_local_paths_removed": true,
+    "scientific_values_unchanged": true,
+    "dp_accounting_values_unchanged": true,
+    "historical_seed_and_configuration_preserved": true
+  }
+}

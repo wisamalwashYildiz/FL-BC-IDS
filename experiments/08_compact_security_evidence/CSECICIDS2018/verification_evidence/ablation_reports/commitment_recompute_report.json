@@ -1,0 +1,41 @@
+{
+  "enabled": true,
+  "target": {
+    "rsu_id": 2,
+    "round": 2,
+    "global_round": 2
+  },
+  "rsu_check": {
+    "target": {
+      "rsu_id": 2,
+      "round": 2
+    },
+    "manifest_path": "experiments/08_compact_security_evidence/CSECICIDS2018/verification_evidence/rsu_2/round_manifests/rsu/rsu_2/round_2.json",
+    "record_count": 2,
+    "record_envelope_sha256_match": true,
+    "manifest_root_sha256_hex": "5e8650bda9e1e84df2ba57d54055e6ea8ef7a7ee82979c5056b77514858e9b7a",
+    "recomputed_root_sha256_hex": "5e8650bda9e1e84df2ba57d54055e6ea8ef7a7ee82979c5056b77514858e9b7a",
+    "manifest_root_poseidon_field": 19268322764750176638697042101818619472875531761440023780921201417664614965466,
+    "recomputed_root_poseidon_field": 19268322764750176638697042101818619472875531761440023780921201417664614965466,
+    "result": "pass"
+  },
+  "global_check": {
+    "target": {
+      "round": 2
+    },
+    "gate_manifest_path": "experiments/08_compact_security_evidence/CSECICIDS2018/verification_evidence/run_root/zkp_anchor_gating_manifest.json",
+    "global_round_manifest_path": "experiments/08_compact_security_evidence/CSECICIDS2018/verification_evidence/zkp_round_manifests/global/round_2.json",
+    "global_manifest_canon_sha256_hex": "6e9d67272aa9d6e5e5bd25c84e5fb2ca7b2761bf920a5bc0fa5191fbdaa12b5b",
+    "gate_root_poseidon_field": 6256034525455582208719653635352908651401196319498550195985094743522728291161,
+    "recomputed_root_poseidon_field": 6256034525455582208719653635352908651401196319498550195985094743522728291161,
+    "summary_root_poseidon_field": 6256034525455582208719653635352908651401196319498550195985094743522728291161,
+    "rsu_ids_sorted_match": true,
+    "mask_list_match": true,
+    "rsu_round_roots_match": true,
+    "pins_hash_field_match": true,
+    "policy_id_field_match": true,
+    "public_input_order_id_field_match": true,
+    "result": "pass"
+  },
+  "result": "pass"
+}

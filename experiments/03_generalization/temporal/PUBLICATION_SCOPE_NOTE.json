@@ -1,0 +1,45 @@
+{
+  "schema": "FLBCIDSGeneralizationPublicationScopeV1",
+  "dataset": "CSE-CIC-IDS2018",
+  "raw_source_sha256": "4335539845e880b1fb06703b5a68da0a03ed0682204bdda0863ddfc316782e3c",
+  "sample_contract": {
+    "source_rows": 63195145,
+    "source_wide_sample_cap": 3000000,
+    "timestamp_valid_sample_rows": 3000000,
+    "features": 85,
+    "chronological_blocks": 10,
+    "identical_timestamps_cross_block_boundary": false
+  },
+  "primary_temporal_endpoint": {
+    "protocol": "supervised adaptive rolling refresh",
+    "operational_assumption": "Labels for the first 70% adaptation segment of the immediately preceding block are available before the subsequent test block.",
+    "eligible_seen_attack_evaluations": 5,
+    "pooled_seen_attack_rows": 6968,
+    "pooled_recall": 0.9847876004592423,
+    "pooled_precision": 0.4706124408476785,
+    "pooled_f1": 0.636874100886352,
+    "pooled_test_fpr": 0.005699564502766714,
+    "scope_constraint": "These pooled values apply only to attacks whose attack family was represented in the supervised training history for that transition."
+  },
+  "strict_nonadaptive_diagnostic": {
+    "evaluations": 5,
+    "eligible_seen_attack_evaluations": 0,
+    "interpretation": "The strict rolling audit is retained as chronology evidence. It does not provide a seen-attack temporal recall endpoint because all five strict test folds contain zero seen-attack rows."
+  },
+  "terminal_70_15_15_diagnostic": {
+    "seen_attack_rows": 0,
+    "novel_attack_rows": 7560,
+    "combined_recall": 0.005555555555555556,
+    "combined_precision": 0.02106318956870612,
+    "combined_f1": 0.008792128951224618,
+    "combined_test_fpr": 0.004411897658439562,
+    "combined_auc": 0.8733829182709256,
+    "interpretation": "This is an intentionally retained combined temporal plus open-set attack-novelty stress diagnostic. It must not be presented as seen-attack temporal recall."
+  },
+  "threshold_policy": {
+    "primary_target_benign_calibration_fpr": 0.01,
+    "threshold_selected_from": "benign calibration scores only",
+    "test_rows_used_for_threshold_selection": false
+  },
+  "publication_principle": "Weak strict/open-set results are retained rather than removed. Strong adaptive seen-attack results are explicitly bounded by their supervised label-availability and seen-family assumptions."
+}

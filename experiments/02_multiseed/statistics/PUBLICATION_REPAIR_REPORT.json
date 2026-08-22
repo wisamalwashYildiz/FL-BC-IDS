@@ -1,0 +1,30 @@
+{
+  "schema": "FLBCIDSMultiSeedStatisticsPublicationRepairV1",
+  "source_zip": "statistics.zip",
+  "source_zip_sha256": "a811b7c895c0f5dc0ea2bd05bb6948b527c5ca4c4c4448d96667542c4b2e70f0",
+  "original_file_count": 5,
+  "publication_repairs": {
+    "per_seed_source_summary_locators_normalized": 300,
+    "summary_statistics_ci_rows_repaired": 30,
+    "summary_ci_from": "Student-t 95% CI",
+    "summary_ci_to": "Reported percentile-bootstrap 95% CI",
+    "bootstrap_summary_machine_local_input_path_removed": true,
+    "bootstrap_exact_audit_statistics_changed": false,
+    "paired_permutation_statistics_changed": false,
+    "per_seed_metric_values_changed": false,
+    "means_changed": false,
+    "sample_sds_changed": false
+  },
+  "validation": {
+    "per_seed_rows": 300,
+    "groups": 30,
+    "seeds_exactly_42_to_51": true,
+    "ten_observations_per_group": true,
+    "summary_mean_sd_match_per_seed_data": true,
+    "bootstrap_audit_mean_sd_match_per_seed_data": true,
+    "exact_signflip_raw_p_mismatches": 0,
+    "holm_adjusted_p_mismatches": 0,
+    "bootstrap_reported_endpoint_count": 60,
+    "bootstrap_reported_interval_count": 30
+  }
+}

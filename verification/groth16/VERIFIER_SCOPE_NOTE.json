@@ -1,0 +1,34 @@
+{
+  "schema": "FLBCIDSGroth16VerifierScopeNoteV1",
+  "retained_circuit_sources": {
+    "rsu": {
+      "path": "verification/groth16/circuit_sources/AggRSU_AnchorSum_M64_K2_RM1_S100000_RC0_RB2.circom",
+      "sha256": "5a33c289953ae0689f40f8e320cf9effcc45941ecb036377ee4f7c51706f5382"
+    },
+    "global": {
+      "path": "verification/groth16/circuit_sources/AggGlobal_AnchorSum_M64_K2_RM2_S100000_RC0_RB2.circom",
+      "sha256": "a7c7c85b43eb74f7961f77292d02bd8f5ad8306aaec3a9936c7775b3d70e98a3"
+    },
+    "sources_are_byte_identical": false
+  },
+  "retained_canonical_verifier_material": {
+    "verification_key_sha256": "9b5dc0643303568535ad8e7ef8a922fa2cf078f61aa653bc4dffcccbaf04a9ce",
+    "verifier_sol_sha256": "49acf88545b18d0d1253d7830d5273e5503c6ed59b15088029516e5580fc0301",
+    "zkey_sha256": "c662494e592d6eef40f7f843854a866c66c429b5f8beb3adb5a50f3093b2b2a5",
+    "retained_proof_scope": "global round 2",
+    "retained_public_input_count": 10
+  },
+  "deployment_metadata": {
+    "rsu_vkey_sha256": "9b5dc0643303568535ad8e7ef8a922fa2cf078f61aa653bc4dffcccbaf04a9ce",
+    "global_vkey_sha256": "9b5dc0643303568535ad8e7ef8a922fa2cf078f61aa653bc4dffcccbaf04a9ce",
+    "rsu_verifier_sol_sha256": "49acf88545b18d0d1253d7830d5273e5503c6ed59b15088029516e5580fc0301",
+    "global_verifier_sol_sha256": "49acf88545b18d0d1253d7830d5273e5503c6ed59b15088029516e5580fc0301",
+    "shared_verification_material_for_both_logical_scopes": true
+  },
+  "interpretation": [
+    "The retained deployment records use the same verification-key and verifier-source hashes for the RSU and GLOBAL logical scopes.",
+    "The two retained Circom source files are not byte-identical. This package does not contain separate source-to-zkey/vkey build manifests proving that each named source independently produced a distinct deployed setup.",
+    "The on-chain evidence demonstrates functional verification of the submitted proofs against the deployed verifier material. It must not be overstated as independent source-to-deployed-key reproducibility for both logical circuit-source files.",
+    "The retained standalone Groth16 proof triplet in this verification package is the global round-2 proof. Cryptographic re-verification requires snarkjs or an equivalent Groth16 verifier."
+  ]
+}

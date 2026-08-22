@@ -1,0 +1,120 @@
+FL-BC-IDS V10 vs V9 FULL-STACK COMPARISON SUMMARY
+======================================================================================
+
+SCOPE / LINEAGE NOTE
+--------------------------------------------------------------------------------------
+The SHA-256 values below identify the exact retained historical V10/V9
+snapshots under experiments/05_long_round/code/retained_*_stack/.
+They do NOT identify the publication-portable copies under code/core/,
+which may contain later portability/documentation hardening.
+
+The comparison establishes similarity or differences only among the
+retained V10 and V9 snapshots. It does not by itself prove which
+historical snapshot executed the 20-round experiment.
+
+COMPONENT: main_runner
+  V10: experiments/05_long_round/code/retained_v10_stack/FL_DP_SSI_DualMerklePoseidon_RSU+Global_ZKVerify_V10.py
+  V9 : experiments/05_long_round/code/retained_v9_stack/FL_DP_SSI_DualMerklePoseidon_RSU+Global_ZKVerify_V9.py
+  V10 SHA-256                  : 3da86add5373524e6295a3eba1622482d9ae7b2a47253cca65734e9e6bb41159
+  V9 SHA-256                   : 92d2cdd8f368f9b30f3d179ffa26c2cca8ecb9607efe4c0785e3d48f74386071
+  Exact file identical         : False
+  Exact AST identical          : False
+  Exact line similarity        : 0.998682477
+  Runtime-normalized text same  : False
+  Runtime-normalized similarity : 0.998682477
+  Function/method bodies V10   : 16
+  Function/method bodies V9    : 16
+  Identical function bodies    : 16
+  Changed function bodies      : 0
+  Functions only in V10        : 0
+  Functions only in V9         : 0
+  Changed class bodies         : 0
+  Exact diff lines             : 35
+  Runtime-normalized diff lines : 35
+  Exact diff artifact          : docs/source_lineage_evidence/main_runner_V10_vs_V9_exact.patch
+  Runtime-normalized diff       : docs/source_lineage_evidence/main_runner_V10_vs_V9_runtime_normalized.patch
+
+COMPONENT: anchor_zkp_utils
+  V10: experiments/05_long_round/code/retained_v10_stack/FL_IoV_AnchorZKP_UtilsV10.py
+  V9 : experiments/05_long_round/code/retained_v9_stack/FL_IoV_AnchorZKP_UtilsV9.py
+  V10 SHA-256                  : 242a4d8f25fbbb5977be591fd816e5c1e9b36bb35d6b5a834057fc0a86d094f4
+  V9 SHA-256                   : b3a93c3b00b048895728bea39894ef7d416cb14f0ce21c09d1191b3a1ce535da
+  Exact file identical         : False
+  Exact AST identical          : False
+  Exact line similarity        : 0.999643494
+  Function/method bodies V10   : 82
+  Function/method bodies V9    : 82
+  Identical function bodies    : 82
+  Changed function bodies      : 0
+  Functions only in V10        : 0
+  Functions only in V9         : 0
+  Changed class bodies         : 0
+  Exact diff lines             : 11
+  Exact diff artifact          : docs/source_lineage_evidence/anchor_zkp_utils_V10_vs_V9_exact.patch
+
+COMPONENT: canonical_spec
+  V10: experiments/05_long_round/code/retained_v10_stack/FL_IoV_CanonicalSpecV10.py
+  V9 : experiments/05_long_round/code/retained_v9_stack/FL_IoV_CanonicalSpecV9.py
+  V10 SHA-256                  : f2559b08c10157a7accceff4e9c97a9a847dae6b7bec5a42f41e03e04849bee4
+  V9 SHA-256                   : f2559b08c10157a7accceff4e9c97a9a847dae6b7bec5a42f41e03e04849bee4
+  Exact file identical         : True
+  Exact AST identical          : True
+  Exact line similarity        : 1.000000000
+  Function/method bodies V10   : 38
+  Function/method bodies V9    : 38
+  Identical function bodies    : 38
+  Changed function bodies      : 0
+  Functions only in V10        : 0
+  Functions only in V9         : 0
+  Changed class bodies         : 0
+  Exact diff lines             : 0
+  Exact diff artifact          : none required (exact files identical)
+
+COMPONENT: merkle_ssi_utils
+  V10: experiments/05_long_round/code/retained_v10_stack/FL_IoV_MerkleSSI_UtilsV10.py
+  V9 : experiments/05_long_round/code/retained_v9_stack/FL_IoV_MerkleSSI_UtilsV9.py
+  V10 SHA-256                  : 55774c98d9f79856c88c65d7698a48115076ac34278120df0a9868da420797d6
+  V9 SHA-256                   : 1a48de4b74825010bb097d57e230ab54d13844a0b6d71e24c2b847e7269fe58f
+  Exact file identical         : False
+  Exact AST identical          : False
+  Exact line similarity        : 0.997963340
+  Function/method bodies V10   : 17
+  Function/method bodies V9    : 17
+  Identical function bodies    : 17
+  Changed function bodies      : 0
+  Functions only in V10        : 0
+  Functions only in V9         : 0
+  Changed class bodies         : 0
+  Exact diff lines             : 11
+  Exact diff artifact          : docs/source_lineage_evidence/merkle_ssi_utils_V10_vs_V9_exact.patch
+
+COMPONENT: dpxgb_utils
+  V10: experiments/05_long_round/code/retained_v10_stack/FL_IoV_DPxgb_UtilsV10.py
+  V9 : experiments/05_long_round/code/retained_v9_stack/FL_IoV_DPxgb_UtilsV9.py
+  V10 SHA-256                  : 8bd9b2d4036231db087fc00fc866bc2491bb7de0ff6a6feb72d4bb6e3ae683f8
+  V9 SHA-256                   : 75ae53eaaca4aae1a0fd29bae3a093e6d5af35b60f509b885455297d78a93881
+  Exact file identical         : False
+  Exact AST identical          : False
+  Exact line similarity        : 0.998086735
+  Function/method bodies V10   : 57
+  Function/method bodies V9    : 57
+  Identical function bodies    : 57
+  Changed function bodies      : 0
+  Functions only in V10        : 0
+  Functions only in V9         : 0
+  Changed class bodies         : 0
+  Exact diff lines             : 22
+  Exact diff artifact          : docs/source_lineage_evidence/dpxgb_utils_V10_vs_V9_exact.patch
+
+KEY INTERPRETATION
+--------------------------------------------------------------------------------------
+Across all five compared components, no function/method body changed
+between the retained V10 and V9 snapshots.
+
+For the main runner, the retained runtime assignments are:
+  V10: NUM_RSUS=10, VEHICLES_PER_RSU=20, NUM_ROUNDS=2, NUM_LOCAL_ROUNDS=10
+  V9 : NUM_RSUS=2,  VEHICLES_PER_RSU=2,  NUM_ROUNDS=2, NUM_LOCAL_ROUNDS=10
+
+Thus the retained V10 snapshot directly represents the expanded 10-RSU ×
+20-vehicle topology configuration, while this lineage comparison alone
+does not identify an exact historical executable for the separate 20-round run.

@@ -1,0 +1,13 @@
+{
+  "dataset_name": "CSECICIDS2018",
+  "dp_enabled": false,
+  "dp_epsilon_round": 0.0,
+  "dp_delta_round": 0.0,
+  "dp_clip_l1": null,
+  "num_rounds": 2,
+  "num_local_rounds": 100,
+  "num_rsus": 2,
+  "vehicles_per_rsu": 2,
+  "tree_method": "hist",
+  "dp_epsilon_total": 0.0
+}

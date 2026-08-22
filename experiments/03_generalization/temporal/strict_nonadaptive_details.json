@@ -1,0 +1,892 @@
+[
+  {
+    "protocol": "strict_nonadaptive",
+    "evaluation_id": "strict_test_B6",
+    "fold": 1,
+    "train_blocks": "B1-B4",
+    "calibration_block": 5,
+    "test_block": 6,
+    "train_rows": 1200000,
+    "calibration_rows": 300000,
+    "test_rows": 300000,
+    "train_time_range": [
+      "2018-02-14 12:28:11.768711",
+      "2018-02-21 13:07:33.509229"
+    ],
+    "calibration_time_range": [
+      "2018-02-21 13:07:33.521374",
+      "2018-02-21 21:18:00.975171"
+    ],
+    "test_time_range": [
+      "2018-02-21 21:18:01.516644",
+      "2018-02-23 12:23:58.329045"
+    ],
+    "train_class_counts": {
+      "benign": 1080082,
+      "attack": 119918
+    },
+    "calibration_class_counts": {
+      "benign": 248563,
+      "attack": 51437
+    },
+    "test_class_counts": {
+      "benign": 299991,
+      "attack": 9
+    },
+    "train_attack_types": [
+      "DDOS-LOIC-HTTP",
+      "DDOS-LOIC-UDP",
+      "DDOS-LOIC-UDP - ATTEMPTED",
+      "DOS GOLDENEYE",
+      "DOS GOLDENEYE - ATTEMPTED",
+      "DOS HULK",
+      "DOS HULK - ATTEMPTED",
+      "DOS SLOWLORIS",
+      "DOS SLOWLORIS - ATTEMPTED",
+      "FTP-BRUTEFORCE - ATTEMPTED",
+      "SSH-BRUTEFORCE"
+    ],
+    "test_attack_types": [
+      "WEB ATTACK - BRUTE FORCE",
+      "WEB ATTACK - BRUTE FORCE - ATTEMPTED",
+      "WEB ATTACK - SQL",
+      "WEB ATTACK - XSS"
+    ],
+    "seen_test_attack_types": [],
+    "novel_test_attack_types": [
+      "WEB ATTACK - BRUTE FORCE",
+      "WEB ATTACK - BRUTE FORCE - ATTEMPTED",
+      "WEB ATTACK - SQL",
+      "WEB ATTACK - XSS"
+    ],
+    "seen_attack_rows": 0,
+    "novel_attack_rows": 9,
+    "status": "evaluated",
+    "primary_seen_endpoint_eligible": false,
+    "primary_threshold": 0.015469443053007128,
+    "diagnostic_validation_f1_threshold": 0.3812121212121212,
+    "primary_calibration_metrics": {
+      "n": 300000,
+      "benign_n": 248563,
+      "attack_n": 51437,
+      "accuracy": 0.9916933333333333,
+      "precision": 0.9539257692949752,
+      "recall": 0.9998444699340941,
+      "f1": 0.9763455149501661,
+      "balanced_accuracy": 0.9949255138138585,
+      "mcc": 0.9717058320912827,
+      "fpr": 0.009993442306377056,
+      "tn": 246079,
+      "fp": 2484,
+      "fn": 8,
+      "tp": 51429,
+      "confusion_matrix": [
+        [
+          246079,
+          2484
+        ],
+        [
+          8,
+          51429
+        ]
+      ],
+      "roc_auc": 0.9995582197113877,
+      "threshold": 0.015469443053007128
+    },
+    "combined_test_period": {
+      "n": 300000,
+      "benign_n": 299991,
+      "attack_n": 9,
+      "accuracy": 0.98925,
+      "precision": 0.0006211180124223603,
+      "recall": 0.2222222222222222,
+      "f1": 0.0012387736141220192,
+      "balanced_accuracy": 0.6057476168729506,
+      "mcc": 0.011241666599658591,
+      "fpr": 0.010726988476320956,
+      "tn": 296773,
+      "fp": 3218,
+      "fn": 7,
+      "tp": 2,
+      "confusion_matrix": [
+        [
+          296773,
+          3218
+        ],
+        [
+          7,
+          2
+        ]
+      ],
+      "roc_auc": 0.9588158015110824,
+      "threshold": 0.015469443053007128
+    },
+    "seen_attack_temporal": null,
+    "novel_attack_with_benign_diagnostic": {
+      "n": 300000,
+      "benign_n": 299991,
+      "attack_n": 9,
+      "accuracy": 0.98925,
+      "precision": 0.0006211180124223603,
+      "recall": 0.2222222222222222,
+      "f1": 0.0012387736141220192,
+      "balanced_accuracy": 0.6057476168729506,
+      "mcc": 0.011241666599658591,
+      "fpr": 0.010726988476320956,
+      "tn": 296773,
+      "fp": 3218,
+      "fn": 7,
+      "tp": 2,
+      "confusion_matrix": [
+        [
+          296773,
+          3218
+        ],
+        [
+          7,
+          2
+        ]
+      ],
+      "roc_auc": 0.9588158015110824,
+      "threshold": 0.015469443053007128
+    },
+    "test_benign_fpr": 0.010726988476320956,
+    "fit_seconds": 14.149637399998028,
+    "balance": {
+      "enabled": true,
+      "before": {
+        "benign": 1080082,
+        "attack": 119918
+      },
+      "performed": true,
+      "after": {
+        "benign": 1080082,
+        "attack": 1080082
+      }
+    },
+    "predictor_hash_diagnostics": {
+      "test_rows_hash_seen_in_train": 565,
+      "test_rows_hash_novel_to_train": 299435,
+      "seen_attack_rows_hash_seen_in_train": 0,
+      "seen_attack_rows_hash_novel_to_train": 0,
+      "seen_attack_recall_hash_seen_in_train": null,
+      "seen_attack_recall_hash_novel_to_train": null
+    },
+    "primary_seen_endpoint_exclusion_reason": "zero_seen_attack_rows_in_test"
+  },
+  {
+    "protocol": "strict_nonadaptive",
+    "evaluation_id": "strict_test_B7",
+    "fold": 2,
+    "train_blocks": "B1-B5",
+    "calibration_block": 6,
+    "test_block": 7,
+    "train_rows": 1500000,
+    "calibration_rows": 300000,
+    "test_rows": 300000,
+    "train_time_range": [
+      "2018-02-14 12:28:11.768711",
+      "2018-02-21 21:18:00.975171"
+    ],
+    "calibration_time_range": [
+      "2018-02-21 21:18:01.516644",
+      "2018-02-23 12:23:58.329045"
+    ],
+    "test_time_range": [
+      "2018-02-23 12:23:58.678035",
+      "2018-02-28 12:51:31.023940"
+    ],
+    "train_class_counts": {
+      "benign": 1328645,
+      "attack": 171355
+    },
+    "calibration_class_counts": {
+      "benign": 299991,
+      "attack": 9
+    },
+    "test_class_counts": {
+      "benign": 299989,
+      "attack": 11
+    },
+    "train_attack_types": [
+      "DDOS-HOIC",
+      "DDOS-LOIC-HTTP",
+      "DDOS-LOIC-UDP",
+      "DDOS-LOIC-UDP - ATTEMPTED",
+      "DOS GOLDENEYE",
+      "DOS GOLDENEYE - ATTEMPTED",
+      "DOS HULK",
+      "DOS HULK - ATTEMPTED",
+      "DOS SLOWLORIS",
+      "DOS SLOWLORIS - ATTEMPTED",
+      "FTP-BRUTEFORCE - ATTEMPTED",
+      "SSH-BRUTEFORCE"
+    ],
+    "test_attack_types": [
+      "WEB ATTACK - BRUTE FORCE",
+      "WEB ATTACK - BRUTE FORCE - ATTEMPTED",
+      "WEB ATTACK - SQL",
+      "WEB ATTACK - SQL - ATTEMPTED",
+      "WEB ATTACK - XSS"
+    ],
+    "seen_test_attack_types": [],
+    "novel_test_attack_types": [
+      "WEB ATTACK - BRUTE FORCE",
+      "WEB ATTACK - BRUTE FORCE - ATTEMPTED",
+      "WEB ATTACK - SQL",
+      "WEB ATTACK - SQL - ATTEMPTED",
+      "WEB ATTACK - XSS"
+    ],
+    "seen_attack_rows": 0,
+    "novel_attack_rows": 11,
+    "status": "evaluated",
+    "primary_seen_endpoint_eligible": false,
+    "primary_threshold": 0.017433824017643932,
+    "diagnostic_validation_f1_threshold": 0.0198989898989899,
+    "primary_calibration_metrics": {
+      "n": 300000,
+      "benign_n": 299991,
+      "attack_n": 9,
+      "accuracy": 0.9900466666666666,
+      "precision": 0.0020073603211776514,
+      "recall": 0.6666666666666666,
+      "f1": 0.004002668445630421,
+      "balanced_accuracy": 0.828361517512192,
+      "mcc": 0.03621665973249732,
+      "fpr": 0.009943631642282602,
+      "tn": 297008,
+      "fp": 2983,
+      "fn": 3,
+      "tp": 6,
+      "confusion_matrix": [
+        [
+          297008,
+          2983
+        ],
+        [
+          3,
+          6
+        ]
+      ],
+      "roc_auc": 0.9748885059144365,
+      "threshold": 0.017433824017643932
+    },
+    "combined_test_period": {
+      "n": 300000,
+      "benign_n": 299989,
+      "attack_n": 11,
+      "accuracy": 0.9895466666666667,
+      "precision": 0.0025469595670168737,
+      "recall": 0.7272727272727273,
+      "f1": 0.005076142131979695,
+      "balanced_accuracy": 0.8584145055015654,
+      "mcc": 0.042643761223342534,
+      "fpr": 0.010443716269596552,
+      "tn": 296856,
+      "fp": 3133,
+      "fn": 3,
+      "tp": 8,
+      "confusion_matrix": [
+        [
+          296856,
+          3133
+        ],
+        [
+          3,
+          8
+        ]
+      ],
+      "roc_auc": 0.9840298689739836,
+      "threshold": 0.017433824017643932
+    },
+    "seen_attack_temporal": null,
+    "novel_attack_with_benign_diagnostic": {
+      "n": 300000,
+      "benign_n": 299989,
+      "attack_n": 11,
+      "accuracy": 0.9895466666666667,
+      "precision": 0.0025469595670168737,
+      "recall": 0.7272727272727273,
+      "f1": 0.005076142131979695,
+      "balanced_accuracy": 0.8584145055015654,
+      "mcc": 0.042643761223342534,
+      "fpr": 0.010443716269596552,
+      "tn": 296856,
+      "fp": 3133,
+      "fn": 3,
+      "tp": 8,
+      "confusion_matrix": [
+        [
+          296856,
+          3133
+        ],
+        [
+          3,
+          8
+        ]
+      ],
+      "roc_auc": 0.9840298689739836,
+      "threshold": 0.017433824017643932
+    },
+    "test_benign_fpr": 0.010443716269596552,
+    "fit_seconds": 14.864467499995953,
+    "balance": {
+      "enabled": true,
+      "before": {
+        "benign": 1328645,
+        "attack": 171355
+      },
+      "performed": true,
+      "after": {
+        "benign": 1328645,
+        "attack": 1328645
+      }
+    },
+    "predictor_hash_diagnostics": {
+      "test_rows_hash_seen_in_train": 732,
+      "test_rows_hash_novel_to_train": 299268,
+      "seen_attack_rows_hash_seen_in_train": 0,
+      "seen_attack_rows_hash_novel_to_train": 0,
+      "seen_attack_recall_hash_seen_in_train": null,
+      "seen_attack_recall_hash_novel_to_train": null
+    },
+    "primary_seen_endpoint_exclusion_reason": "zero_seen_attack_rows_in_test"
+  },
+  {
+    "protocol": "strict_nonadaptive",
+    "evaluation_id": "strict_test_B8",
+    "fold": 3,
+    "train_blocks": "B1-B6",
+    "calibration_block": 7,
+    "test_block": 8,
+    "train_rows": 1800000,
+    "calibration_rows": 300000,
+    "test_rows": 300000,
+    "train_time_range": [
+      "2018-02-14 12:28:11.768711",
+      "2018-02-23 12:23:58.329045"
+    ],
+    "calibration_time_range": [
+      "2018-02-23 12:23:58.678035",
+      "2018-02-28 12:51:31.023940"
+    ],
+    "test_time_range": [
+      "2018-02-28 12:51:31.106671",
+      "2018-03-01 12:31:08.747427"
+    ],
+    "train_class_counts": {
+      "benign": 1628636,
+      "attack": 171364
+    },
+    "calibration_class_counts": {
+      "benign": 299989,
+      "attack": 11
+    },
+    "test_class_counts": {
+      "benign": 297641,
+      "attack": 2359
+    },
+    "train_attack_types": [
+      "DDOS-HOIC",
+      "DDOS-LOIC-HTTP",
+      "DDOS-LOIC-UDP",
+      "DDOS-LOIC-UDP - ATTEMPTED",
+      "DOS GOLDENEYE",
+      "DOS GOLDENEYE - ATTEMPTED",
+      "DOS HULK",
+      "DOS HULK - ATTEMPTED",
+      "DOS SLOWLORIS",
+      "DOS SLOWLORIS - ATTEMPTED",
+      "FTP-BRUTEFORCE - ATTEMPTED",
+      "SSH-BRUTEFORCE",
+      "WEB ATTACK - BRUTE FORCE",
+      "WEB ATTACK - BRUTE FORCE - ATTEMPTED",
+      "WEB ATTACK - SQL",
+      "WEB ATTACK - XSS"
+    ],
+    "test_attack_types": [
+      "INFILTRATION - COMMUNICATION VICTIM ATTACKER",
+      "INFILTRATION - DROPBOX DOWNLOAD",
+      "INFILTRATION - NMAP PORTSCAN"
+    ],
+    "seen_test_attack_types": [],
+    "novel_test_attack_types": [
+      "INFILTRATION - COMMUNICATION VICTIM ATTACKER",
+      "INFILTRATION - DROPBOX DOWNLOAD",
+      "INFILTRATION - NMAP PORTSCAN"
+    ],
+    "seen_attack_rows": 0,
+    "novel_attack_rows": 2359,
+    "status": "evaluated",
+    "primary_seen_endpoint_eligible": false,
+    "primary_threshold": 0.01202268432825804,
+    "diagnostic_validation_f1_threshold": 0.029797979797979796,
+    "primary_calibration_metrics": {
+      "n": 300000,
+      "benign_n": 299989,
+      "attack_n": 11,
+      "accuracy": 0.99,
+      "precision": 0.0026622296173044926,
+      "recall": 0.7272727272727273,
+      "f1": 0.005305039787798408,
+      "balanced_accuracy": 0.8586411804796479,
+      "mcc": 0.04361565025270401,
+      "fpr": 0.009990366313431493,
+      "tn": 296992,
+      "fp": 2997,
+      "fn": 3,
+      "tp": 8,
+      "confusion_matrix": [
+        [
+          296992,
+          2997
+        ],
+        [
+          3,
+          8
+        ]
+      ],
+      "roc_auc": 0.9877456112784742,
+      "threshold": 0.01202268432825804
+    },
+    "combined_test_period": {
+      "n": 300000,
+      "benign_n": 297641,
+      "attack_n": 2359,
+      "accuracy": 0.9757833333333333,
+      "precision": 0.03007662835249042,
+      "recall": 0.0665536244171259,
+      "f1": 0.04143026784536218,
+      "balanced_accuracy": 0.5247715995530484,
+      "mcc": 0.03346648769793927,
+      "fpr": 0.01701042531102906,
+      "tn": 292578,
+      "fp": 5063,
+      "fn": 2202,
+      "tp": 157,
+      "confusion_matrix": [
+        [
+          292578,
+          5063
+        ],
+        [
+          2202,
+          157
+        ]
+      ],
+      "roc_auc": 0.7940057375195899,
+      "threshold": 0.01202268432825804
+    },
+    "seen_attack_temporal": null,
+    "novel_attack_with_benign_diagnostic": {
+      "n": 300000,
+      "benign_n": 297641,
+      "attack_n": 2359,
+      "accuracy": 0.9757833333333333,
+      "precision": 0.03007662835249042,
+      "recall": 0.0665536244171259,
+      "f1": 0.04143026784536218,
+      "balanced_accuracy": 0.5247715995530484,
+      "mcc": 0.03346648769793927,
+      "fpr": 0.01701042531102906,
+      "tn": 292578,
+      "fp": 5063,
+      "fn": 2202,
+      "tp": 157,
+      "confusion_matrix": [
+        [
+          292578,
+          5063
+        ],
+        [
+          2202,
+          157
+        ]
+      ],
+      "roc_auc": 0.7940057375195899,
+      "threshold": 0.01202268432825804
+    },
+    "test_benign_fpr": 0.01701042531102906,
+    "fit_seconds": 19.043608099993435,
+    "balance": {
+      "enabled": true,
+      "before": {
+        "benign": 1628636,
+        "attack": 171364
+      },
+      "performed": true,
+      "after": {
+        "benign": 1628636,
+        "attack": 1628636
+      }
+    },
+    "predictor_hash_diagnostics": {
+      "test_rows_hash_seen_in_train": 707,
+      "test_rows_hash_novel_to_train": 299293,
+      "seen_attack_rows_hash_seen_in_train": 0,
+      "seen_attack_rows_hash_novel_to_train": 0,
+      "seen_attack_recall_hash_seen_in_train": null,
+      "seen_attack_recall_hash_novel_to_train": null
+    },
+    "primary_seen_endpoint_exclusion_reason": "zero_seen_attack_rows_in_test"
+  },
+  {
+    "protocol": "strict_nonadaptive",
+    "evaluation_id": "strict_test_B9",
+    "fold": 4,
+    "train_blocks": "B1-B7",
+    "calibration_block": 8,
+    "test_block": 9,
+    "train_rows": 2100000,
+    "calibration_rows": 300000,
+    "test_rows": 300000,
+    "train_time_range": [
+      "2018-02-14 12:28:11.768711",
+      "2018-02-28 12:51:31.023940"
+    ],
+    "calibration_time_range": [
+      "2018-02-28 12:51:31.106671",
+      "2018-03-01 12:31:08.747427"
+    ],
+    "test_time_range": [
+      "2018-03-01 12:31:08.749266",
+      "2018-03-01 22:04:29.763131"
+    ],
+    "train_class_counts": {
+      "benign": 1928625,
+      "attack": 171375
+    },
+    "calibration_class_counts": {
+      "benign": 297641,
+      "attack": 2359
+    },
+    "test_class_counts": {
+      "benign": 298165,
+      "attack": 1835
+    },
+    "train_attack_types": [
+      "DDOS-HOIC",
+      "DDOS-LOIC-HTTP",
+      "DDOS-LOIC-UDP",
+      "DDOS-LOIC-UDP - ATTEMPTED",
+      "DOS GOLDENEYE",
+      "DOS GOLDENEYE - ATTEMPTED",
+      "DOS HULK",
+      "DOS HULK - ATTEMPTED",
+      "DOS SLOWLORIS",
+      "DOS SLOWLORIS - ATTEMPTED",
+      "FTP-BRUTEFORCE - ATTEMPTED",
+      "SSH-BRUTEFORCE",
+      "WEB ATTACK - BRUTE FORCE",
+      "WEB ATTACK - BRUTE FORCE - ATTEMPTED",
+      "WEB ATTACK - SQL",
+      "WEB ATTACK - SQL - ATTEMPTED",
+      "WEB ATTACK - XSS"
+    ],
+    "test_attack_types": [
+      "INFILTRATION - COMMUNICATION VICTIM ATTACKER",
+      "INFILTRATION - DROPBOX DOWNLOAD",
+      "INFILTRATION - NMAP PORTSCAN"
+    ],
+    "seen_test_attack_types": [],
+    "novel_test_attack_types": [
+      "INFILTRATION - COMMUNICATION VICTIM ATTACKER",
+      "INFILTRATION - DROPBOX DOWNLOAD",
+      "INFILTRATION - NMAP PORTSCAN"
+    ],
+    "seen_attack_rows": 0,
+    "novel_attack_rows": 1835,
+    "status": "evaluated",
+    "primary_seen_endpoint_eligible": false,
+    "primary_threshold": 0.032838873565197,
+    "diagnostic_validation_f1_threshold": 0.0198989898989899,
+    "primary_calibration_metrics": {
+      "n": 300000,
+      "benign_n": 297641,
+      "attack_n": 2359,
+      "accuracy": 0.9825766666666667,
+      "precision": 0.02766798418972332,
+      "recall": 0.03560830860534125,
+      "f1": 0.03113994439295644,
+      "balanced_accuracy": 0.5128451600780846,
+      "mcc": 0.02267133418540967,
+      "fpr": 0.009917988449171989,
+      "tn": 294689,
+      "fp": 2952,
+      "fn": 2275,
+      "tp": 84,
+      "confusion_matrix": [
+        [
+          294689,
+          2952
+        ],
+        [
+          2275,
+          84
+        ]
+      ],
+      "roc_auc": 0.7771755965962444,
+      "threshold": 0.032838873565197
+    },
+    "combined_test_period": {
+      "n": 300000,
+      "benign_n": 298165,
+      "attack_n": 1835,
+      "accuracy": 0.9919466666666666,
+      "precision": 0.09026798307475317,
+      "recall": 0.03487738419618529,
+      "f1": 0.050314465408805034,
+      "balanced_accuracy": 0.51635707621427,
+      "mcc": 0.052530567454182435,
+      "fpr": 0.0021632317676454314,
+      "tn": 297520,
+      "fp": 645,
+      "fn": 1771,
+      "tp": 64,
+      "confusion_matrix": [
+        [
+          297520,
+          645
+        ],
+        [
+          1771,
+          64
+        ]
+      ],
+      "roc_auc": 0.7900717508652265,
+      "threshold": 0.032838873565197
+    },
+    "seen_attack_temporal": null,
+    "novel_attack_with_benign_diagnostic": {
+      "n": 300000,
+      "benign_n": 298165,
+      "attack_n": 1835,
+      "accuracy": 0.9919466666666666,
+      "precision": 0.09026798307475317,
+      "recall": 0.03487738419618529,
+      "f1": 0.050314465408805034,
+      "balanced_accuracy": 0.51635707621427,
+      "mcc": 0.052530567454182435,
+      "fpr": 0.0021632317676454314,
+      "tn": 297520,
+      "fp": 645,
+      "fn": 1771,
+      "tp": 64,
+      "confusion_matrix": [
+        [
+          297520,
+          645
+        ],
+        [
+          1771,
+          64
+        ]
+      ],
+      "roc_auc": 0.7900717508652265,
+      "threshold": 0.032838873565197
+    },
+    "test_benign_fpr": 0.0021632317676454314,
+    "fit_seconds": 23.38289639999857,
+    "balance": {
+      "enabled": true,
+      "before": {
+        "benign": 1928625,
+        "attack": 171375
+      },
+      "performed": true,
+      "after": {
+        "benign": 1928625,
+        "attack": 1928625
+      }
+    },
+    "predictor_hash_diagnostics": {
+      "test_rows_hash_seen_in_train": 630,
+      "test_rows_hash_novel_to_train": 299370,
+      "seen_attack_rows_hash_seen_in_train": 0,
+      "seen_attack_rows_hash_novel_to_train": 0,
+      "seen_attack_recall_hash_seen_in_train": null,
+      "seen_attack_recall_hash_novel_to_train": null
+    },
+    "primary_seen_endpoint_exclusion_reason": "zero_seen_attack_rows_in_test"
+  },
+  {
+    "protocol": "strict_nonadaptive",
+    "evaluation_id": "strict_test_B10",
+    "fold": 5,
+    "train_blocks": "B1-B8",
+    "calibration_block": 9,
+    "test_block": 10,
+    "train_rows": 2400000,
+    "calibration_rows": 300000,
+    "test_rows": 300000,
+    "train_time_range": [
+      "2018-02-14 12:28:11.768711",
+      "2018-03-01 12:31:08.747427"
+    ],
+    "calibration_time_range": [
+      "2018-03-01 12:31:08.749266",
+      "2018-03-01 22:04:29.763131"
+    ],
+    "test_time_range": [
+      "2018-03-01 22:04:35.424320",
+      "2018-03-03 00:38:37.344583"
+    ],
+    "train_class_counts": {
+      "benign": 2226266,
+      "attack": 173734
+    },
+    "calibration_class_counts": {
+      "benign": 298165,
+      "attack": 1835
+    },
+    "test_class_counts": {
+      "benign": 293187,
+      "attack": 6813
+    },
+    "train_attack_types": [
+      "DDOS-HOIC",
+      "DDOS-LOIC-HTTP",
+      "DDOS-LOIC-UDP",
+      "DDOS-LOIC-UDP - ATTEMPTED",
+      "DOS GOLDENEYE",
+      "DOS GOLDENEYE - ATTEMPTED",
+      "DOS HULK",
+      "DOS HULK - ATTEMPTED",
+      "DOS SLOWLORIS",
+      "DOS SLOWLORIS - ATTEMPTED",
+      "FTP-BRUTEFORCE - ATTEMPTED",
+      "INFILTRATION - COMMUNICATION VICTIM ATTACKER",
+      "INFILTRATION - DROPBOX DOWNLOAD",
+      "INFILTRATION - NMAP PORTSCAN",
+      "SSH-BRUTEFORCE",
+      "WEB ATTACK - BRUTE FORCE",
+      "WEB ATTACK - BRUTE FORCE - ATTEMPTED",
+      "WEB ATTACK - SQL",
+      "WEB ATTACK - SQL - ATTEMPTED",
+      "WEB ATTACK - XSS"
+    ],
+    "test_attack_types": [
+      "BOTNET ARES",
+      "BOTNET ARES - ATTEMPTED"
+    ],
+    "seen_test_attack_types": [],
+    "novel_test_attack_types": [
+      "BOTNET ARES",
+      "BOTNET ARES - ATTEMPTED"
+    ],
+    "seen_attack_rows": 0,
+    "novel_attack_rows": 6813,
+    "status": "evaluated",
+    "primary_seen_endpoint_eligible": false,
+    "primary_threshold": 0.02345661632716656,
+    "diagnostic_validation_f1_threshold": 0.7326262626262626,
+    "primary_calibration_metrics": {
+      "n": 300000,
+      "benign_n": 298165,
+      "attack_n": 1835,
+      "accuracy": 0.99032,
+      "precision": 0.3854233654876742,
+      "recall": 0.9798365122615804,
+      "f1": 0.5532307692307692,
+      "balanced_accuracy": 0.9851105154502945,
+      "mcc": 0.6114117305787614,
+      "fpr": 0.009615481360991397,
+      "tn": 295298,
+      "fp": 2867,
+      "fn": 37,
+      "tp": 1798,
+      "confusion_matrix": [
+        [
+          295298,
+          2867
+        ],
+        [
+          37,
+          1798
+        ]
+      ],
+      "roc_auc": 0.9971350007317694,
+      "threshold": 0.02345661632716656
+    },
+    "combined_test_period": {
+      "n": 300000,
+      "benign_n": 293187,
+      "attack_n": 6813,
+      "accuracy": 0.96773,
+      "precision": 0.016520566419420093,
+      "recall": 0.007192132687509173,
+      "f1": 0.010021474588403722,
+      "balanced_accuracy": 0.49862142558546724,
+      "mcc": -0.00415157706217794,
+      "fpr": 0.009949281516574746,
+      "tn": 290270,
+      "fp": 2917,
+      "fn": 6764,
+      "tp": 49,
+      "confusion_matrix": [
+        [
+          290270,
+          2917
+        ],
+        [
+          6764,
+          49
+        ]
+      ],
+      "roc_auc": 0.9707783164642063,
+      "threshold": 0.02345661632716656
+    },
+    "seen_attack_temporal": null,
+    "novel_attack_with_benign_diagnostic": {
+      "n": 300000,
+      "benign_n": 293187,
+      "attack_n": 6813,
+      "accuracy": 0.96773,
+      "precision": 0.016520566419420093,
+      "recall": 0.007192132687509173,
+      "f1": 0.010021474588403722,
+      "balanced_accuracy": 0.49862142558546724,
+      "mcc": -0.00415157706217794,
+      "fpr": 0.009949281516574746,
+      "tn": 290270,
+      "fp": 2917,
+      "fn": 6764,
+      "tp": 49,
+      "confusion_matrix": [
+        [
+          290270,
+          2917
+        ],
+        [
+          6764,
+          49
+        ]
+      ],
+      "roc_auc": 0.9707783164642063,
+      "threshold": 0.02345661632716656
+    },
+    "test_benign_fpr": 0.009949281516574746,
+    "fit_seconds": 26.682388000001083,
+    "balance": {
+      "enabled": true,
+      "before": {
+        "benign": 2226266,
+        "attack": 173734
+      },
+      "performed": true,
+      "after": {
+        "benign": 2226266,
+        "attack": 2226266
+      }
+    },
+    "predictor_hash_diagnostics": {
+      "test_rows_hash_seen_in_train": 700,
+      "test_rows_hash_novel_to_train": 299300,
+      "seen_attack_rows_hash_seen_in_train": 0,
+      "seen_attack_rows_hash_novel_to_train": 0,
+      "seen_attack_recall_hash_seen_in_train": null,
+      "seen_attack_recall_hash_novel_to_train": null
+    },
+    "primary_seen_endpoint_exclusion_reason": "zero_seen_attack_rows_in_test"
+  }
+]

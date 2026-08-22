@@ -1,0 +1,67 @@
+{
+  "enabled": true,
+  "supports_actual_onchain_publication_measurement": false,
+  "note": "This V8c run measures off-chain learning, DP, SSI, Merkle, proof, and export-index packaging layers. Actual blockchain submission latency/gas must still be taken from the on-chain publication run/report.",
+  "measured_layers_sec": {
+    "learning_core_sec": 252.33685440001136,
+    "dp_evidence_sec": 0.03731159998278599,
+    "ssi_admission_sec": 2.590635199987446,
+    "commitment_sec": 12.983848100018804,
+    "proof_sec": 8.883635799982585,
+    "artifact_export_sec": 0.02347309998003766
+  },
+  "fine_grained_components_sec": {
+    "local_train_sec": 252.30564050000976,
+    "rsu_model_aggregation_sec": 0.020790299997315742,
+    "global_aggregation_sec": 0.010423600004287437,
+    "dp_record_sec": 0.03731159998278599,
+    "ssi_vehicle_report_sec": 0.0010719999845605344,
+    "rsu_preselect_sec": 0.008545000004232861,
+    "rsu_ssi_verification_sec": 2.5810181999986526,
+    "rsu_merkle_build_sec": 12.983848100018804,
+    "rsu_zkp_sec": 7.946446299989475,
+    "global_zkp_sec": 0.9371894999931101,
+    "global_artifact_export_sec": 0.00076299998909235,
+    "export_index_write_sec": 0.02271009999094531
+  },
+  "per_rsu_overhead_summary": {
+    "1": {
+      "simulation_wall_time_sec": 139.63386464118958,
+      "sum_fit_total_upload_bytes": 339254.0,
+      "sum_fit_total_download_bytes": 249906.0,
+      "sum_fit_total_bytes": 589160.0,
+      "sum_fit_total_train_time_sec": 121.57455829999526,
+      "sum_rsu_preselect_latency_sec": 0.007539700003690086,
+      "sum_rsu_model_aggregation_latency_sec": 0.010782199999084696,
+      "sum_rsu_ssi_verification_latency_sec": 1.36083520000102,
+      "sum_rsu_merkle_build_latency_sec": 3.9518875000067055,
+      "sum_rsu_verification_pipeline_latency_sec": 9.390526100003626,
+      "sum_rsu_zkp_latency_sec": 4.072076099997503,
+      "sum_rsu_round_total_latency_sec": 9.421715199991013
+    },
+    "2": {
+      "simulation_wall_time_sec": 144.26222252845764,
+      "sum_fit_total_upload_bytes": 347412.0,
+      "sum_fit_total_download_bytes": 242170.0,
+      "sum_fit_total_bytes": 589582.0,
+      "sum_fit_total_train_time_sec": 130.7310822000145,
+      "sum_rsu_preselect_latency_sec": 0.0010053000005427748,
+      "sum_rsu_model_aggregation_latency_sec": 0.010008099998231046,
+      "sum_rsu_ssi_verification_latency_sec": 1.2201829999976326,
+      "sum_rsu_merkle_build_latency_sec": 9.031960600012098,
+      "sum_rsu_verification_pipeline_latency_sec": 14.134360800002469,
+      "sum_rsu_zkp_latency_sec": 3.874370199991972,
+      "sum_rsu_round_total_latency_sec": 14.15659600001527
+    }
+  },
+  "global_overhead_summary": {
+    "global_aggregation_latency_sec": 0.010423600004287437,
+    "global_zkp_latency_sec": 0.9371894999931101,
+    "global_artifact_export_latency_sec": 0.00076299998909235,
+    "global_total_latency_sec": 0.9379524999822024,
+    "global_summary_artifact_size_bytes": 2172,
+    "global_proof_artifact_size_bytes": 8865,
+    "global_public_inputs_sidecar_size_bytes": 764
+  },
+  "result": "pass"
+}

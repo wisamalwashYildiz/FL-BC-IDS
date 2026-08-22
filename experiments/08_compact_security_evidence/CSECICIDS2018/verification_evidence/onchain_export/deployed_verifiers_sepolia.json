@@ -1,0 +1,22 @@
+{
+  "rsu": {
+    "address": "0x957810FD547C6C7f13300C184B1823a58F68d53c",
+    "deploy_tx": "65a80aa0b7f735808f18001f01f2f6321bf24f4c4131629bdf54b331166da33f",
+    "verifier_sol_sha256": "49acf88545b18d0d1253d7830d5273e5503c6ed59b15088029516e5580fc0301",
+    "vkey_sha256": "9b5dc0643303568535ad8e7ef8a922fa2cf078f61aa653bc4dffcccbaf04a9ce",
+    "circuit_name": "AggRSU_AnchorSum_M64_K2_RM1_S100000_RC0_RB2",
+    "chain_id": 11155111,
+    "deployer": "0xDc5b1C091A4dde454689C080b99c025888aEa56f",
+    "updated_utc": "2026-08-15T03:13:12Z"
+  },
+  "global": {
+    "address": "0xcDCf8376B7851205a70A4A7f5985F6fBcbeE7465",
+    "deploy_tx": "5115281a0e08c210c31b2f26c72c6b5246231d62c2e5cd392ac13f4570a6c0ed",
+    "verifier_sol_sha256": "49acf88545b18d0d1253d7830d5273e5503c6ed59b15088029516e5580fc0301",
+    "vkey_sha256": "9b5dc0643303568535ad8e7ef8a922fa2cf078f61aa653bc4dffcccbaf04a9ce",
+    "circuit_name": "AggGlobal_AnchorSum_M64_K2_RM2_S100000_RC0_RB2",
+    "chain_id": 11155111,
+    "deployer": "0xDc5b1C091A4dde454689C080b99c025888aEa56f",
+    "updated_utc": "2026-08-15T03:13:25Z"
+  }
+}

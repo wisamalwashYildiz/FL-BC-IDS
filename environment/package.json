@@ -1,0 +1,13 @@
+{
+  "name": "fl-bc-ids-reproducibility",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Locked Node dependencies for the FL-BC-IDS reproducibility and Groth16 verification package.",
+  "license": "MIT",
+  "type": "commonjs",
+  "dependencies": {
+    "circomlib": "^2.0.5",
+    "circomlibjs": "^0.1.7",
+    "snarkjs": "^0.7.5"
+  }
+}

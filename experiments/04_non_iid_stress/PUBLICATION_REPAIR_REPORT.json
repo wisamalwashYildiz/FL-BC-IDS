@@ -1,0 +1,44 @@
+{
+  "schema": "FLBCIDSNonIIDStressPublicationRepairV1",
+  "source_zip": "04_non_iid_stress.zip",
+  "source_zip_sha256": "9d6329254d617b990e5295a24b6cc45f5fc6ce427bdb2ff45699c9a68d797478",
+  "original_file_count": 31,
+  "historical_json_files_path_sanitized": 9,
+  "historical_artifact_path_values_replaced": 59,
+  "path_replacements_by_file": {
+    "04_non_iid_stress/balanced_reference/global_ensemble_summary.json": 3,
+    "04_non_iid_stress/balanced_reference/iov_rsu_1_summary.json": 7,
+    "04_non_iid_stress/balanced_reference/iov_rsu_2_summary.json": 7,
+    "04_non_iid_stress/data_heterogeneity/global_ensemble_summary.json": 3,
+    "04_non_iid_stress/data_heterogeneity/iov_rsu_1_summary.json": 7,
+    "04_non_iid_stress/data_heterogeneity/iov_rsu_2_summary.json": 7,
+    "04_non_iid_stress/combined_stress/global_ensemble_summary.json": 3,
+    "04_non_iid_stress/combined_stress/iov_rsu_1_summary.json": 11,
+    "04_non_iid_stress/combined_stress/iov_rsu_2_summary.json": 11
+  },
+  "python_source_regenerated": true,
+  "python_source_changes": [
+    "shebang moved to first line",
+    "four contentReference remnants removed",
+    "archive-compatible repository/core discovery added",
+    "relative preprocessed-data path resolved against repository root",
+    "learner-stage DP accounting wording aligned with final privacy boundary"
+  ],
+  "scientific_values_changed": false,
+  "validation": {
+    "python_syntax": "PASS",
+    "topology_2x10x8x10": true,
+    "train_rows": 3944668,
+    "size_ratio": 7.183039782612298,
+    "attack_fraction_range": [
+      0.008791916457692653,
+      0.8702817563950753
+    ],
+    "successes": 142,
+    "failures": 18,
+    "stale_round_rejection": "1/1",
+    "cross_rsu_rejection": "1/1",
+    "global_anchor_zkp_ok_all_scenarios": true,
+    "metrics_from_confusion_matrices": true
+  }
+}

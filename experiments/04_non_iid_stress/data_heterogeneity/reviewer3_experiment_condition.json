@@ -1,0 +1,50 @@
+{
+  "experiment_version": "reviewer3-heterogeneity-participation-v1",
+  "scenario": "data_heterogeneity",
+  "seed": 42,
+  "num_rsus": 2,
+  "vehicles_per_rsu": 10,
+  "num_rounds": 8,
+  "num_local_rounds": 10,
+  "stress_configuration": {
+    "enable_admission_failure_check": false,
+    "enable_digest_binding_failure_check": false,
+    "enable_artifact_tamper_check": false,
+    "enable_participation_stress": false,
+    "availability_schedule": {
+      "permanent_dropout_local_index": 10,
+      "permanent_dropout_from_round": 5,
+      "burst_outage_rounds_by_local_index": {
+        "3": [
+          2,
+          3
+        ],
+        "7": [
+          6,
+          7
+        ]
+      },
+      "isolated_outage_rounds_by_local_index": {
+        "5": [
+          4
+        ]
+      }
+    },
+    "enable_context_binding_challenges": false,
+    "context_binding_targets": [],
+    "enable_commitment_recompute_check": true,
+    "commitment_recompute_target": {
+      "rsu_id": 2,
+      "round": 8,
+      "global_round": 8
+    },
+    "enable_public_input_agreement_check": true,
+    "public_input_agreement_target": {
+      "rsu_id": 2,
+      "round": 8,
+      "global_round": 8
+    },
+    "enable_layered_overhead_breakdown": true
+  },
+  "interpretation_boundary": "Controlled FL-level data/participation/context stress evaluation; not physical mobility, seamless handoff, or packet-level V2X deployment validation."
+}

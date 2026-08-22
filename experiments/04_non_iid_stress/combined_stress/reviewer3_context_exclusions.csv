@@ -1,0 +1,3 @@
+cid,vehicle_id,reason,classification,detail,ablation_target,ablation_mode,ablation_digest_target,ablation_digest_mode,reviewer3_context_challenge_target,reviewer3_context_challenge_mode,reviewer3_signed_report_rsu_id,reviewer3_signed_report_round,rsu_id,round
+15444411835385564854,1002,bad_signature_or_report_binding,stale_round_context,,0,,0,,1,stale_round,1,5,1,6
+3469108752387642136,2002,bad_signature_or_report_binding,cross_rsu_context,,0,,0,,1,cross_rsu_scope,1,6,2,6
