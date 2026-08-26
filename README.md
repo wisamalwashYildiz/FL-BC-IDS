@@ -121,8 +121,3 @@ audit report only after the assembled repository passes the executable checks.
 Original FL-BC-IDS repository content is released under the MIT License; see
 `LICENSE`. Third-party dependencies and generated artifacts remain subject to
 their own applicable licenses and notices.
-
-## Archive identifier
-
-After acceptance/deposition, insert the permanent archive identifier/DOI here
-and in the final published manuscript.
